@@ -1,0 +1,111 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Background.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Fall"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="back_g" type="Sprite" parent="."]
+position = Vector2( 958, 540 )
+scale = Vector2( 3.33522, 0.969701 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 771, 0, 360, 1080 )
+
+[node name="back_g0" type="Sprite" parent="."]
+position = Vector2( 958, 540 )
+scale = Vector2( 3.33522, 0.969701 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 771, 0, 360, 1080 )
+
+[node name="backb_1r" type="Sprite" parent="."]
+position = Vector2( 1550, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1169, 0, 176, 1080 )
+
+[node name="backb_1r2" type="Sprite" parent="."]
+position = Vector2( 1550, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1169, 0, 176, 1080 )
+
+[node name="backm_1r" type="Sprite" parent="."]
+position = Vector2( 1666, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1410, 0, 175, 1080 )
+
+[node name="backm_1r2" type="Sprite" parent="."]
+position = Vector2( 1666, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1410, 0, 175, 1080 )
+
+[node name="backb_1l" type="Sprite" parent="."]
+position = Vector2( 362, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 554, 0, 184, 1080 )
+
+[node name="backb_1l2" type="Sprite" parent="."]
+position = Vector2( 362, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 554, 0, 184, 1080 )
+
+[node name="backm_1l" type="Sprite" parent="."]
+position = Vector2( 234, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 291, 0, 179, 1080 )
+
+[node name="backm_1l2" type="Sprite" parent="."]
+position = Vector2( 234, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 291, 0, 179, 1080 )
+
+[node name="backf_1r" type="Sprite" parent="."]
+position = Vector2( 1794, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="backf_1r2" type="Sprite" parent="."]
+position = Vector2( 1794, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="backf_1l" type="Sprite" parent="."]
+position = Vector2( 109, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="backf_1l2" type="Sprite" parent="."]
+position = Vector2( 109, 540 )
+z_index = -20
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Fall = SubResource( 1 )

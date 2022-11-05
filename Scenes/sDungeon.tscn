@@ -1,0 +1,359 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Out.png" type="Texture" id=2]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/sDungeon.gd" type="Script" id=4]
+[ext_resource path="res://GameNodes/Exit.tscn" type="PackedScene" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Go_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.258816, 1 ),
+"update": 0,
+"values": [ Vector2( -453, 656 ), Vector2( 156, 631 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CatPaw2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.435275, 1 ),
+"update": 0,
+"values": [ Vector2( -401, -7 ), Vector2( 173, 292 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CatPaw3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.329877, 1 ),
+"update": 0,
+"values": [ Vector2( 987, -546 ), Vector2( 848, 110 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CatPaw4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.210224, 1 ),
+"update": 0,
+"values": [ Vector2( 2245, -162 ), Vector2( 1789, 141 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CatPaw5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.574349, 1 ),
+"update": 0,
+"values": [ Vector2( 465, 1481 ), Vector2( 615, 971 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CatPaw6:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.435275, 1 ),
+"update": 0,
+"values": [ Vector2( 1839, 1443 ), Vector2( 1340, 1015 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CatPaw7:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.25, 1 ),
+"update": 0,
+"values": [ Vector2( 2866, 685 ), Vector2( 1808, 738 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Go_out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 3.48221, 1 ),
+"update": 0,
+"values": [ Vector2( 156, 631 ), Vector2( -660, 599 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CatPaw2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 2.63902, 1 ),
+"update": 0,
+"values": [ Vector2( 173, 292 ), Vector2( -493, -11 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CatPaw3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 2.46229, 1 ),
+"update": 0,
+"values": [ Vector2( 848, 110 ), Vector2( 969, -514 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CatPaw4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 3.86375, 1 ),
+"update": 0,
+"values": [ Vector2( 1789, 141 ), Vector2( 2210, -194 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CatPaw5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 2.82843, 1 ),
+"update": 0,
+"values": [ Vector2( 615, 971 ), Vector2( 472, 1249 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CatPaw6:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 2.63902, 1 ),
+"update": 0,
+"values": [ Vector2( 1340, 1015 ), Vector2( 1775, 1343 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CatPaw7:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 2.54912, 1 ),
+"update": 0,
+"values": [ Vector2( 1808, 738 ), Vector2( 2792, 663 ) ]
+}
+
+[node name="Dungeon" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="CatPaw" parent="." instance=ExtResource( 3 )]
+position = Vector2( -453, 656 )
+
+[node name="Floor12" type="Sprite" parent="CatPaw"]
+position = Vector2( 47.9683, -150.997 )
+rotation = -1.59094
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 19, 323, 516, 725 )
+
+[node name="CatPaw2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -401, -7 )
+rotation = 2.09439
+
+[node name="Floor8" type="Sprite" parent="CatPaw2"]
+position = Vector2( -137.042, -163.366 )
+rotation = -2.09439
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor19" type="Sprite" parent="CatPaw2"]
+position = Vector2( -71.3466, -61.5765 )
+rotation = -2.09439
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 303, 13, 255, 261 )
+
+[node name="Floor10" type="Sprite" parent="CatPaw2"]
+position = Vector2( -183.344, -143.562 )
+rotation = -2.09439
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 19, 11, 206, 135 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 987, -546 )
+rotation = 3.40339
+
+[node name="Floor13" type="Sprite" parent="CatPaw3"]
+position = Vector2( 52.109, -218.947 )
+rotation = 2.8798
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 593, 24, 531, 604 )
+
+[node name="CatPaw4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2245, -162 )
+rotation = 3.92699
+
+[node name="Floor23" type="Sprite" parent="CatPaw4"]
+position = Vector2( 35.3557, -65.0536 )
+rotation = 2.3562
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1200, 884, 227, 167 )
+
+[node name="CatPaw5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 465, 1481 )
+rotation = 0.261799
+
+[node name="Floor22" type="Sprite" parent="CatPaw5"]
+position = Vector2( 19.8313, -61.2186 )
+rotation = -0.261799
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1200, 884, 227, 167 )
+
+[node name="CatPaw6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1839, 1443 )
+rotation = -0.523598
+
+[node name="Floor18" type="Sprite" parent="CatPaw6"]
+position = Vector2( -63.8538, -153.939 )
+rotation = 0.523598
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor21" type="Sprite" parent="CatPaw6"]
+position = Vector2( -47.7198, -183.884 )
+rotation = 0.523598
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1450, 879, 64, 60 )
+
+[node name="Floor9" type="Sprite" parent="CatPaw6"]
+position = Vector2( 4.74298, -52.7554 )
+rotation = 0.523598
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor11" type="Sprite" parent="CatPaw6"]
+position = Vector2( 27.7153, -96.0045 )
+rotation = 0.523598
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 19, 11, 206, 135 )
+
+[node name="Floor17" type="Sprite" parent="CatPaw6"]
+position = Vector2( -208.523, -190.828 )
+rotation = 0.523598
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="CatPaw7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2866, 685 )
+rotation = -1.57079
+
+[node name="Floor20" type="Sprite" parent="CatPaw7"]
+position = Vector2( 184.999, -505 )
+rotation = 1.57079
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 303, 13, 255, 261 )
+
+[node name="Floor15" type="Sprite" parent="CatPaw7"]
+position = Vector2( 237.999, -284 )
+rotation = 1.57079
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1150, 18, 478, 559 )
+
+[node name="Floor16" type="Sprite" parent="CatPaw7"]
+position = Vector2( -22.0004, -148 )
+rotation = 1.57079
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1150, 18, 478, 559 )
+
+[node name="Exit" parent="CatPaw7" instance=ExtResource( 5 )]
+position = Vector2( 578.996, -581.004 )
+rotation = 1.57079
+next_level = "res://Scenes/sBackAlley.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Go_in = SubResource( 1 )
+anims/Go_out = SubResource( 2 )

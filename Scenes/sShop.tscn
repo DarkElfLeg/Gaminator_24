@@ -1,0 +1,245 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Gate.png" type="Texture" id=3]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CatPaw" parent="." instance=ExtResource( 4 )]
+position = Vector2( 156, 516 )
+
+[node name="Floor11" type="Sprite" parent="CatPaw"]
+position = Vector2( -178.18, -106.433 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="Floor12" type="Sprite" parent="CatPaw"]
+position = Vector2( -204.539, -272.935 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1694, 196, 168, 95 )
+
+[node name="Floor" type="Sprite" parent="CatPaw"]
+position = Vector2( 195.112, -194.97 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw"]
+position = Vector2( 2.90967, -203.1 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 582, 658, 427, 393 )
+
+[node name="Floor9" type="Sprite" parent="CatPaw"]
+position = Vector2( 133.365, -330.753 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1649, 520, 191, 167 )
+
+[node name="Floor10" type="Sprite" parent="CatPaw"]
+position = Vector2( 152.03, -0.0622406 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="Floor21" type="Sprite" parent="CatPaw"]
+position = Vector2( 171.755, -212.503 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="Floor22" type="Sprite" parent="CatPaw"]
+position = Vector2( 30.8491, -305.683 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="CatPaw2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 962, 987 )
+rotation = -0.261799
+
+[node name="Floor3" type="Sprite" parent="CatPaw2"]
+position = Vector2( -140.724, -127.776 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw2"]
+position = Vector2( -124.255, -191.174 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1559, 746, 346, 131 )
+
+[node name="Floor26" type="Sprite" parent="CatPaw2"]
+position = Vector2( -184.574, -304.134 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 906, 14, 80, 120 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 729, 30 )
+rotation = 3.14159
+
+[node name="Floor25" type="Sprite" parent="CatPaw3"]
+position = Vector2( 12.0006, -130 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 44, 25, 126, 276 )
+
+[node name="CatPaw4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1229, 267 )
+rotation = 3.66519
+
+[node name="Floor14" type="Sprite" parent="CatPaw4"]
+position = Vector2( -36.3318, -164.93 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Floor15" type="Sprite" parent="CatPaw4"]
+position = Vector2( 78.6422, -361.79 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1569, 916, 331, 135 )
+
+[node name="Floor16" type="Sprite" parent="CatPaw4"]
+position = Vector2( -69.5691, -24.4977 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1670, 23, 211, 141 )
+
+[node name="Floor18" type="Sprite" parent="CatPaw4"]
+position = Vector2( -130.772, -36.5051 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1694, 196, 168, 95 )
+
+[node name="Floor19" type="Sprite" parent="CatPaw4"]
+position = Vector2( 92.4762, -123.827 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 1390, 310, 254, 248 )
+
+[node name="Floor20" type="Sprite" parent="CatPaw4"]
+position = Vector2( 105.883, -288.606 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 37, 33, 277, 181 )
+
+[node name="Floor17" type="Sprite" parent="CatPaw4"]
+position = Vector2( 160.079, -206.736 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="Floor23" type="Sprite" parent="CatPaw4"]
+position = Vector2( -64.7673, -116.182 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="Floor25" type="Sprite" parent="CatPaw4"]
+position = Vector2( -159.995, -53.1194 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 941, 434, 127, 114 )
+
+[node name="Floor26" type="Sprite" parent="CatPaw4"]
+position = Vector2( -130.923, 13.2344 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 832, 19, 54, 77 )
+
+[node name="Floor24" type="Sprite" parent="CatPaw4"]
+position = Vector2( 156.413, 0.91684 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1708, 328, 144, 108 )
+
+[node name="CatPaw5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1696, 945 )
+rotation = -0.785397
+
+[node name="Floor4" type="Sprite" parent="CatPaw5"]
+position = Vector2( 3.53528, -239.709 )
+rotation = 0.785397
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Floor5" type="Sprite" parent="CatPaw5"]
+position = Vector2( -19.092, -102.53 )
+rotation = 0.785397
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1569, 916, 331, 135 )
+
+[node name="Floor6" type="Sprite" parent="CatPaw5"]
+position = Vector2( 37.4763, -294.863 )
+rotation = 0.785397
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1559, 746, 346, 131 )
+
+[node name="Floor13" type="Sprite" parent="CatPaw5"]
+position = Vector2( 47.376, -142.128 )
+rotation = 0.785397
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1670, 23, 211, 141 )

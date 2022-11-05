@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=1]
+
+[node name="Bed" type="Node2D"]
+position = Vector2( 8, 1 )
+
+[node name="Bed" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 14, 378, 389, 219 )

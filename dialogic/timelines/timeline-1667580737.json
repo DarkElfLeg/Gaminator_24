@@ -1,0 +1,63 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Мусорка!"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "И меня никто не поругает!\n[wave amp=50 freq=2]Пороюсь![/wave]\n...\n.....\n[shake]Фууу![/shake]"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1667580737.json",
+		"name": "Garbage"
+	}
+}

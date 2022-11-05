@@ -1,0 +1,87 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="Knight" type="Node2D"]
+
+[node name="Body" type="Node2D" parent="."]
+position = Vector2( 0, -2 )
+
+[node name="Legs" type="Sprite" parent="Body"]
+position = Vector2( 2, 56 )
+texture = ExtResource( 1 )
+offset = Vector2( -16, 33 )
+region_enabled = true
+region_rect = Rect2( 156, 510, 99, 103 )
+
+[node name="HandB" type="Sprite" parent="Body"]
+position = Vector2( 40, -27 )
+rotation = -0.261799
+scale = Vector2( 0.871429, 0.871429 )
+texture = ExtResource( 1 )
+offset = Vector2( -1.30721, 4.84861 )
+region_enabled = true
+region_rect = Rect2( 205, 890, 42, 81 )
+
+[node name="HandB3" type="Sprite" parent="Body/HandB"]
+position = Vector2( 5.98235, 40.1985 )
+scale = Vector2( 1.04456, 1.04456 )
+texture = ExtResource( 1 )
+offset = Vector2( 6.38053, 22.2797 )
+region_enabled = true
+region_rect = Rect2( 204, 691, 39, 68 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( 3, -1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 154, 370, 91, 120 )
+
+[node name="Head" type="Node2D" parent="Body"]
+position = Vector2( 0, -51 )
+
+[node name="Decor" type="Sprite" parent="Body/Head"]
+position = Vector2( -8, -77 )
+texture = ExtResource( 1 )
+offset = Vector2( -41, 21 )
+region_enabled = true
+region_rect = Rect2( 26, 466, 112, 141 )
+
+[node name="Head" type="Sprite" parent="Body/Head"]
+position = Vector2( -3, -5 )
+texture = ExtResource( 1 )
+offset = Vector2( 3, -34 )
+region_enabled = true
+region_rect = Rect2( 30, 364, 96, 88 )
+
+[node name="HandA" type="Sprite" parent="Body"]
+position = Vector2( -33, -28 )
+rotation = 0.261799
+texture = ExtResource( 1 )
+offset = Vector2( -9.08485, 14.1428 )
+region_enabled = true
+region_rect = Rect2( 193, 786, 54, 81 )
+
+[node name="HandA2" type="Node2D" parent="Body/HandA"]
+position = Vector2( 6.10108, 47.3042 )
+rotation = 0.785397
+scale = Vector2( 0.871429, 0.871429 )
+
+[node name="Alebard" type="Sprite" parent="Body/HandA/HandA2"]
+position = Vector2( 46.0357, 2.26386 )
+rotation = 0.261799
+scale = Vector2( 1.04456, 1.04456 )
+texture = ExtResource( 1 )
+offset = Vector2( 21.0042, -73.3468 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 10, 637, 158, 358 )
+
+[node name="HandA2" type="Sprite" parent="Body/HandA/HandA2"]
+position = Vector2( 1.73317, 0.304461 )
+rotation = 0.261799
+scale = Vector2( 1.14754, 1.14754 )
+texture = ExtResource( 1 )
+offset = Vector2( 20.3218, -7.58875 )
+region_enabled = true
+region_rect = Rect2( 183, 629, 74, 44 )

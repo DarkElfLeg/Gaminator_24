@@ -1,0 +1,21 @@
+{
+	"color": "#ff2f5eff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1666948708.json",
+	"mirror_portraits": false,
+	"name": "Алиса",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "default-theme.cfg"
+}

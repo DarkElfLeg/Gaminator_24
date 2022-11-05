@@ -1,0 +1,284 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Gate.png" type="Texture" id=4]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, 55 )
+
+[node name="CatPaw5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1751, 39 )
+rotation = -2.618
+
+[node name="Floor20" type="Sprite" parent="CatPaw5"]
+position = Vector2( 458.7, -247.507 )
+rotation = 2.618
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 4 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 807, 204, 555, 869 )
+
+[node name="Floor12" type="Sprite" parent="CatPaw5"]
+position = Vector2( 10.5067, -238.123 )
+rotation = 2.98101
+scale = Vector2( 0.562726, 0.562726 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 807, 204, 555, 869 )
+
+[node name="Floor21" type="Sprite" parent="CatPaw5"]
+position = Vector2( -177.735, -189.067 )
+rotation = 2.618
+scale = Vector2( 0.478832, 0.478832 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 30, 253, 753, 813 )
+
+[node name="Floor22" type="Sprite" parent="CatPaw5"]
+position = Vector2( 99.3585, -357.128 )
+rotation = 2.618
+scale = Vector2( 0.608977, 0.608977 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 30, 253, 753, 813 )
+
+[node name="Floor27" type="Sprite" parent="CatPaw5"]
+position = Vector2( 412.466, -580.091 )
+rotation = 2.618
+scale = Vector2( 0.724144, 0.724144 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 30, 253, 753, 813 )
+
+[node name="Floor17" type="Sprite" parent="CatPaw5"]
+position = Vector2( -130.799, -544.556 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor18" type="Sprite" parent="CatPaw5"]
+position = Vector2( -67.2999, -434.571 )
+rotation = 2.618
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 49, 56, 314, 236 )
+
+[node name="Floor19" type="Sprite" parent="CatPaw5"]
+position = Vector2( -72.434, -445.463 )
+rotation = 2.618
+scale = Vector2( 0.897814, 0.641746 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 1653, 270, 269, 298 )
+
+[node name="CatPaw" parent="." instance=ExtResource( 5 )]
+position = Vector2( 641, 51 )
+rotation = 3.14159
+
+[node name="Floor28" type="Sprite" parent="CatPaw"]
+position = Vector2( -17.3886, -324.604 )
+rotation = -3.14159
+scale = Vector2( 0.865285, 0.865285 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 30, 253, 753, 813 )
+
+[node name="Floor29" type="Sprite" parent="CatPaw"]
+position = Vector2( 531.612, -344.602 )
+rotation = -3.14159
+scale = Vector2( 1.14048, 1.14048 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 30, 253, 753, 813 )
+
+[node name="Floor4" type="Sprite" parent="CatPaw"]
+position = Vector2( 379.003, -734.998 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor15" type="Sprite" parent="CatPaw"]
+position = Vector2( 395.003, -657.998 )
+rotation = -3.14159
+scale = Vector2( 0.739867, 0.739867 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 1402, 831, 433, 225 )
+
+[node name="Floor13" type="Sprite" parent="CatPaw"]
+position = Vector2( 405.247, -640.998 )
+rotation = -3.14159
+scale = Vector2( 0.897814, 0.641746 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 1653, 270, 269, 298 )
+
+[node name="Floor14" type="Sprite" parent="CatPaw"]
+position = Vector2( 451.004, -835.998 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor9" type="Sprite" parent="CatPaw"]
+position = Vector2( 188.501, -289.999 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1243, 36, 429, 456 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw"]
+position = Vector2( 166.502, -511.999 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 753, 690, 189, 384 )
+
+[node name="Floor33" type="Sprite" parent="CatPaw"]
+position = Vector2( 642.004, -940.997 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1243, 36, 429, 456 )
+
+[node name="Floor30" type="Sprite" parent="CatPaw"]
+position = Vector2( -44.9971, -668 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor31" type="Sprite" parent="CatPaw"]
+position = Vector2( -44.9976, -541 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 49, 56, 314, 236 )
+
+[node name="Floor32" type="Sprite" parent="CatPaw"]
+position = Vector2( -43.9976, -553 )
+rotation = -3.14159
+scale = Vector2( 0.897814, 0.641746 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 1653, 270, 269, 298 )
+
+[node name="CatPaw2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 496, 920 )
+rotation = 0.0
+
+[node name="Floor6" type="Sprite" parent="CatPaw2"]
+position = Vector2( 11.9999, -50 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1376, 1012 )
+rotation = 0.0
+
+[node name="Floor5" type="Sprite" parent="CatPaw3"]
+position = Vector2( -4, -186 )
+z_index = -1
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1169, 515, 365, 558 )
+
+[node name="Floor3" type="Sprite" parent="CatPaw3"]
+position = Vector2( -196, -362 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw3"]
+position = Vector2( -256, -109 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor10" type="Sprite" parent="CatPaw3"]
+position = Vector2( -196, -489 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 49, 56, 314, 236 )
+
+[node name="Floor16" type="Sprite" parent="CatPaw3"]
+position = Vector2( -197, -477 )
+scale = Vector2( 0.897814, 0.641746 )
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 1653, 270, 269, 298 )
+
+[node name="Floor23" type="Sprite" parent="CatPaw3"]
+position = Vector2( -429.5, -697 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1243, 36, 429, 456 )
+
+[node name="Floor24" type="Sprite" parent="CatPaw3"]
+position = Vector2( -407.5, -475 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 753, 690, 189, 384 )
+
+[node name="CatPaw4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1990, 1151 )
+rotation = -0.523598
+
+[node name="Floor11" type="Sprite" parent="CatPaw4"]
+position = Vector2( -120.557, -447.19 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 15, 166, 275, 126 )
+
+[node name="Floor25" type="Sprite" parent="CatPaw4"]
+position = Vector2( -78.3535, -217.288 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1243, 36, 429, 456 )
+
+[node name="Floor26" type="Sprite" parent="CatPaw4"]
+position = Vector2( -170.301, -14.03 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 753, 690, 189, 384 )

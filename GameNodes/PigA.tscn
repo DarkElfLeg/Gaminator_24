@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="PigA" type="Node2D"]
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="HandB" type="Sprite" parent="Body"]
+position = Vector2( 20, 19 )
+texture = ExtResource( 1 )
+offset = Vector2( -2, 8 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 630, 352, 29, 36 )
+
+[node name="Tail" type="Sprite" parent="Body"]
+position = Vector2( -35, -1 )
+texture = ExtResource( 1 )
+offset = Vector2( -11, -3 )
+region_enabled = true
+region_rect = Rect2( 408, 853, 34, 28 )
+
+[node name="LegB" type="Sprite" parent="Body"]
+position = Vector2( -16, 16 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 10 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 630, 352, 29, 36 )
+
+[node name="HandA" type="Sprite" parent="Body"]
+position = Vector2( 3, 20 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 7 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 632, 297, 28, 40 )
+
+[node name="LegA" type="Sprite" parent="Body"]
+position = Vector2( -26, 16 )
+texture = ExtResource( 1 )
+offset = Vector2( -1, 9 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 632, 297, 28, 40 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( -3.1452, 2.29741 )
+rotation = -0.261799
+texture = ExtResource( 1 )
+offset = Vector2( -0.0415888, 0.716232 )
+region_enabled = true
+region_rect = Rect2( 455, 841, 72, 55 )
+
+[node name="Head" type="Node2D" parent="Body"]
+position = Vector2( 6, -8 )
+
+[node name="EarB" type="Sprite" parent="Body/Head"]
+position = Vector2( 40, -38 )
+texture = ExtResource( 1 )
+offset = Vector2( 5, -7 )
+region_enabled = true
+region_rect = Rect2( 488, 754, 24, 23 )
+
+[node name="Head" type="Sprite" parent="Body/Head"]
+texture = ExtResource( 1 )
+offset = Vector2( 20, -18 )
+region_enabled = true
+region_rect = Rect2( 442, 666, 77, 65 )
+
+[node name="EarA" type="Sprite" parent="Body/Head"]
+position = Vector2( -6, -34 )
+texture = ExtResource( 1 )
+offset = Vector2( -4, -14 )
+region_enabled = true
+region_rect = Rect2( 445, 746, 32, 46 )

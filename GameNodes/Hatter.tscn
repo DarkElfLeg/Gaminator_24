@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="Hatter" type="Node2D"]
+
+[node name="Body" type="Node2D" parent="."]
+position = Vector2( 0, -2 )
+
+[node name="Legs" type="Sprite" parent="Body"]
+position = Vector2( -1, 57 )
+texture = ExtResource( 1 )
+offset = Vector2( -13, 31 )
+region_enabled = true
+region_rect = Rect2( 303, 590, 116, 97 )
+
+[node name="HandB" type="Sprite" parent="Body"]
+position = Vector2( 21, -32 )
+scale = Vector2( 0.871429, 0.871429 )
+texture = ExtResource( 1 )
+offset = Vector2( 7.7459, 19.5245 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 313, 723, 35, 62 )
+
+[node name="HandB2" type="Sprite" parent="Body/HandB"]
+position = Vector2( 17.2131, 42.459 )
+scale = Vector2( 1.04456, 1.04456 )
+texture = ExtResource( 1 )
+offset = Vector2( 24.645, 10.9623 )
+region_enabled = true
+region_rect = Rect2( 311, 854, 65, 39 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( -2, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 332, 456, 55, 106 )
+
+[node name="HandA" type="Sprite" parent="Body"]
+position = Vector2( -29, -29 )
+texture = ExtResource( 1 )
+offset = Vector2( -9, 21 )
+region_enabled = true
+region_rect = Rect2( 313, 723, 35, 62 )
+
+[node name="HandA2" type="Sprite" parent="Body/HandA"]
+position = Vector2( -19, 46 )
+texture = ExtResource( 1 )
+offset = Vector2( 27, -8 )
+region_enabled = true
+region_rect = Rect2( 312, 810, 68, 28 )
+
+[node name="Head2" type="Sprite" parent="Body"]
+position = Vector2( 1, -48 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -54 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 280, 305, 167, 124 )

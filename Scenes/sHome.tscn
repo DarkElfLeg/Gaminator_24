@@ -1,0 +1,148 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://GameNodes/TV.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
+[ext_resource path="res://GameNodes/Bed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CatPaw" parent="." instance=ExtResource( 4 )]
+position = Vector2( 158, 785 )
+rotation = 1.309
+
+[node name="Floor" type="Sprite" parent="CatPaw"]
+position = Vector2( -24.2343, -203.196 )
+rotation = -1.309
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="TV" parent="CatPaw" instance=ExtResource( 1 )]
+position = Vector2( -210.487, -234.468 )
+rotation = -1.309
+
+[node name="CatPaw2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 739, 35 )
+rotation = 2.87979
+
+[node name="Floor14" type="Sprite" parent="CatPaw2"]
+position = Vector2( -9.74194, -40.9156 )
+rotation = -2.87979
+z_index = -1
+texture = ExtResource( 2 )
+offset = Vector2( 8, 107 )
+region_enabled = true
+region_rect = Rect2( 44, 25, 126, 276 )
+
+[node name="CatPaw6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1115, 206 )
+rotation = 3.40339
+
+[node name="Floor6" type="Sprite" parent="CatPaw6"]
+position = Vector2( -10.8241, -109.945 )
+rotation = 2.8798
+z_index = -1
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 773, 382, 177, 214 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1851, 362 )
+rotation = 4.45058
+
+[node name="Floor2" type="Sprite" parent="CatPaw3"]
+position = Vector2( 44.1125, -257.352 )
+rotation = 1.8326
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw3"]
+position = Vector2( 187.323, -162.038 )
+rotation = 1.8326
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 478, 653, 317, 342 )
+
+[node name="Floor12" type="Sprite" parent="CatPaw3"]
+position = Vector2( 149.96, -428.281 )
+rotation = 1.8326
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 941, 434, 127, 114 )
+
+[node name="Floor13" type="Sprite" parent="CatPaw3"]
+position = Vector2( 235.927, -405.245 )
+rotation = 1.8326
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 906, 14, 80, 120 )
+
+[node name="CatPaw4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1775, 882 )
+rotation = 5.23598
+
+[node name="Floor4" type="Sprite" parent="CatPaw4"]
+position = Vector2( -37.0778, -207.224 )
+rotation = 1.04721
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw4"]
+position = Vector2( 66.9175, -251.098 )
+rotation = 1.04721
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 464, 397, 289, 199 )
+
+[node name="Floor9" type="Sprite" parent="CatPaw4"]
+position = Vector2( -44.3925, -373.895 )
+rotation = 1.04721
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 789, 401, 133, 152 )
+
+[node name="Floor10" type="Sprite" parent="CatPaw4"]
+position = Vector2( 125.436, -89.7395 )
+rotation = 1.04721
+z_index = -1
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 789, 401, 133, 152 )
+
+[node name="Floor11" type="Sprite" parent="CatPaw4"]
+position = Vector2( 150.056, -299.098 )
+rotation = 1.04721
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 216, 210, 220, 141 )
+
+[node name="CatPaw5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 767, 1006 )
+rotation = 6.54498
+
+[node name="Floor3" type="Sprite" parent="CatPaw5"]
+position = Vector2( 94.9987, -120.699 )
+rotation = -0.26179
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Bed" parent="CatPaw5" instance=ExtResource( 3 )]
+position = Vector2( 71.031, -233.334 )
+rotation = -0.26179
+z_index = -1

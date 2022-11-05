@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Home" type="Sprite" parent="."]
+position = Vector2( 1385, 528 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 740, 684, 241, 199 )

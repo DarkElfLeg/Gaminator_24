@@ -1,0 +1,138 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Ribbon" type="Sprite" parent="."]
+position = Vector2( -2, -78 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 25, 115, 58 )
+
+[node name="HairBack" type="Sprite" parent="."]
+position = Vector2( -9, -27 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 28, 126, 143, 137 )
+
+[node name="HandL" type="Sprite" parent="."]
+position = Vector2( -30, 11 )
+rotation = 0.261799
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 196, 206, 40, 36 )
+
+[node name="HandR" type="Sprite" parent="."]
+position = Vector2( 43, 0 )
+rotation = -0.261799
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 262, 205, 33, 22 )
+
+[node name="LegL" type="Sprite" parent="."]
+position = Vector2( -3, 58 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 228, 243, 28, 36 )
+
+[node name="LegR" type="Sprite" parent="."]
+position = Vector2( 46, 49 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 265, 238, 36, 28 )
+
+[node name="Dress" type="Polygon2D" parent="."]
+position = Vector2( 68, -15 )
+offset = Vector2( -291, -104 )
+texture = ExtResource( 1 )
+skeleton = NodePath("../DressSkelet")
+polygon = PoolVector2Array( 191.124, 159.763, 197.633, 144.379, 201.775, 124.26, 209.467, 105.325, 226.036, 103.55, 244.379, 109.467, 258.58, 119.527, 265.089, 125.444, 286.982, 123.669, 291.124, 136.095, 279.882, 163.905, 262.722, 172.189, 239.645, 180.473, 212.426, 177.515, 197.041, 170.414, 212.5, 124.569, 210.776, 145.259, 203.448, 159.483, 215.517, 165.517, 219.828, 146.983, 237.069, 167.241, 230.603, 146.983, 219.828, 121.983, 224.138, 114.224, 255.172, 160.776, 241.379, 141.379, 268.103, 152.586, 275.431, 138.362, 256.897, 132.328, 250, 138.362, 240.752, 118.809, 235.423, 127.273, 225.705, 134.169, 211.912, 136.05 )
+uv = PoolVector2Array( 191.124, 159.763, 197.633, 144.379, 201.775, 124.26, 209.467, 105.325, 226.036, 103.55, 244.379, 109.467, 258.58, 119.527, 265.089, 125.444, 286.982, 123.669, 291.124, 136.095, 279.882, 163.905, 262.722, 172.189, 239.645, 180.473, 212.426, 177.515, 197.041, 170.414, 212.5, 124.569, 210.776, 145.259, 203.448, 159.483, 215.517, 165.517, 219.828, 146.983, 237.069, 167.241, 230.603, 146.983, 219.828, 121.983, 224.138, 114.224, 255.172, 160.776, 241.379, 141.379, 268.103, 152.586, 275.431, 138.362, 256.897, 132.328, 250, 138.362, 240.752, 118.809, 235.423, 127.273, 225.705, 134.169, 211.912, 136.05 )
+polygons = [ PoolIntArray( 3, 23, 4 ), PoolIntArray( 3, 22, 23 ), PoolIntArray( 3, 15, 22 ), PoolIntArray( 3, 2, 15 ), PoolIntArray( 2, 1, 33, 15 ), PoolIntArray( 1, 16, 33 ), PoolIntArray( 16, 19, 32, 33 ), PoolIntArray( 32, 22, 15, 33 ), PoolIntArray( 23, 22, 32, 31 ), PoolIntArray( 32, 19, 21 ), PoolIntArray( 21, 25, 31, 32 ), PoolIntArray( 1, 0, 17, 16 ), PoolIntArray( 0, 14, 17 ), PoolIntArray( 14, 13, 18, 17 ), PoolIntArray( 17, 18, 19, 16 ), PoolIntArray( 13, 12, 20, 18 ), PoolIntArray( 18, 20, 21, 19 ), PoolIntArray( 20, 24, 25, 21 ), PoolIntArray( 20, 12, 11, 24 ), PoolIntArray( 11, 10, 26, 24 ), PoolIntArray( 10, 9, 27, 26 ), PoolIntArray( 9, 8, 7, 27 ), PoolIntArray( 7, 28, 27 ), PoolIntArray( 28, 26, 27 ), PoolIntArray( 29, 24, 26, 28 ), PoolIntArray( 25, 24, 29 ), PoolIntArray( 31, 25, 29 ), PoolIntArray( 30, 31, 29, 28 ), PoolIntArray( 30, 28, 7, 6 ), PoolIntArray( 30, 6, 5 ), PoolIntArray( 30, 5, 4 ), PoolIntArray( 30, 4, 23, 31 ) ]
+bones = [ "Bone2D", PoolRealArray( 0.57, 1, 1, 1, 1, 1, 1, 1, 0.14, 0.14, 0.14, 0.14, 0.14, 0.43, 0.57, 1, 1, 1, 0.43, 1, 0.57, 1, 1, 1, 0.57, 1, 0.57, 0.57, 1, 1, 1, 1, 1, 1 ), "Bone2D/Bone2D", PoolRealArray( 1, 0.57, 0, 0, 0, 0, 0.57, 0.57, 1, 1, 1, 1, 1, 1, 1, 0, 0.57, 1, 1, 0.57, 1, 0.57, 0, 0, 1, 0.57, 1, 1, 0.57, 0.57, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+internal_vertex_count = 19
+
+[node name="DressSkelet" type="Skeleton2D" parent="."]
+position = Vector2( 1, -1 )
+
+[node name="bodyB" type="Bone2D" parent="DressSkelet"]
+rotation = -0.261799
+rest = Transform2D( 0.965926, -0.258819, 0.258819, 0.965926, 0, 0 )
+
+[node name="dressB" type="Bone2D" parent="DressSkelet/bodyB"]
+position = Vector2( 0, 33 )
+rotation = 1.309
+rest = Transform2D( 0.258821, 0.965925, -0.965925, 0.258821, 0, 33 )
+
+[node name="x" type="Bone2D" parent="DressSkelet/bodyB/dressB"]
+position = Vector2( 28.4879, 0.906448 )
+rest = Transform2D( 1, 0, 0, 1, 28.4879, 0.906448 )
+
+[node name="Bone2D" type="Bone2D" parent="DressSkelet/bodyB/dressB"]
+position = Vector2( 27.2296, -22.9141 )
+rest = Transform2D( 1, 0, 0, 1, 27.2296, -22.9141 )
+
+[node name="Bone2D" type="Bone2D" parent="DressSkelet/bodyB/dressB/Bone2D"]
+position = Vector2( 20.1244, -6.85637 )
+rotation = 0.523598
+rest = Transform2D( 0.866026, 0.499999, -0.499999, 0.866026, 20.1244, -6.85637 )
+
+[node name="Bone2D2" type="Bone2D" parent="DressSkelet/bodyB/dressB"]
+position = Vector2( 12.1865, 20.8923 )
+rest = Transform2D( 1, 0, 0, 1, 12.1865, 20.8923 )
+
+[node name="Bone2D" type="Bone2D" parent="DressSkelet/bodyB/dressB/Bone2D2"]
+position = Vector2( 17.5525, 13.5981 )
+rotation = 0.610092
+rest = Transform2D( 0.819596, 0.572942, -0.572942, 0.819596, 17.5525, 13.5981 )
+
+[node name="headB" type="Bone2D" parent="DressSkelet/bodyB"]
+rest = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="ribbonB" type="Bone2D" parent="DressSkelet/bodyB/headB"]
+position = Vector2( 17.0127, -59.6286 )
+rotation = -1.309
+rest = Transform2D( 0.258821, -0.965925, 0.965925, 0.258821, 17.0127, -59.6286 )
+
+[node name="hair" type="Bone2D" parent="DressSkelet/bodyB/headB"]
+position = Vector2( -13.4487, -65.7201 )
+rotation = 2.35619
+rest = Transform2D( -0.707104, 0.707109, -0.707109, -0.707104, -13.4487, -65.7201 )
+
+[node name="x2" type="Bone2D" parent="DressSkelet/bodyB"]
+rest = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="handR" type="Bone2D" parent="DressSkelet/bodyB/x2"]
+position = Vector2( 26.08, 6.9881 )
+rest = Transform2D( 1, 0, 0, 1, 26.08, 6.9881 )
+
+[node name="x3" type="Bone2D" parent="DressSkelet/bodyB/x2/handR"]
+position = Vector2( 29.3059, 2.67611 )
+rotation = 0.261799
+rest = Transform2D( 0.965926, 0.258819, -0.258819, 0.965926, 29.3059, 2.67611 )
+
+[node name="x" type="Bone2D" parent="DressSkelet/bodyB"]
+rest = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="handL" type="Bone2D" parent="DressSkelet/bodyB/x"]
+position = Vector2( -15.9725, -2.20925 )
+rest = Transform2D( 1, 0, 0, 1, -15.9725, -2.20925 )
+
+[node name="x4" type="Bone2D" parent="DressSkelet/bodyB/x/handL"]
+position = Vector2( -31.4458, 9.17382 )
+rotation = -2.87979
+rest = Transform2D( -0.965925, -0.258823, 0.258823, -0.965925, -31.4458, 9.17382 )
+
+[node name="Head" type="Sprite" parent="."]
+position = Vector2( 3, -11 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -34 )
+region_enabled = true
+region_rect = Rect2( 36, 21, 89, 88 )
+
+[node name="HairFore" type="Sprite" parent="."]
+position = Vector2( -2, -52 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 33, 282, 118, 51 )

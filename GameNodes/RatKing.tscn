@@ -1,0 +1,113 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="Queen" type="Node2D"]
+
+[node name="Body" type="Node2D" parent="."]
+position = Vector2( 0, -2 )
+
+[node name="LegB" type="Sprite" parent="Body"]
+position = Vector2( 54, 96 )
+scale = Vector2( 0.871429, 0.871429 )
+texture = ExtResource( 1 )
+offset = Vector2( 15.5645, 23.8796 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 877, 580, 76, 73 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( 10, 13 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 740, 684, 241, 199 )
+
+[node name="HandB" type="Sprite" parent="Body"]
+position = Vector2( 134, -6 )
+scale = Vector2( 0.871429, 0.871429 )
+texture = ExtResource( 1 )
+offset = Vector2( -11.9765, 4.37136 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 699, 293, 49, 53 )
+
+[node name="LegA" type="Sprite" parent="Body"]
+position = Vector2( -12, 102 )
+scale = Vector2( 0.871429, 0.871429 )
+texture = ExtResource( 1 )
+offset = Vector2( 24.7449, 16.9943 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 747, 577, 111, 97 )
+
+[node name="Head" type="Node2D" parent="Body"]
+position = Vector2( 0, -72 )
+
+[node name="EarA2" type="Sprite" parent="Body/Head"]
+position = Vector2( -12, -54 )
+rotation = 0.523598
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 1 )
+offset = Vector2( -1.35574, -1.65544 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 871, 70, 25, 33 )
+
+[node name="Head" type="Sprite" parent="Body/Head"]
+position = Vector2( -17, 4 )
+texture = ExtResource( 1 )
+offset = Vector2( 23, -24 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 715, 199, 101, 69 )
+
+[node name="Hat" type="Sprite" parent="Body/Head"]
+position = Vector2( -29.892, -48.6223 )
+rotation = -0.261799
+texture = ExtResource( 1 )
+offset = Vector2( -15.8261, -25.9769 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 835, 198, 55, 67 )
+
+[node name="EarA" type="Sprite" parent="Body/Head"]
+position = Vector2( -39.3307, -37.2958 )
+rotation = -0.261799
+texture = ExtResource( 1 )
+offset = Vector2( -7.86775, -7.61804 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 865, 115, 36, 35 )
+
+[node name="HandA" type="Sprite" parent="Body"]
+position = Vector2( -56.7513, -41.6004 )
+rotation = 0.261799
+texture = ExtResource( 1 )
+offset = Vector2( 17.3772, 21.1325 )
+region_enabled = true
+region_rect = Rect2( 687, 367, 87, 96 )
+
+[node name="HandA2" type="Node2D" parent="Body/HandA"]
+position = Vector2( 4.6683, 34.2295 )
+rotation = 0.785397
+scale = Vector2( 0.871429, 0.871429 )
+
+[node name="Staff" type="Sprite" parent="Body/HandA/HandA2"]
+position = Vector2( 82.7197, -78.2571 )
+rotation = -1.309
+scale = Vector2( 1.04456, 1.04456 )
+texture = ExtResource( 1 )
+offset = Vector2( 8.13297, -21.0659 )
+region_enabled = true
+region_rect = Rect2( 783, 27, 75, 111 )
+
+[node name="HandA2" type="Sprite" parent="Body/HandA/HandA2"]
+position = Vector2( 40.3018, -13.9678 )
+rotation = -1.0472
+scale = Vector2( 1.14754, 1.14754 )
+texture = ExtResource( 1 )
+offset = Vector2( 38.7272, 14.9733 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 667, 486, 121, 73 )

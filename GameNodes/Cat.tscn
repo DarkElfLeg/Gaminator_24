@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="Cat" type="Node2D"]
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="EarB" type="Sprite" parent="Body"]
+position = Vector2( 46, -47 )
+texture = ExtResource( 1 )
+offset = Vector2( 3, -9 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 473, 32, 27, 40 )
+
+[node name="HandB" type="Sprite" parent="Body"]
+position = Vector2( 48, 15 )
+texture = ExtResource( 1 )
+offset = Vector2( 7, 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 343, 171, 28, 22 )
+
+[node name="Tail" type="Sprite" parent="Body"]
+position = Vector2( -54, 29 )
+texture = ExtResource( 1 )
+offset = Vector2( -23, -40 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 490, 163, 64, 100 )
+
+[node name="LegB" type="Sprite" parent="Body"]
+position = Vector2( 22, 51 )
+texture = ExtResource( 1 )
+offset = Vector2( 2, 5 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 348, 218, 30, 29 )
+
+[node name="Body" type="Sprite" parent="Body"]
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 330, 22, 120, 127 )
+
+[node name="Face" type="Sprite" parent="Body"]
+position = Vector2( 15, -22 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 489, 95, 69, 51 )
+
+[node name="EarA" type="Sprite" parent="Body"]
+position = Vector2( -10, -52 )
+texture = ExtResource( 1 )
+offset = Vector2( -6, -12 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 537, 22, 39, 50 )
+
+[node name="HandA" type="Sprite" parent="Body"]
+position = Vector2( -33, 6 )
+texture = ExtResource( 1 )
+offset = Vector2( -10, 3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 419, 162, 30, 25 )
+
+[node name="LegA" type="Sprite" parent="Body"]
+position = Vector2( -33, 51 )
+texture = ExtResource( 1 )
+offset = Vector2( -9, 6 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 415, 214, 34, 25 )

@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[node name="PigB" type="Node2D"]
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="HandB" type="Sprite" parent="Body"]
+position = Vector2( 20, -8 )
+rotation = -0.261799
+scale = Vector2( 0.802326, 0.802326 )
+texture = ExtResource( 1 )
+offset = Vector2( -4.18091, 19.6496 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 674, 872, 43, 77 )
+
+[node name="Tail" type="Sprite" parent="Body"]
+position = Vector2( -21, 24 )
+texture = ExtResource( 1 )
+offset = Vector2( -8, -7 )
+region_enabled = true
+region_rect = Rect2( 408, 853, 34, 28 )
+
+[node name="Legs" type="Sprite" parent="Body"]
+position = Vector2( 0, 35 )
+texture = ExtResource( 1 )
+offset = Vector2( -30, 12 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 556, 855, 102, 61 )
+
+[node name="Body" type="Sprite" parent="Body"]
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 565, 768, 60, 76 )
+
+[node name="HandA" type="Sprite" parent="Body"]
+position = Vector2( -28.5, -13 )
+rotation = 0.523598
+texture = ExtResource( 1 )
+offset = Vector2( 5.3971, 20.6686 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 669, 791, 43, 71 )
+
+[node name="Head" type="Sprite" parent="Body"]
+position = Vector2( 1, -30 )
+texture = ExtResource( 1 )
+offset = Vector2( 2, -26 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 560, 672, 89, 82 )

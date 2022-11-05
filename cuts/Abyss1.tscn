@@ -1,0 +1,280 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Background.png" type="Texture" id=1]
+[ext_resource path="res://cuts/Abyss1.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fall"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Ground:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -1080 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Back:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -2159 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Midle:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -3240 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Front:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -4320 ) ]
+}
+
+[node name="Fon" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="Back" type="Sprite" parent="Ground"]
+position = Vector2( 950, 540 )
+scale = Vector2( 3.52778, 1 )
+z_index = -10
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 771, 0, 360, 1080 )
+
+[node name="Back2" type="Sprite" parent="Ground"]
+position = Vector2( 950, 540 )
+scale = Vector2( 3.52778, 1 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 771, 0, 360, 1080 )
+
+[node name="Back" type="Node2D" parent="."]
+
+[node name="B1R" type="Sprite" parent="Back"]
+position = Vector2( 346, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 554, 0, 184, 1080 )
+
+[node name="B1R2" type="Sprite" parent="Back"]
+position = Vector2( 346, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 554, 0, 184, 1080 )
+
+[node name="B1R3" type="Sprite" parent="Back"]
+position = Vector2( 346, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 2160 )
+region_enabled = true
+region_rect = Rect2( 554, 0, 184, 1080 )
+
+[node name="B1L" type="Sprite" parent="Back"]
+position = Vector2( 1564, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1169, 0, 176, 1080 )
+
+[node name="B1L2" type="Sprite" parent="Back"]
+position = Vector2( 1564, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 1169, 0, 176, 1080 )
+
+[node name="B1L3" type="Sprite" parent="Back"]
+position = Vector2( 1564, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 2160 )
+region_enabled = true
+region_rect = Rect2( 1169, 0, 176, 1080 )
+
+[node name="Midle" type="Node2D" parent="."]
+
+[node name="B2R" type="Sprite" parent="Midle"]
+position = Vector2( 225, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 291, 0, 179, 1080 )
+
+[node name="B2R2" type="Sprite" parent="Midle"]
+position = Vector2( 225, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 291, 0, 179, 1080 )
+
+[node name="B2R3" type="Sprite" parent="Midle"]
+position = Vector2( 225, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 2160 )
+region_enabled = true
+region_rect = Rect2( 291, 0, 179, 1080 )
+
+[node name="B2R4" type="Sprite" parent="Midle"]
+position = Vector2( 225, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 3240 )
+region_enabled = true
+region_rect = Rect2( 291, 0, 179, 1080 )
+
+[node name="B2L" type="Sprite" parent="Midle"]
+position = Vector2( 1672, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1410, 0, 175, 1080 )
+
+[node name="B2L2" type="Sprite" parent="Midle"]
+position = Vector2( 1672, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 1410, 0, 175, 1080 )
+
+[node name="B2L3" type="Sprite" parent="Midle"]
+position = Vector2( 1672, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 2160 )
+region_enabled = true
+region_rect = Rect2( 1410, 0, 175, 1080 )
+
+[node name="B2L4" type="Sprite" parent="Midle"]
+position = Vector2( 1672, 540 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 0, 3240 )
+region_enabled = true
+region_rect = Rect2( 1410, 0, 175, 1080 )
+
+[node name="Front" type="Node2D" parent="."]
+
+[node name="B3R" type="Sprite" parent="Front"]
+position = Vector2( 109, 540 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="B3R2" type="Sprite" parent="Front"]
+position = Vector2( 109, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="B3R3" type="Sprite" parent="Front"]
+position = Vector2( 109, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 2160 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="B3R4" type="Sprite" parent="Front"]
+position = Vector2( 109, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 3240 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="B3R5" type="Sprite" parent="Front"]
+position = Vector2( 109, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 4320 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 218, 1080 )
+
+[node name="B3L" type="Sprite" parent="Front"]
+position = Vector2( 1794, 540 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="B3L2" type="Sprite" parent="Front"]
+position = Vector2( 1794, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1080 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="B3L3" type="Sprite" parent="Front"]
+position = Vector2( 1794, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 2160 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="B3L4" type="Sprite" parent="Front"]
+position = Vector2( 1794, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 3240 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="B3L5" type="Sprite" parent="Front"]
+position = Vector2( 1794, 540 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 4320 )
+region_enabled = true
+region_rect = Rect2( 1668, 0, 252, 1080 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/fall = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 173, 0 )
+polygon = PoolVector2Array( 0, -1, -103, 0, -209, 1096, 0, 1080 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -305, -3, 2087, -2, 2007, -218, -161, -237 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( -181, 0 )
+polygon = PoolVector2Array( 1920, -1, 2147, -1, 2258, 1087, 1920, 1080 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 0, 1080, 1920, 1080, 2098, 1241, -146, 1241 )
