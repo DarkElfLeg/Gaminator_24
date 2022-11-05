@@ -39,7 +39,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sDungeon.tscn"
+					"res://Scenes/sBackAlley.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"

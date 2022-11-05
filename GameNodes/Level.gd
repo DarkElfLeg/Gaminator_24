@@ -7,7 +7,7 @@ func _ready():
 	add_child(Level)
 
 func _in(Level):
-	print(Level)
+	#print(Level)
 	var scene = load(Level)
 	var loaded = scene.instance()
 	yield(get_tree().create_timer(2.0), "timeout")
