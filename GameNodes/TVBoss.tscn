@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=1]
+
+[node name="TVBoss" type="Node2D"]
+position = Vector2( -1, -4 )
+
+[node name="Back" type="Sprite" parent="."]
+position = Vector2( -25, 0 )
+scale = Vector2( 2.0566, 2.14035 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 217, 30, 106, 114 )
+
+[node name="TV" type="Sprite" parent="."]
+position = Vector2( 8, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 17, -21 )
+region_enabled = true
+region_rect = Rect2( 47, 624, 380, 384 )
+
+[node name="Mouth" type="Sprite" parent="."]
+position = Vector2( -35, 47 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 368, 103, 123, 71 )
+
+[node name="EyeB" type="Sprite" parent="."]
+position = Vector2( -77, -42 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 368, 33, 36, 47 )
+
+[node name="EyeA" type="Sprite" parent="."]
+position = Vector2( -1, -45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 442, 22, 43, 58 )
