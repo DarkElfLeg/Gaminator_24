@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[node name="SkullFoe" type="Node2D"]
+position = Vector2( -1, -4 )
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Wing1" type="Sprite" parent="Body"]
+position = Vector2( 2, 14 )
+texture = ExtResource( 1 )
+offset = Vector2( -69, -18 )
+region_enabled = true
+region_rect = Rect2( 34, 156, 109, 95 )
+
+[node name="Wing2" type="Sprite" parent="Body"]
+position = Vector2( 5, 20 )
+texture = ExtResource( 1 )
+offset = Vector2( 64, -22 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 34, 156, 109, 95 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( 1, 2 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 153, 157, 134, 119 )

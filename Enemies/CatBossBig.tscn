@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[node name="CatBossBig" type="Node2D"]
+position = Vector2( -1, -4 )
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Tail" type="Sprite" parent="Body"]
+position = Vector2( -101.583, 117 )
+rotation = -1.0472
+texture = ExtResource( 1 )
+offset = Vector2( -57.8361, -66.5273 )
+region_enabled = true
+region_rect = Rect2( 1978, 347, 130, 151 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( -0.582642, 8 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1379, 575, 492, 408 )
+
+[node name="Mouth" type="Sprite" parent="Body"]
+position = Vector2( -0.582642, 29 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1430, 1018, 406, 189 )
+
+[node name="EarL" type="Sprite" parent="Body"]
+position = Vector2( -136, -156 )
+texture = ExtResource( 1 )
+offset = Vector2( -17.5826, -17 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1977, 212, 107, 98 )
+
+[node name="EarR" type="Sprite" parent="Body"]
+position = Vector2( 144.417, -144 )
+texture = ExtResource( 1 )
+offset = Vector2( 12, -22 )
+region_enabled = true
+region_rect = Rect2( 1977, 212, 107, 98 )
+
+[node name="HandR" type="Sprite" parent="Body"]
+position = Vector2( 238.417, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1187, 1035, 69, 65 )
+
+[node name="HandL" type="Sprite" parent="Body"]
+position = Vector2( -246.583, 16 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1086, 1034, 65, 60 )
+
+[node name="Eyes" type="Sprite" parent="Body"]
+position = Vector2( -1.58264, -112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 778.708, 984.87, 275.804, 148.695 )

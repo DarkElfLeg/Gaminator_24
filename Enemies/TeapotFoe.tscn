@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[node name="TeapotFoe" type="Node2D"]
+position = Vector2( -1, -4 )
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( 0, -1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 562, 197, 254 )
+
+[node name="WingB" type="Sprite" parent="Body/Body"]
+position = Vector2( -81, -44 )
+texture = ExtResource( 1 )
+offset = Vector2( -29, 46 )
+region_enabled = true
+region_rect = Rect2( 247, 569, 80, 127 )
+
+[node name="WingA" type="Sprite" parent="Body/Body"]
+position = Vector2( 98, 25 )
+texture = ExtResource( 1 )
+offset = Vector2( 8, -26 )
+region_enabled = true
+region_rect = Rect2( 344, 571, 57, 119 )
+
+[node name="Face" type="Sprite" parent="Body"]
+position = Vector2( 84, 14 )
+texture = ExtResource( 1 )
+offset = Vector2( -69, -18 )
+region_enabled = true
+region_rect = Rect2( 266, 719, 118, 105 )

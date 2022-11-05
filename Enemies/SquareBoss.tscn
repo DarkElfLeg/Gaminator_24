@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[node name="SquareBoss" type="Node2D"]
+position = Vector2( -1, -4 )
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Part1" type="Sprite" parent="Body"]
+position = Vector2( -141, 6 )
+texture = ExtResource( 1 )
+offset = Vector2( -29, 88 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1817, 218, 116, 196 )
+
+[node name="Part2" type="Sprite" parent="Body"]
+position = Vector2( 146, 6 )
+texture = ExtResource( 1 )
+offset = Vector2( 23, 91 )
+region_enabled = true
+region_rect = Rect2( 1817, 218, 116, 196 )
+
+[node name="Part3" type="Sprite" parent="Body"]
+position = Vector2( -140, -2 )
+texture = ExtResource( 1 )
+offset = Vector2( -26, -100 )
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2( 1817, 218, 116, 196 )
+
+[node name="Part4" type="Sprite" parent="Body"]
+position = Vector2( 145, -6 )
+texture = ExtResource( 1 )
+offset = Vector2( 28, -93 )
+flip_v = true
+region_enabled = true
+region_rect = Rect2( 1817, 218, 116, 196 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( 1, 4 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1385, 221, 394, 292 )

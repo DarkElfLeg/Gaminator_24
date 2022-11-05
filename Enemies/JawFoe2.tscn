@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[node name="JawFoe2" type="Node2D"]
+position = Vector2( -1, -4 )
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Tongue" type="Sprite" parent="Body"]
+position = Vector2( 0.489929, -37.2399 )
+rotation = 4.71238
+texture = ExtResource( 1 )
+offset = Vector2( -46.2405, -0.489322 )
+region_enabled = true
+region_rect = Rect2( 1972, 26, 130, 51 )
+
+[node name="Jaw1" type="Sprite" parent="Body"]
+position = Vector2( 1.82477, -73.2806 )
+rotation = 4.71238
+texture = ExtResource( 1 )
+offset = Vector2( -83.2807, -59.8244 )
+region_enabled = true
+region_rect = Rect2( 1673, 17, 278, 170 )
+
+[node name="Jaw2" type="Sprite" parent="Body"]
+position = Vector2( -0.844913, -74.6154 )
+rotation = 4.71238
+texture = ExtResource( 1 )
+offset = Vector2( -85.6164, 58.8453 )
+flip_v = true
+region_enabled = true
+region_rect = Rect2( 1673, 17, 278, 170 )
+
+[node name="Eye" type="Sprite" parent="Body"]
+position = Vector2( 31.1912, -66.6064 )
+rotation = -1.5708
+texture = ExtResource( 1 )
+offset = Vector2( -0.846836, 1.31976 )
+region_enabled = true
+region_rect = Rect2( 343, 207, 54, 57 )
+
+[node name="Eye2" type="Sprite" parent="Body"]
+position = Vector2( -38.2204, -65.2715 )
+rotation = -2.61799
+texture = ExtResource( 1 )
+offset = Vector2( 0.48801, -0.269 )
+region_enabled = true
+region_rect = Rect2( 346, 151, 41, 41 )
