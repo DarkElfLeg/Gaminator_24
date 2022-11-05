@@ -20,6 +20,7 @@ func _on_Interact():
 		$Intrract.visible = false
 		pause_mode = 1
 		var new_dialog = Dialogic.start("timeline-1667587178.json")
+		#dialog.connect("dialogic_signal", self, "dialog_listener")
 		add_child(new_dialog)
 		yield(new_dialog,"tree_exited")
 		pause_mode = 1

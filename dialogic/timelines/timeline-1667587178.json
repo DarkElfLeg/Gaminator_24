@@ -27,6 +27,20 @@
 			"text": "О!\nДеревце.\nСмогу ли я отломать ветку?\n[shake]Попробуем...[/shake]\nНе. Не смогу."
 		},
 		{
+			"emit_signal": "get_out",
+			"event_id": "dialogic_040"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sDungeon.tsc"
+				],
+				"method_name": "_in",
+				"target_node_path": "'../../../../../Level'"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"animation": "4-fade_out.gd",
 			"animation_length": 0,
 			"change_mirror_portrait": false,

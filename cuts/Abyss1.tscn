@@ -63,7 +63,7 @@ script = ExtResource( 2 )
 
 [node name="Back" type="Sprite" parent="Ground"]
 position = Vector2( 950, 540 )
-scale = Vector2( 3.52778, 1 )
+scale = Vector2( 4.23333, 1 )
 z_index = -10
 texture = ExtResource( 1 )
 region_enabled = true
@@ -71,7 +71,7 @@ region_rect = Rect2( 771, 0, 360, 1080 )
 
 [node name="Back2" type="Sprite" parent="Ground"]
 position = Vector2( 950, 540 )
-scale = Vector2( 3.52778, 1 )
+scale = Vector2( 4.23333, 1 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
@@ -81,14 +81,14 @@ region_rect = Rect2( 771, 0, 360, 1080 )
 [node name="Back" type="Node2D" parent="."]
 
 [node name="B1R" type="Sprite" parent="Back"]
-position = Vector2( 346, 540 )
+position = Vector2( 219, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 554, 0, 184, 1080 )
 
 [node name="B1R2" type="Sprite" parent="Back"]
-position = Vector2( 346, 540 )
+position = Vector2( 219, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
@@ -96,7 +96,7 @@ region_enabled = true
 region_rect = Rect2( 554, 0, 184, 1080 )
 
 [node name="B1R3" type="Sprite" parent="Back"]
-position = Vector2( 346, 540 )
+position = Vector2( 219, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 2160 )
@@ -104,14 +104,14 @@ region_enabled = true
 region_rect = Rect2( 554, 0, 184, 1080 )
 
 [node name="B1L" type="Sprite" parent="Back"]
-position = Vector2( 1564, 540 )
+position = Vector2( 1691, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1169, 0, 176, 1080 )
 
 [node name="B1L2" type="Sprite" parent="Back"]
-position = Vector2( 1564, 540 )
+position = Vector2( 1691, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
@@ -119,7 +119,7 @@ region_enabled = true
 region_rect = Rect2( 1169, 0, 176, 1080 )
 
 [node name="B1L3" type="Sprite" parent="Back"]
-position = Vector2( 1564, 540 )
+position = Vector2( 1691, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 2160 )
@@ -129,14 +129,14 @@ region_rect = Rect2( 1169, 0, 176, 1080 )
 [node name="Midle" type="Node2D" parent="."]
 
 [node name="B2R" type="Sprite" parent="Midle"]
-position = Vector2( 225, 540 )
+position = Vector2( 98, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 291, 0, 179, 1080 )
 
 [node name="B2R2" type="Sprite" parent="Midle"]
-position = Vector2( 225, 540 )
+position = Vector2( 98, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
@@ -144,7 +144,7 @@ region_enabled = true
 region_rect = Rect2( 291, 0, 179, 1080 )
 
 [node name="B2R3" type="Sprite" parent="Midle"]
-position = Vector2( 225, 540 )
+position = Vector2( 98, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 2160 )
@@ -152,7 +152,7 @@ region_enabled = true
 region_rect = Rect2( 291, 0, 179, 1080 )
 
 [node name="B2R4" type="Sprite" parent="Midle"]
-position = Vector2( 225, 540 )
+position = Vector2( 98, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 3240 )
@@ -160,14 +160,14 @@ region_enabled = true
 region_rect = Rect2( 291, 0, 179, 1080 )
 
 [node name="B2L" type="Sprite" parent="Midle"]
-position = Vector2( 1672, 540 )
+position = Vector2( 1799, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1410, 0, 175, 1080 )
 
 [node name="B2L2" type="Sprite" parent="Midle"]
-position = Vector2( 1672, 540 )
+position = Vector2( 1799, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
@@ -175,7 +175,7 @@ region_enabled = true
 region_rect = Rect2( 1410, 0, 175, 1080 )
 
 [node name="B2L3" type="Sprite" parent="Midle"]
-position = Vector2( 1672, 540 )
+position = Vector2( 1799, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 2160 )
@@ -183,7 +183,7 @@ region_enabled = true
 region_rect = Rect2( 1410, 0, 175, 1080 )
 
 [node name="B2L4" type="Sprite" parent="Midle"]
-position = Vector2( 1672, 540 )
+position = Vector2( 1799, 540 )
 z_index = -10
 texture = ExtResource( 1 )
 offset = Vector2( 0, 3240 )
@@ -193,68 +193,68 @@ region_rect = Rect2( 1410, 0, 175, 1080 )
 [node name="Front" type="Node2D" parent="."]
 
 [node name="B3R" type="Sprite" parent="Front"]
-position = Vector2( 109, 540 )
+position = Vector2( -18, 540 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 218, 1080 )
 
 [node name="B3R2" type="Sprite" parent="Front"]
-position = Vector2( 109, 540 )
+position = Vector2( -18, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 218, 1080 )
 
 [node name="B3R3" type="Sprite" parent="Front"]
-position = Vector2( 109, 540 )
+position = Vector2( -18, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 2160 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 218, 1080 )
 
 [node name="B3R4" type="Sprite" parent="Front"]
-position = Vector2( 109, 540 )
+position = Vector2( -18, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 3240 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 218, 1080 )
 
 [node name="B3R5" type="Sprite" parent="Front"]
-position = Vector2( 109, 540 )
+position = Vector2( -18, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 4320 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 218, 1080 )
 
 [node name="B3L" type="Sprite" parent="Front"]
-position = Vector2( 1794, 540 )
+position = Vector2( 1921, 540 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1668, 0, 252, 1080 )
 
 [node name="B3L2" type="Sprite" parent="Front"]
-position = Vector2( 1794, 540 )
+position = Vector2( 1921, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1080 )
 region_enabled = true
 region_rect = Rect2( 1668, 0, 252, 1080 )
 
 [node name="B3L3" type="Sprite" parent="Front"]
-position = Vector2( 1794, 540 )
+position = Vector2( 1921, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 2160 )
 region_enabled = true
 region_rect = Rect2( 1668, 0, 252, 1080 )
 
 [node name="B3L4" type="Sprite" parent="Front"]
-position = Vector2( 1794, 540 )
+position = Vector2( 1921, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 3240 )
 region_enabled = true
 region_rect = Rect2( 1668, 0, 252, 1080 )
 
 [node name="B3L5" type="Sprite" parent="Front"]
-position = Vector2( 1794, 540 )
+position = Vector2( 1921, 540 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 4320 )
 region_enabled = true
@@ -266,14 +266,14 @@ anims/fall = SubResource( 1 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2( 173, 0 )
+position = Vector2( 43, 0 )
 polygon = PoolVector2Array( 0, -1, -103, 0, -209, 1096, 0, 1080 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( -305, -3, 2087, -2, 2007, -218, -161, -237 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2( -181, 0 )
+position = Vector2( -55, 0 )
 polygon = PoolVector2Array( 1920, -1, 2147, -1, 2258, 1087, 1920, 1080 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
