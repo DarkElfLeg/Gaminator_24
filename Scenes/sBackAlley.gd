@@ -10,5 +10,4 @@ func _out():
 	print("Go out!")
 	$AnimationPlayer.play("Go_out")
 	yield(get_tree().create_timer(3.0), "timeout")
-	var exit = get_tree().get_root().find_node("Level",true,false)
 	queue_free()

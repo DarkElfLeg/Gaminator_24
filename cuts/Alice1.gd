@@ -8,7 +8,7 @@ var is_flipped = 0
 
 
 func _physics_process(delta):
-	if pause_mode == 0:
+	if Singletone.Glob_pause == false:
 		var direction = Vector2.ZERO
 		if Input.is_action_pressed("ui_left"):
 			direction += Vector2.LEFT;
@@ -34,4 +34,4 @@ func _physics_process(delta):
 		if Input.is_action_pressed("ui_accept"):
 			emit_signal("Interact")
 				
-		move_and_collide(direction_speed * delta)
+		move_and_slide(direction_speed* 100 * delta)

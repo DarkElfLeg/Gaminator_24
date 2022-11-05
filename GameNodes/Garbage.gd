@@ -19,8 +19,10 @@ func _on_Garbage_body_exited(body):
 
 func _on_Interact():
 	if $Intrract.visible:
+		Singletone.Glob_pause = true
 		$Intrract.visible = false
 		var new_dialog = Dialogic.start(dialog_file)
 		add_child(new_dialog)
 		yield(new_dialog,"tree_exited")
+		Singletone.Glob_pause = false
 

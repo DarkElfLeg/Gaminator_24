@@ -90,6 +90,10 @@ config/name="GodotTalk"
 run/main_scene="res://GameNodes/Abyss.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Singletone="*res://GameNodes/Singletone.tscn"
+
 [display]
 
 window/size/width=1920
