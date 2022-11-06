@@ -17,3 +17,4 @@ position = Vector2( 398, 468 )
 speed = 500
 
 [node name="Singletone" parent="." instance=ExtResource( 4 )]
+Helth_Player = 3

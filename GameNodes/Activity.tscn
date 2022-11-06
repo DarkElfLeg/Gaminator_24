@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Intrract.png" type="Texture" id=1]
+[ext_resource path="res://GameNodes/Activity.gd" type="Script" id=2]
+
+[node name="Activity" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Intrract" type="Sprite" parent="."]
+visible = false
+position = Vector2( 7.62939e-06, -139 )
+rotation = -0.016272
+scale = Vector2( 1.42623, 1.42623 )
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -68.7367, -60.1688, 47.2062, -65.5787, 69.5905, 48.1576, -62.339, 54.762 )
+
+[connection signal="body_entered" from="." to="." method="_on_Activity_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Activity_body_exited"]

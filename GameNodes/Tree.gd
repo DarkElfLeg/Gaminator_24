@@ -17,11 +17,12 @@ func _on_Tree_body_exited(body):
 
 func _on_Interact():
 	if $Intrract.visible:
-		Singletone.Glob_pause = true
-		$Intrract.visible = false
-		var new_dialog = Dialogic.start("timeline-1667587178.json")
-		#dialog.connect("dialogic_signal", self, "dialog_listener")
-		add_child(new_dialog)
-		yield(new_dialog,"tree_exited")
-		Singletone.Glob_pause = false
+		if not Singletone.Glob_pause:
+			Singletone.Glob_pause = true
+			$Intrract.visible = false
+			var new_dialog = Dialogic.start("timeline-1667587178.json")
+			#dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(new_dialog)
+			yield(new_dialog,"tree_exited")
+			Singletone.Glob_pause = false
 
