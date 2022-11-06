@@ -37,7 +37,6 @@ region_rect = Rect2( 1209, 40, 103, 67 )
 
 [node name="HandB2" type="Sprite" parent="Body/HandB"]
 position = Vector2( 102.221, 57.3267 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 1 )
 offset = Vector2( -11.9765, 4.37136 )
 region_enabled = true
