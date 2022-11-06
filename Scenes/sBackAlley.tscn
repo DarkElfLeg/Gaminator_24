@@ -159,7 +159,6 @@ rotation = 1.57079
 [node name="Gsrbage" type="Sprite" parent="CatPaw3"]
 position = Vector2( -914.043, -1703.92 )
 rotation = 1.58295
-scale = Vector2( 1, 1 )
 texture = ExtResource( 1 )
 offset = Vector2( 1125.82, -673.769 )
 region_enabled = true
@@ -167,12 +166,10 @@ region_rect = Rect2( 1018, 912, 133, 129 )
 
 [node name="Activity2" parent="CatPaw3/Gsrbage" instance=ExtResource( 6 )]
 position = Vector2( 1127, -658.782 )
-scale = Vector2( 1, 1 )
 
 [node name="Tree" type="Sprite" parent="CatPaw3"]
 position = Vector2( -296.001, -216.999 )
 rotation = 1.58295
-scale = Vector2( 1, 1 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 753, 690, 189, 384 )

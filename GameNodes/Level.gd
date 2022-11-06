@@ -2,7 +2,7 @@ extends Node2D
 
 func _ready():
 	OS.set_window_maximized(true)
-	var scene = load("res://Scenes/sBackAlley.tscn")
+	var scene = load("res://Scenes/Cat_Scene.tscn")
 	var Level = scene.instance()
 	add_child(Level)
 

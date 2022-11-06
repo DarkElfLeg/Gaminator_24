@@ -1,0 +1,77 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake]Падаю, бля![/shake]"
+		},
+		{
+			"character": "character-1667759486.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Спакуха."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_intro_cat",
+				"target_node_path": "../../../Cat_intro_scene"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1667759486.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Тут при всем желании я все [wave amp=100 freq=2]еще[/wave] не смог разбится!\nКороче я пошел.\nПока ;-)"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sBackAlley.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1667759428.json",
+		"name": "Cat_intro"
+	}
+}
