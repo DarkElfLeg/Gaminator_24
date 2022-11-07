@@ -88,7 +88,8 @@ _global_script_class_icons={
 
 config/name="GodotTalk"
 run/main_scene="res://GameNodes/Abyss.tscn"
-config/icon="res://icon.png"
+config/icon="res://Icon.png"
+config/windows_native_icon="res://Icon.ico"
 
 [autoload]
 

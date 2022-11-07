@@ -48,4 +48,6 @@ func _process(delta):
 				speed = speed.bounce(collision.normal)
 				if collision.collider.has_method("_hert"):
 					collision.collider._hert();
-				print(collision.collider.name)
+				if collision.collider.name == "Alice":
+					move_and_slide(speed*100*delta)
+				#print(collision.collider.name)
