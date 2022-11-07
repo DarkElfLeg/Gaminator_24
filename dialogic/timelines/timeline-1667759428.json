@@ -27,10 +27,22 @@
 			"text": "[shake]Падаю![/shake]"
 		},
 		{
-			"character": "character-1667759486.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[wave amp=100 freq=5]Спокойно...[/wave]"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake]Какой спокойно?!!![/shake]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Секундочку..."
 		},
 		{
 			"call_node": {
@@ -51,7 +63,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sBackAlley.tscn"
+					"res://Fight_Levels/Fight_with_red_cat.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"
@@ -73,6 +85,10 @@
 				"target_node_path": "../../../Cat_intro_scene"
 			},
 			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {

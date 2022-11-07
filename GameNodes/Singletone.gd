@@ -13,16 +13,20 @@ func check_helth():
 
 func _set_helth(helth):
 	Helth_Player = helth
+	check_helth()
 
 func _set_max_helth(helth):
 	Max_Helth_Player = helth
+	check_helth()
 
 func heal(heal):
 	Helth_Player += heal
+	check_helth()
 	# Почему это отдельно он damage? Чтобы запускать анимацию в ноде Alice!
 
 func _damage(damage):
 	Helth_Player -= damage
+	check_helth()
 
 
 func _out():

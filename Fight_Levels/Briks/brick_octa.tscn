@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Briks/brick.gd" type="Script" id=2]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 2033, 656, 121, 118 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0, -59, 7, -58, 46, -32, 54, -24, 59, -14, 60, -1, 44, 44, 41, 48, 35, 54, 29, 57, -25, 58, -35, 54, -42, 48, -47, 40, -59, 3, -60, -6, -59, -17, -55, -25, -9, -58 )

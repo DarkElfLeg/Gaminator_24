@@ -160,57 +160,53 @@ script = ExtResource( 2 )
 [node name="Skeleton2D" type="Skeleton2D" parent="Body"]
 
 [node name="Body" type="Bone2D" parent="Body/Skeleton2D"]
-position = Vector2( 0, -0.316829 )
 rest = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="EarL" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -3, -57 )
-rotation = -2.20523
+rotation = -2.19311
 rest = Transform2D( -0.582917, -0.812532, 0.812532, -0.582917, -3, -57 )
 
 [node name="EarR" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 38, -50 )
-rotation = -0.887573
+rotation = -0.904915
 rest = Transform2D( 0.617752, -0.786373, 0.786373, 0.617752, 38, -50 )
 
 [node name="HandR" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 50, 12 )
-rotation = 0.320097
+rotation = 0.306509
 rest = Transform2D( 0.953392, 0.301733, -0.301733, 0.953392, 50, 12 )
 
 [node name="HandL" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -34, 4 )
-rotation = 2.93796
+rotation = 2.94978
 rest = Transform2D( -0.956159, 0.292847, -0.292847, -0.956159, -34, 4 )
 
 [node name="LegR" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 26, 53 )
-rotation = 1.08124
+rotation = 1.07197
 rest = Transform2D( 0.478395, 0.878145, -0.878145, 0.478395, 26, 53 )
 
 [node name="LegL" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -36, 50 )
-rotation = 2.55722
+rotation = 2.57447
 rest = Transform2D( -0.84345, 0.537207, -0.537207, -0.84345, -36, 50 )
 
 [node name="Tail" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -49, 24 )
-rotation = 0.000278483
 rest = Transform2D( 1, 0, 0, 1, -49, 24 )
 
 [node name="Tail2" type="Bone2D" parent="Body/Skeleton2D/Body/Tail"]
 position = Vector2( -21, -12 )
-rotation = -0.0322282
 rest = Transform2D( 1, 0, 0, 1, -21, -12 )
 
 [node name="Tail3" type="Bone2D" parent="Body/Skeleton2D/Body/Tail/Tail2"]
 position = Vector2( -10, -32 )
-rotation = -0.0408926
 rest = Transform2D( 1, 0, 0, 1, -10, -32 )
 
 [node name="Tail4" type="Bone2D" parent="Body/Skeleton2D/Body/Tail/Tail2/Tail3"]
 position = Vector2( 3, -21 )
-rotation = -1.6067
+rotation = -1.64238
 rest = Transform2D( -0.0715226, -0.997439, 0.997439, -0.0715226, 3, -21 )
 
 [node name="EarB" type="Polygon2D" parent="Body"]
