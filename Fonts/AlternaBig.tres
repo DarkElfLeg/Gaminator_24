@@ -3,7 +3,6 @@
 [ext_resource path="res://Fonts/a_AlternaRg Demi.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 50
+size = 200
 use_filter = true
-extra_spacing_top = 12
 font_data = ExtResource( 1 )
