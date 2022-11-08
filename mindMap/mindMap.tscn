@@ -475,9 +475,7 @@ size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = ExtResource( 2 )
 text = "<?>Первый раз на локации
-*Блохастик: Добро пожаловать в моё Убежище! Чувствуй себя как дома!
-*Алиса: Пожалуйста отпустите меня домой!
-*Блохастик: Найди выход сама. Можешь спросить об этом в городе."
+<?>Не первый раз на локации"
 valign = 1
 
 [node name="Comment2" type="Label" parent="Texts"]
