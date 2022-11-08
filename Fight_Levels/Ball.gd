@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var speed = Vector2(2000,2000)
+export var speed = Vector2(800,800)
 export var acceleration_from_Shield = 1.05
 
 var go_position
@@ -49,5 +49,7 @@ func _process(delta):
 				if collision.collider.has_method("_hert"):
 					collision.collider._hert();
 				if collision.collider.name == "Alice":
+					move_and_slide(speed*100*delta)
+				if collision.collider.name == "Shield":
 					move_and_slide(speed*100*delta)
 				#print(collision.collider.name)
