@@ -55,4 +55,6 @@ func _hert():
 		$AnimationPlayer.play("Defeat")
 		yield(get_tree().create_timer(0.3), "timeout")
 		$"/root/Singletone"._out()
+		yield(get_tree().create_timer(5.0), "timeout")
+		$"/root/Singletone"._in($"../".next_level)
 	Singletone.pause_mode = false

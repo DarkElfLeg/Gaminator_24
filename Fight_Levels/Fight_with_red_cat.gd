@@ -8,5 +8,5 @@ func _ready():
 func _out():
 	$AnimationPlayer.play("Go_out")
 	yield(get_tree().create_timer(5.0), "timeout")
-	$"/root/Singletone"._in(next_level)
+	#$"/root/Singletone"._in(next_level)
 	queue_free()
