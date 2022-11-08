@@ -12,6 +12,7 @@
 script = ExtResource( 3 )
 
 [node name="Shield" parent="Level" instance=ExtResource( 5 )]
+position = Vector2( 578, 542 )
 
 [node name="Fon" parent="." instance=ExtResource( 1 )]
 
@@ -20,3 +21,9 @@ position = Vector2( 398, 468 )
 
 [node name="Singletone" parent="." instance=ExtResource( 4 )]
 Helth_Player = 3
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Sprite" type="Sprite" parent="Control"]

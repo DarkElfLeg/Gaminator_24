@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Blood_splash.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1987, 98, 31, 35 )
+
+[node name="Blood_splash" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 60
+lifetime = 6.0
+one_shot = true
+explosiveness = 1.0
+texture = SubResource( 1 )
+emission_shape = 1
+emission_sphere_radius = 31.53
+spread = 180.0
+gravity = Vector2( 0, -500 )
+initial_velocity = 238.53
+initial_velocity_random = 1.0
+angular_velocity = 720.0
+angular_velocity_random = 1.0

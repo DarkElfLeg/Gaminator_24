@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 export var radius = 150
-export var speed = 9
+export var speed = 0.07
 var direction_speed = Vector2.ZERO
 var direct = Vector2.ZERO
 var pdir = Vector2.ZERO
@@ -18,4 +18,4 @@ func _physics_process(delta):
 	if not($"/root/Game/Alice".direction == Vector2.ZERO):
 		pdir = $"/root/Game/Alice".direction
 	direct = (move_to + pdir * radius)
-	position = lerp(position,direct,0.1)
+	position = lerp(position,direct,speed)
