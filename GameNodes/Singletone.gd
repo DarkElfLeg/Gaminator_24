@@ -22,8 +22,9 @@ func check_helth():
 			child.queue_free();
 		$"../Game/Level"._in("res://Scenes/sHome.tscn")
 		$"../Game/Alice".position = Vector2(900,850)
+		yield(get_tree().create_timer(4.0), "timeout")
 		pause_off()
-		Helth_Player = 0 # Пока так...
+		Helth_Player = Max_Helth_Player
 	if Helth_Player < 1:
 		$"../Game/HUD/L1".visible = false
 	else:

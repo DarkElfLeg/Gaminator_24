@@ -5,7 +5,7 @@ signal Interact
 export var speed = 300
 var direction_speed = Vector2.ZERO
 var is_flipped = 0
-var direction = Vector2.ZERO
+var direction = Vector2.RIGHT
 
 
 func _physics_process(delta):
