@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var radius = 150
+export var radius = 200
 export var speed = 0.07
 var direction_speed = Vector2.ZERO
 var direct = Vector2.ZERO

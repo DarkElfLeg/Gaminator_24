@@ -1,15 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://cuts/Abyss1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://cuts/Alice1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://GameNodes/Level.gd" type="Script" id=3]
 [ext_resource path="res://GameNodes/Singletone.tscn" type="PackedScene" id=4]
 [ext_resource path="res://GameNodes/Shield.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprites/gfxUI.png" type="Texture" id=6]
 
 [node name="Game" type="Node2D"]
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource( 3 )
+first_level = "res://Fight_Levels/Fight_with_red_cat.tscn"
 
 [node name="Shield" parent="Level" instance=ExtResource( 5 )]
 position = Vector2( 578, 542 )
@@ -22,8 +24,43 @@ position = Vector2( 398, 468 )
 [node name="Singletone" parent="." instance=ExtResource( 4 )]
 Helth_Player = 3
 
-[node name="Control" type="Control" parent="."]
+[node name="HUD" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
-[node name="Sprite" type="Sprite" parent="Control"]
+[node name="L1" type="Sprite" parent="HUD"]
+position = Vector2( 79, 63 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 29, 761, 150, 121 )
+
+[node name="L2" type="Sprite" parent="HUD"]
+position = Vector2( 232, 61 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 29, 761, 150, 121 )
+
+[node name="L3" type="Sprite" parent="HUD"]
+position = Vector2( 384, 62 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 29, 761, 150, 121 )
+
+[node name="L4" type="Sprite" parent="HUD"]
+position = Vector2( 533, 61.5 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 29, 761, 150, 121 )
+
+[node name="L5" type="Sprite" parent="HUD"]
+position = Vector2( 688, 59.5 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 29, 761, 150, 121 )
+
+[node name="L6" type="Sprite" parent="HUD"]
+visible = false
+position = Vector2( 841, 57.5 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 29, 761, 150, 121 )
