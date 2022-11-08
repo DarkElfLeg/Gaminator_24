@@ -1,11 +1,13 @@
 extends Node2D
 
+export var first_level = "res://Scenes/Cat_Scene.tscn"
+
 func _ready():
 	OS.set_window_maximized(false)
 	OS.set_window_size(Vector2(800,450))# Потом просто удалю. 
 	#Для работы и отладки это удобнее!
 	OS.set_window_title("Mouse Trap") 
-	var scene = load("res://Scenes/Cat_Scene.tscn")
+	var scene = load(first_level)
 	var Level = scene.instance()
 	add_child(Level)
 
