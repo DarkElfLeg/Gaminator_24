@@ -49,6 +49,7 @@ first_level = "res://Fight_Levels/Fight_with_red_cat.tscn"
 
 [node name="Alice" parent="." instance=ExtResource( 2 )]
 position = Vector2( 398, 468 )
+speed = 330
 
 [node name="Singletone" parent="." instance=ExtResource( 4 )]
 Helth_Player = 3
