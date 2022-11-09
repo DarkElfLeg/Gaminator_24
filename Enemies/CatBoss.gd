@@ -1,5 +1,15 @@
 extends KinematicBody2D
 var life = 3
+export var speed = 10
+var direction = Vector2.ZERO
+var spavn = Vector2.ZERO
+var go_spawn = false
+var time = 0
+export var moveDuration = 3
+var timeDirection = 1
+
+func _set_spawn_point():
+	spavn = position
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -51,6 +61,7 @@ func spawn():
 				child._go_spawn(position)
 
 func _hert():
+	go_spawn = true
 	Singletone.pause_mode = true
 	$AnimationPlayer.play("hert")
 	# Момент очистки!
@@ -65,3 +76,27 @@ func _hert():
 		yield(get_tree().create_timer(5.0), "timeout")
 		$"/root/Singletone"._in($"../".next_level)
 	Singletone.pause_mode = false
+
+func _process(delta):
+	if not Singletone.pause_mode:
+		if $AnimationPlayer.current_animation == "idle":
+			if direction == Vector2.ZERO:
+				direction = Vector2(rand_range(-1, 1), rand_range(-1, 1))
+				direction = direction.normalized()
+			var collide = move_and_collide(direction)
+			if collide:
+				if collide.collider.name == "Alice":
+					collide.collider._hert();
+				direction = Vector2(rand_range(-1, 1), rand_range(-1, 1))
+				direction = direction.normalized()
+	if go_spawn:
+		$CollisionPolygon2D.disabled = true;
+		if (time > moveDuration):
+			go_spawn = false
+			$CollisionPolygon2D.disabled = false;
+
+		# delta is how long it takes to complete a frame.
+		time += delta * timeDirection
+		var t = time / moveDuration
+
+		position = lerp(position,spavn, t)

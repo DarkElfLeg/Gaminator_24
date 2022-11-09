@@ -24,6 +24,20 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 2430, 293 ), Vector2( 1600, 255 ) ]
 }
+tracks/1/type = "method"
+tracks/1/path = NodePath("CatBoss")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_set_spawn_point"
+} ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Go_out"
@@ -48,7 +62,7 @@ anims/Go_in = SubResource( 1 )
 anims/Go_out = SubResource( 2 )
 
 [node name="CatBoss" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2430, 293 )
+position = Vector2( 1600, 255 )
 
 [node name="3" type="Node2D" parent="."]
 

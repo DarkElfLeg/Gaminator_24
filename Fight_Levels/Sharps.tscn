@@ -29,7 +29,7 @@ script = ExtResource( 2 )
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2( -103, 1 )
 emitting = false
-amount = 5
+amount = 2
 lifetime = 10.0
 one_shot = true
 explosiveness = 1.0
@@ -45,7 +45,7 @@ angular_velocity_random = 1.0
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
 position = Vector2( 122, -1 )
 emitting = false
-amount = 3
+amount = 2
 lifetime = 10.0
 one_shot = true
 explosiveness = 1.0
@@ -61,7 +61,7 @@ angular_velocity_random = 1.0
 [node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
 position = Vector2( 48, 3 )
 emitting = false
-amount = 3
+amount = 2
 lifetime = 10.0
 one_shot = true
 explosiveness = 1.0
@@ -77,7 +77,7 @@ angular_velocity_random = 1.0
 [node name="CPUParticles2D4" type="CPUParticles2D" parent="."]
 position = Vector2( -52, 1 )
 emitting = false
-amount = 5
+amount = 2
 lifetime = 10.0
 one_shot = true
 explosiveness = 1.0

@@ -34,11 +34,19 @@ func _go_spawn(tposition):
 func _process(delta):
 	if go_spawn:
 		$Sprite.visible = true
+		$".".set_collision_layer_bit(3,true);
+		$".".set_collision_layer_bit(0,false);
+		$".".set_collision_mask_bit(3,true);
+		$".".set_collision_mask_bit(0,false);
 		$CollisionPolygon2D.disabled = false;
 		# Flip the direction of how time gets added
 		# This ensures it moves back to its initial position
 		if (time > moveDuration):
 			go_spawn = false
+			$".".set_collision_layer_bit(0,true);
+			$".".set_collision_layer_bit(3,false);
+			$".".set_collision_mask_bit(0,true);
+			$".".set_collision_mask_bit(3,false);
 			pass
 
 		# delta is how long it takes to complete a frame.
