@@ -6,6 +6,7 @@ export var speed = 300
 var direction_speed = Vector2.ZERO
 var is_flipped = 0
 var direction = Vector2.RIGHT
+var blood = preload("res://Fight_Levels/Blood_splash.tscn")
 
 
 func _physics_process(delta):
@@ -39,8 +40,8 @@ func _physics_process(delta):
 
 func _hert():
 	Singletone._damage(1)
-	var scene = load("res://Fight_Levels/Blood_splash.tscn")
-	var loaded = scene.instance()
+	#var scene = load("res://Fight_Levels/Blood_splash.tscn")
+	var loaded = blood.instance()
 	add_child(loaded)
 	pass
 
