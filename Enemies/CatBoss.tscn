@@ -484,6 +484,20 @@ tracks/11/keys = {
 "update": 0,
 "values": [ 139.407, 131.554, 99.8212, 139.407 ]
 }
+tracks/12/type = "method"
+tracks/12/path = NodePath("CatBoss")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "fire_sword"
+} ]
+}
 
 [node name="CatBoss" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -587,50 +601,57 @@ rest = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="Mouth" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 1, -22 )
-rotation = 4.69668
+rotation = -1.58718
 rest = Transform2D( -0.0163857, -0.999866, 0.999866, -0.0163857, 1, -22 )
 
 [node name="EarR" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 71, -109 )
-rotation = -0.689121
+rotation = -0.0862701
 rest = Transform2D( 0.771806, -0.635859, 0.635859, 0.771806, 71, -109 )
 
 [node name="EarL" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -69, -106 )
-rotation = -2.21671
+rotation = -2.09606
 rest = Transform2D( -0.601932, -0.798548, 0.798548, -0.601932, -69, -106 )
 
 [node name="HandR" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 142, 17 )
+rotation = 1.23832
 rest = Transform2D( 1, 0, 0, 1, 142, 17 )
 
 [node name="HandL" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -137, 16 )
+rotation = -0.170232
 rest = Transform2D( 1, 0, 0, 1, -137, 16 )
 
 [node name="LegR" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( 82, 82 )
+rotation = -0.200243
 rest = Transform2D( 1, 0, 0, 1, 82, 82 )
 
 [node name="LegL" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -73, 88 )
+rotation = -0.284983
 rest = Transform2D( 1, 0, 0, 1, -73, 88 )
 
 [node name="Tail" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -91, 78 )
+rotation = -0.420228
 rest = Transform2D( 1, 0, 0, 1, -91, 78 )
 
 [node name="Tail2" type="Bone2D" parent="Body/Skeleton2D/Body/Tail"]
 position = Vector2( -19, 11 )
+rotation = -1.35155
 rest = Transform2D( 1, 0, 0, 1, -19, 11 )
 
 [node name="Tail3" type="Bone2D" parent="Body/Skeleton2D/Body/Tail/Tail2"]
 position = Vector2( -28, -19 )
+rotation = 1.89595
 rest = Transform2D( 1, 0, 0, 1, -28, -19 )
 
 [node name="Tail4" type="Bone2D" parent="Body/Skeleton2D/Body/Tail/Tail2/Tail3"]
 position = Vector2( -19, -7 )
-rotation = 2.43311
+rotation = 1.77998
 rest = Transform2D( -0.759354, 0.650678, -0.650678, -0.759354, -19, -7 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

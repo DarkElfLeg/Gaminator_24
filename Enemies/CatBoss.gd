@@ -13,6 +13,13 @@ func _ready():
 func _idle():
 	$AnimationPlayer.play("idle")
 
+func fire_sword():
+	if not Singletone.pause_mode:
+		var scene = load("res://Fight_Levels/Sword1.tscn")
+		var Level = scene.instance()
+		Level.position = position
+		$"..".add_child(Level)
+
 func clear():
 	if life == 3:
 		for child in $"../3".get_children():# Почему 3? А просто хочу 3 жизни...
@@ -55,4 +62,6 @@ func _hert():
 		$AnimationPlayer.play("Defeat")
 		yield(get_tree().create_timer(0.3), "timeout")
 		$"/root/Singletone"._out()
+		yield(get_tree().create_timer(5.0), "timeout")
+		$"/root/Singletone"._in($"../".next_level)
 	Singletone.pause_mode = false

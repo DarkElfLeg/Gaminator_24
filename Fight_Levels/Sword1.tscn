@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Sword1.gd" type="Script" id=2]
+
+[node name="Sword1" type="KinematicBody2D"]
+collision_layer = 6
+collision_mask = 6
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 27, 27, 321, 83 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 160, -8, 160, 8, 144, 22, 102, 36, 75, 37, 53, 38, 46, 35, 3, 33, -7, 36, -32, 38, -39, 34, -52, 36, -66, 32, -63, 9, -71, 6, -70, -7, -63, -9, -65, -31, -39, -35, -32, -37, -7, -36, 3, -33, 46, -36, 53, -39, 76, -38, 82, -35, 98, -37, 122, -33, 141, -24, 154, -16 )
