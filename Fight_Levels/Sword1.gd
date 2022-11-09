@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+var sharps = preload("res://Fight_Levels/Sharps.tscn")
+
 export var speed = 600;
 export var aim_time = 1;
 var pos = Vector2.ZERO
@@ -32,6 +34,10 @@ func _physics_process(delta):
 		if collision:
 			if collision.collider.has_method("_hert"):
 				collision.collider._hert();
+			else:
+				var loaded = sharps.instance()
+				loaded.position = position
+				$"/root/Game/HUD".add_child(loaded)
 			queue_free()
 		#position += velocity * delta * speed
 

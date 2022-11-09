@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Sharps.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 242, 955, 174, 35 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 26, 965, 157, 34 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 248, 888, 230, 42 )
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 26, 891, 184, 43 )
+
+[node name="Sharps" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( -103, 1 )
+emitting = false
+amount = 5
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+draw_order = 1
+texture = SubResource( 4 )
+spread = 180.0
+gravity = Vector2( 0, -300 )
+initial_velocity = 394.5
+initial_velocity_random = 1.0
+angular_velocity = 318.09
+angular_velocity_random = 1.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2( 122, -1 )
+emitting = false
+amount = 3
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+draw_order = 1
+texture = SubResource( 3 )
+spread = 180.0
+gravity = Vector2( 0, -300 )
+initial_velocity = 394.5
+initial_velocity_random = 1.0
+angular_velocity = 318.09
+angular_velocity_random = 1.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
+position = Vector2( 48, 3 )
+emitting = false
+amount = 3
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+draw_order = 1
+texture = SubResource( 2 )
+spread = 180.0
+gravity = Vector2( 0, -300 )
+initial_velocity = 394.5
+initial_velocity_random = 1.0
+angular_velocity = 318.09
+angular_velocity_random = 1.0
+
+[node name="CPUParticles2D4" type="CPUParticles2D" parent="."]
+position = Vector2( -52, 1 )
+emitting = false
+amount = 5
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+draw_order = 1
+texture = SubResource( 1 )
+spread = 180.0
+gravity = Vector2( 0, -300 )
+initial_velocity = 394.5
+initial_velocity_random = 1.0
+angular_velocity = 318.09
+angular_velocity_random = 1.0
