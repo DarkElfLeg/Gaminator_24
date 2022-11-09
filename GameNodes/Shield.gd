@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var radius = 200
 export var speed = 0.07
-export var rotate_speed = 0.15
+export var rotate_speed = 0.1
 var direction_speed = Vector2.ZERO
 var direct = Vector2.ZERO
 var pdir = Vector2.ZERO
@@ -22,5 +22,5 @@ func _physics_process(delta):
 		pdir = $"/root/Game/Alice".direction
 		var targetDir = get_angle_to(position - pdir.normalized())
 		rotate((targetDir)*rotate_speed)
-		direct = (move_to + Vector2(-radius,0).rotated(rotation))
-	position = lerp(position,direct,speed)
+	direct = (move_to + Vector2(-radius,0).rotated(rotation))
+	position = direct
