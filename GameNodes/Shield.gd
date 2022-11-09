@@ -5,6 +5,7 @@ export var speed = 0.07
 var direction_speed = Vector2.ZERO
 var direct = Vector2.ZERO
 var pdir = Vector2.ZERO
+var pdir1= Vector2.ZERO
 
 func _ready():
 	var move_to = $"/root/Game/Alice".position
@@ -16,6 +17,6 @@ func _ready():
 func _physics_process(delta):
 	var move_to = $"/root/Game/Alice".position
 	if not($"/root/Game/Alice".direction == Vector2.ZERO):
-		pdir = $"/root/Game/Alice".direction
+		(pdir = $"/root/Game/Alice".direction)
 	direct = (move_to + pdir * radius)
 	position = lerp(position,direct,speed)

@@ -42,7 +42,8 @@ func _hert():
 	Singletone._damage(1)
 	#var scene = load("res://Fight_Levels/Blood_splash.tscn")
 	var loaded = blood.instance()
-	add_child(loaded)
+	loaded.position = position
+	$"/root/Game/HUD".add_child(loaded)
 	pass
 
 func _throw_shield():
