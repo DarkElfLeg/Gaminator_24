@@ -7,7 +7,7 @@
 [ext_resource path="res://Sprites/Party.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/sHome.gd" type="Script" id=6]
 [ext_resource path="res://GameNodes/Exit.tscn" type="PackedScene" id=7]
-[ext_resource path="res://GameNodes/Cat2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://GameNodes/Cat.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/AlexScripts/StartDialogic.gd" type="Script" id=9]
 
 [sub_resource type="Animation" id=1]
@@ -268,7 +268,7 @@ region_enabled = true
 region_rect = Rect2( 464, 397, 289, 199 )
 
 [node name="Floor9" type="Sprite" parent="CatPaw4"]
-position = Vector2( -44.3925, -373.895 )
+position = Vector2( -58.8421, -345.923 )
 rotation = 1.04721
 z_index = -1
 texture = ExtResource( 2 )
@@ -276,7 +276,7 @@ region_enabled = true
 region_rect = Rect2( 789, 401, 133, 152 )
 
 [node name="Floor10" type="Sprite" parent="CatPaw4"]
-position = Vector2( 125.436, -89.7395 )
+position = Vector2( 82.8522, -112.497 )
 rotation = 1.04721
 z_index = -1
 texture = ExtResource( 2 )
@@ -285,12 +285,14 @@ region_enabled = true
 region_rect = Rect2( 789, 401, 133, 152 )
 
 [node name="Cat" parent="CatPaw4/Floor10" instance=ExtResource( 8 )]
-position = Vector2( -29, -41.4995 )
+position = Vector2( -29.0005, -42.4996 )
 rotation = 0.122173
 scale = Vector2( -1, 1 )
+z_index = 1
 
-[node name="TalkScript" type="Node" parent="CatPaw4/Floor10"]
+[node name="StartTalkScript" type="Node" parent="CatPaw4/Floor10"]
 script = ExtResource( 9 )
+isOnceOnProcess = true
 dialogueOnStart = "sHome"
 
 [node name="Floor11" type="Sprite" parent="CatPaw4"]

@@ -24,14 +24,7 @@ func _physics_process(delta):
 		direction = direction.normalized()
 		direction_speed = lerp(direction_speed,direction*speed,0.1)
 		
-		if direction_speed.x<0:
-			if is_flipped == 0:
-				$".".scale = Vector2(-1,1)
-				is_flipped = 1;
-		else:
-			if is_flipped:
-				$".".scale = Vector2(-1,-1)
-			is_flipped = 0;
+		SetFlip(direction_speed.x) # Поменял поворот для команды с Диалога
 			
 		if Input.is_action_pressed("ui_accept"):
 			emit_signal("Interact")
@@ -56,3 +49,17 @@ func _set_fight_mode():
 func _set_peace_mode():
 	# despawn shield
 	pass
+
+func SetFlip(flip):
+	if flip<0:
+		if is_flipped == 0:
+			$".".scale = Vector2(-1,1);
+			is_flipped = 1;
+	else:
+		if is_flipped:
+			$".".scale = Vector2(-1,-1);
+			is_flipped = 0;
+
+func FlipFromDialogue(flipStr):
+	print("Alice Flip: "+flipStr);
+	SetFlip(float(flipStr));

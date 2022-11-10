@@ -27,3 +27,11 @@ func _on_Interact():
 			yield(new_dialog,"tree_exited")
 			Singletone.Glob_pause = false
 
+
+
+func _on_Talker_body_entered(body):
+	pass # Replace with function body.
+
+
+func _on_Talker_body_exited(body):
+	pass # Replace with function body.

@@ -79,4 +79,3 @@ func _out():
 
 func _in(level):
 	$"../Game/Level"._in(level)
-
