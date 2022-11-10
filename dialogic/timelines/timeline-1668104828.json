@@ -1,0 +1,120 @@
+{
+	"events": [
+		{
+			"condition": "<=",
+			"definition": "1668014886-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"definition": "1668014886-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Добро пожаловать в моё Убежище! дома!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Если ты устанешь, то всегда можешь тут отдохнуть. дома!"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Отпустите меня домой!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ты слишком скучная. Давай лучше устроим чаепитие!?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
+			"definition": "1668102559-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"definition": "1668102559-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "И вообще, я в шоке от того что смогла меня победить!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Раз ты такая сильная, может ещё и крыс у меня в подвале побьёшь!? А то они сводят меня с ума."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
+			"definition": "1668102770-366",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"definition": "1668102770-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ого! Ты победила короля крыс у меня в подвале."
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "С такой крутостью ты можешь не боятся опасностей из Тёмного Переулка."
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Тёмный  Переулок?"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Да! Не вздумай туда ходить, там опасно!"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668104828.json",
+		"name": "sHome"
+	}
+}
