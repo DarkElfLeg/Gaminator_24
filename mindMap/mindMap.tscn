@@ -1699,7 +1699,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
 custom_fonts/font = ExtResource( 3 )
-text = "sCastle"
+text = "sQueen"
 align = 1
 valign = 1
 

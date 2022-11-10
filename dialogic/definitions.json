@@ -4,10 +4,52 @@
 	],
 	"variables": [
 		{
-			"id": "1668014886-648",
-			"name": "",
+			"id": "1668102957-970",
+			"name": "isDefeated_sTree",
 			"type": 0,
 			"value": ""
+		},
+		{
+			"id": "1668102770-366",
+			"name": "isDefeated_sRatKing",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1668103216-713",
+			"name": "isDefeated_sBoss2",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1668103247-785",
+			"name": "isDefeated_sPartyEnd",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1668103231-339",
+			"name": "isDefeated_sParty",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1668102862-483",
+			"name": "isDefeated_sQueen",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1668014886-648",
+			"name": "isFirstTimeIn_sHome",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668102559-648",
+			"name": "isDefeated_sBoss",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }
