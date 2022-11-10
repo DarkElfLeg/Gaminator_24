@@ -51,4 +51,6 @@ func _process(delta):
 						collision.collider._hert();
 					if collision.collider.name in ["Alice","Shield","Ball","Ball1","Ball2"]:
 						move_and_slide(speed*100*delta)
+				position.x = clamp(position.x,0+30,1920-30)
+				position.y = clamp(position.y ,0+30,1080-30)
 					#print(collision.collider.name)
