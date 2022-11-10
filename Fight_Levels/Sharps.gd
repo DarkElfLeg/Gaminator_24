@@ -1,6 +1,12 @@
 extends Node2D
 
 func _ready():
+	
+	$CPUParticles2D.rotation = -rotation
+	$CPUParticles2D2.rotation = -rotation
+	$CPUParticles2D3.rotation = -rotation
+	$CPUParticles2D4.rotation = -rotation
+	
 	$CPUParticles2D.emitting = true;
 	$CPUParticles2D2.emitting = true;
 	$CPUParticles2D3.emitting = true;

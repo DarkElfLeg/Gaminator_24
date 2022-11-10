@@ -37,6 +37,7 @@ func _physics_process(delta):
 			else:
 				var loaded = sharps.instance()
 				loaded.position = position
+				loaded.rotation = rotation
 				$"/root/Game/HUD".add_child(loaded)
 			queue_free()
 		#position += velocity * delta * speed
