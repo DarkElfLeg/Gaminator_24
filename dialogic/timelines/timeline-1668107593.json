@@ -1,0 +1,62 @@
+{
+	"events": [
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Чё, как!? Хочешь поиграть?"
+		},
+		{
+			"choice": "Давай ещё поиграем!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Fight_Levels/sBoss.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"choice": "Освободи Шляпника!",
+			"condition": "",
+			"definition": "1668107919-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"choice": "Я лучше пойду!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668107593.json",
+		"name": "talkCat"
+	}
+}

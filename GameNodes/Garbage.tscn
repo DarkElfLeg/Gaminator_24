@@ -24,10 +24,9 @@ region_rect = Rect2( 1018, 912, 133, 129 )
 polygon = PoolVector2Array( -74.0703, -198.073, 6.11168, -174.29, 2.82515, -96.2759, -50.1247, -95.9104, -91.267, -125.318 )
 
 [node name="Intrract" type="Sprite" parent="."]
-visible = false
-position = Vector2( -6.88137, -308.752 )
+position = Vector2( -2.28923, -283.011 )
 rotation = 0.261799
-scale = Vector2( 2.02724, 2.02724 )
+z_index = -99
 texture = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_Garbage_body_entered"]

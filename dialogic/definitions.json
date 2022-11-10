@@ -28,12 +28,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668103247-785",
-			"name": "isDefeated_sPartyEnd",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668014886-648",
 			"name": "isFirstTimeIn_sHome",
 			"type": 0,
@@ -48,6 +42,18 @@
 		{
 			"id": "1668102957-970",
 			"name": "isDefeated_sTree",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668103247-785",
+			"name": "isDefeated_sPartyEnd",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668107919-648",
+			"name": "isInfoAboutHatter",
 			"type": 0,
 			"value": "0"
 		}
