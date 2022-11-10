@@ -1,6 +1,6 @@
 extends Node2D
 
-export var first_level = "res://Scenes/Cat_Scene.tscn"
+export var first_level = "res://Scenes/.tscn"
 
 func _ready():
 	OS.set_window_maximized(true)

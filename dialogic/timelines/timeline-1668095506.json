@@ -1,0 +1,98 @@
+{
+	"events": [
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Помогите, я падаю!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"Go"
+				],
+				"method_name": "PlayIt",
+				"target_node_path": "Game/Level/sStart/Animator"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1667759486.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Не бойся! Тут невозможно разбиться."
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Г-говорящий кот?! Наверное я сплю."
+		},
+		{
+			"character": "character-1667759486.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Привет! Я Блохастик Многокот."
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "И это не сон, а бесконечная бездна."
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Что!? Как я здесь очутилась?"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А хочешь сыграть в игру?"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Нет, я хочу домой!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Сыграем в кошки-мышки! Чур я вожу!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"GoOut"
+				],
+				"method_name": "PlayIt",
+				"target_node_path": "Game/Level/sStart/Animator"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Fight_Levels/sBoss.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668095506.json",
+		"name": "sStart"
+	}
+}

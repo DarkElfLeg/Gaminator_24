@@ -1063,15 +1063,15 @@ align = 1
 valign = 1
 
 [node name="BigComment4" type="Label" parent="Texts"]
-margin_left = 28.0
-margin_top = -2196.0
-margin_right = 687.0
-margin_bottom = -2032.0
+margin_left = 17.0
+margin_top = -2240.0
+margin_right = 690.0
+margin_bottom = -2071.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
 custom_fonts/font = ExtResource( 3 )
-text = " sBoss1"
+text = "sBoss"
 align = 1
 valign = 1
 
