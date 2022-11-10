@@ -1,6 +1,12 @@
 {
 	"events": [
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Тут конкурс был..."
+		},
+		{
 			"call_node": {
 				"arguments": [
 

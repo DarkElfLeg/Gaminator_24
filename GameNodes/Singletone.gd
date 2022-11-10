@@ -21,6 +21,7 @@ func check_helth():
 		for child in $"../Game/Level".get_children():
 			child.queue_free();
 		$"../Game/Level"._in("res://Scenes/sHome.tscn")
+		print("Death! Go to home.")
 		$"../Game/Alice".position = Vector2(900,850)
 		yield(get_tree().create_timer(4.0), "timeout")
 		pause_off()
