@@ -1,9 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
-[ext_resource path="res://GameNodes/Cat.gd" type="Script" id=2]
-[ext_resource path="res://Sprites/Intrract.png" type="Texture" id=3]
-[ext_resource path="res://GameNodes/Garbage.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
@@ -155,7 +152,6 @@ tracks/11/keys = {
 }
 
 [node name="Cat" type="Node2D"]
-script = ExtResource( 2 )
 
 [node name="Body" type="Node2D" parent="."]
 
@@ -312,23 +308,5 @@ polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ) ]
 bones = [ "Body", PoolRealArray( 0, 0, 0, 0 ), "Body/EarL", PoolRealArray( 0, 0, 0, 0 ), "Body/EarR", PoolRealArray( 0, 0, 0, 0 ), "Body/HandR", PoolRealArray( 0, 0, 0, 0 ), "Body/HandL", PoolRealArray( 0, 0, 0, 0 ), "Body/LegR", PoolRealArray( 0, 0, 0, 0 ), "Body/LegL", PoolRealArray( 0.5, 0.5, 0.5, 0.5 ), "Body/Tail", PoolRealArray( 0, 0, 0, 0 ), "Body/Tail/Tail2", PoolRealArray( 0, 0, 0, 0 ), "Body/Tail/Tail2/Tail3", PoolRealArray( 0, 0, 0, 0 ), "Body/Tail/Tail2/Tail3/Tail4", PoolRealArray( 0, 0, 0, 0 ) ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
 anims/idle = SubResource( 1 )
-
-[node name="Talker" type="Area2D" parent="."]
-position = Vector2( 32.7675, 154.203 )
-collision_layer = 5
-collision_mask = 5
-script = ExtResource( 4 )
-dialog_file = "talkCat"
-
-[node name="Intrract" type="Sprite" parent="Talker"]
-visible = false
-position = Vector2( -36.7675, -323.203 )
-z_index = -99
-texture = ExtResource( 3 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Talker"]
-polygon = PoolVector2Array( -95.7675, -212.203, -36.7675, -227.203, 19.2325, -207.203, 18.2325, -107.203, -42.7675, -88.2025, -100.768, -119.203 )
-
-[connection signal="body_entered" from="Talker" to="Talker" method="_on_Talker_body_entered"]
-[connection signal="body_exited" from="Talker" to="Talker" method="_on_Talker_body_exited"]

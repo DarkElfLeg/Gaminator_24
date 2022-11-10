@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://GameNodes/TV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://GameNodes/Exit.tscn" type="PackedScene" id=7]
 [ext_resource path="res://GameNodes/Cat.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/AlexScripts/StartDialogic.gd" type="Script" id=9]
+[ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -289,6 +290,12 @@ position = Vector2( -29.0005, -42.4996 )
 rotation = 0.122173
 scale = Vector2( -1, 1 )
 z_index = 1
+
+[node name="TalkInteractive" parent="CatPaw4/Floor10/Cat" instance=ExtResource( 10 )]
+position = Vector2( -114.883, 164.405 )
+rotation = -2.75762
+scale = Vector2( 1.35159, -1.35159 )
+dialog_file = "talkCat"
 
 [node name="StartTalkScript" type="Node" parent="CatPaw4/Floor10"]
 script = ExtResource( 9 )
