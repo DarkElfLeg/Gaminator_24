@@ -316,6 +316,8 @@ anims/idle = SubResource( 1 )
 
 [node name="Talker" type="Area2D" parent="."]
 position = Vector2( 32.7675, 154.203 )
+collision_layer = 5
+collision_mask = 5
 script = ExtResource( 4 )
 dialog_file = "talkCat"
 

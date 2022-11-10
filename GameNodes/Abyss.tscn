@@ -54,7 +54,8 @@ collision_mask = 13
 speed = 330
 
 [node name="Singletone" parent="." instance=ExtResource( 4 )]
-Helth_Player = 3
+Max_Helth_Player = 1
+Helth_Player = 1
 
 [node name="HUD" type="Control" parent="."]
 margin_right = 40.0
