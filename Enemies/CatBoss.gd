@@ -8,6 +8,10 @@ var time = 0
 export var moveDuration = 3
 var timeDirection = 1
 
+export var Do_swords = false;
+export var Do_move = false;
+
+
 func _set_spawn_point():
 	spavn = position
 
@@ -25,10 +29,11 @@ func _idle():
 
 func fire_sword():
 	if not Singletone.pause_mode:
-		var scene = load("res://Fight_Levels/Sword1.tscn")
-		var Level = scene.instance()
-		Level.position = position
-		$"..".add_child(Level)
+		if Do_swords:
+			var scene = load("res://Fight_Levels/Sword1.tscn")
+			var Level = scene.instance()
+			Level.position = position
+			$"..".add_child(Level)
 
 func clear():
 	if life == 3:
@@ -80,15 +85,16 @@ func _hert():
 func _process(delta):
 	if not Singletone.pause_mode:
 		if $AnimationPlayer.current_animation == "idle":
-			if direction == Vector2.ZERO:
-				direction = Vector2(rand_range(-1, 1), rand_range(-1, 1))
-				direction = direction.normalized()
-			var collide = move_and_collide(direction)
-			if collide:
-				if collide.collider.name == "Alice":
-					collide.collider._hert();
-				direction = Vector2(rand_range(-1, 1), rand_range(-1, 1))
-				direction = direction.normalized()
+			if Do_move:
+				if direction == Vector2.ZERO:
+					direction = Vector2(rand_range(-1, 1), rand_range(-1, 1))
+					direction = direction.normalized()
+				var collide = move_and_collide(direction)
+				if collide:
+					if collide.collider.name == "Alice":
+						collide.collider._hert();
+					direction = Vector2(rand_range(-1, 1), rand_range(-1, 1))
+					direction = direction.normalized()
 	if go_spawn:
 		$CollisionPolygon2D.disabled = true;
 		if (time > moveDuration):
