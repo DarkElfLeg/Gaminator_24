@@ -63,5 +63,5 @@ func SetFlip(flip):
 			is_flipped = 0;
 
 func FlipFromDialogue(flipStr):
-	direction_speed.x = 1;
-	SetFlip(direction_speed.x);
+	direction_speed.x = float(flipStr)
+	SetFlip(direction_speed.x)
