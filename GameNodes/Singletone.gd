@@ -79,3 +79,7 @@ func _out():
 
 func _in(level):
 	$"../Game/Level"._in(level)
+
+func _dialog(timeline):
+	var new_dialog = Dialogic.start(timeline)
+	add_child(new_dialog)
