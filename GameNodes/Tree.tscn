@@ -24,6 +24,7 @@ visible = false
 position = Vector2( -6.88137, -308.752 )
 rotation = 0.261799
 scale = Vector2( 2.02724, 2.02724 )
+z_index = 99
 texture = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_Tree_body_entered"]

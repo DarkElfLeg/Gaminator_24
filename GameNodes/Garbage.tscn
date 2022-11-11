@@ -27,7 +27,7 @@ polygon = PoolVector2Array( -74.0703, -198.073, 6.11168, -174.29, 2.82515, -96.2
 visible = false
 position = Vector2( -2.28923, -283.011 )
 rotation = 0.261799
-z_index = -99
+z_index = 99
 texture = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_Garbage_body_entered"]
