@@ -50,6 +50,8 @@ func _set_peace_mode():
 	# despawn shield
 	pass
 
+
+
 func SetFlip(flip):
 	if flip<0:
 		if is_flipped == 0:
@@ -61,5 +63,5 @@ func SetFlip(flip):
 			is_flipped = 0;
 
 func FlipFromDialogue(flipStr):
-	print("Alice Flip: "+flipStr);
-	SetFlip(float(flipStr));
+	direction_speed.x = 1;
+	SetFlip(direction_speed.x);
