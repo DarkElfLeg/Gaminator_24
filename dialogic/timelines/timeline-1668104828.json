@@ -1,6 +1,16 @@
 {
 	"events": [
 		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "FlipFromDialogue",
+				"target_node_path": "Game/Alice"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"condition": "<=",
 			"definition": "1668014886-648",
 			"event_id": "dialogic_012",
