@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://mindMap/MindMapArts.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/Alterna.tres" type="DynamicFont" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://GameNodes/Rat.tscn" type="PackedScene" id=18]
 [ext_resource path="res://GameNodes/Hatter.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Enemies/JawFoe2.tscn" type="PackedScene" id=20]
+[ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=21]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -6261, -73 )
@@ -1847,18 +1848,11 @@ text = "Лазить в мусорке"
 align = 1
 valign = 1
 
-[node name="BigComment23" type="Label" parent="Texts"]
-margin_left = 9313.0
-margin_top = 2310.0
-margin_right = 10117.0
-margin_bottom = 2474.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
-custom_fonts/font = ExtResource( 3 )
-text = "sGarbage"
-align = 1
-valign = 1
+[node name="BigComment23" parent="Texts" instance=ExtResource( 21 )]
+margin_left = 9312.0
+margin_top = 2326.0
+margin_right = 10116.0
+margin_bottom = 2490.0
 
 [node name="AlterQueen" parent="." instance=ExtResource( 13 )]
 position = Vector2( 3806, 4246 )

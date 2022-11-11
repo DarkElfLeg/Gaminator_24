@@ -10,6 +10,13 @@
 			"question": "Чё, как!? Хочешь поиграть?"
 		},
 		{
+			"choice": "Я лучше пойду!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
 			"choice": "Давай ещё поиграем!",
 			"condition": "",
 			"definition": "",
@@ -42,13 +49,6 @@
 			"definition": "1668107919-648",
 			"event_id": "dialogic_011",
 			"value": "1"
-		},
-		{
-			"choice": "Я лучше пойду!",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
 		},
 		{
 			"event_id": "dialogic_013"

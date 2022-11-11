@@ -28,12 +28,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668014886-648",
-			"name": "isFirstTimeIn_sHome",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668102862-483",
 			"name": "isDefeated_sQueen",
 			"type": 0,
@@ -54,6 +48,30 @@
 		{
 			"id": "1668107919-648",
 			"name": "isInfoAboutHatter",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668014886-648",
+			"name": "isFirstTimeIn_sHome",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668183998-894",
+			"name": "isInfoAboutAlley",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668185782-171",
+			"name": "CandyCount",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668185974-991",
+			"name": "isGuardGetBribe",
 			"type": 0,
 			"value": "0"
 		}

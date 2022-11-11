@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/AlternaBig.tres" type="DynamicFont" id=1]
+
+[node name="BigText" type="Label"]
+margin_left = -391.0
+margin_top = -68.0
+margin_right = 413.0
+margin_bottom = 96.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "sGarbage"
+align = 1
+valign = 1

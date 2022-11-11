@@ -4,7 +4,7 @@
 [ext_resource path="res://cuts/Alice1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://GameNodes/Level.gd" type="Script" id=3]
 [ext_resource path="res://GameNodes/Singletone.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Sprites/gfxUI.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Black_Screen.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
@@ -43,12 +43,12 @@ tracks/0/keys = {
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource( 3 )
-first_level = "res://Scenes/sStart.tscn"
+first_level = "res://Scenes/sHome.tscn"
 
 [node name="Fon" parent="." instance=ExtResource( 1 )]
 
 [node name="Alice" parent="." instance=ExtResource( 2 )]
-position = Vector2( 398, 468 )
+position = Vector2( 526, 532 )
 collision_layer = 13
 collision_mask = 13
 speed = 330
@@ -61,42 +61,79 @@ Helth_Player = 1
 margin_right = 40.0
 margin_bottom = 40.0
 
-[node name="L1" type="Sprite" parent="HUD"]
-position = Vector2( 79, 63 )
-texture = ExtResource( 6 )
+[node name="BackL1" type="Sprite" parent="HUD"]
+position = Vector2( 99.5, 53 )
+texture = ExtResource( 5 )
 region_enabled = true
-region_rect = Rect2( 29, 761, 150, 121 )
+region_rect = Rect2( 861, 920, 78, 72 )
+
+[node name="BackL2" type="Sprite" parent="HUD"]
+position = Vector2( 171.5, 53 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 861, 920, 78, 72 )
+
+[node name="BackL3" type="Sprite" parent="HUD"]
+position = Vector2( 243.5, 53 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 861, 920, 78, 72 )
+
+[node name="BackL4" type="Sprite" parent="HUD"]
+position = Vector2( 315.5, 53 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 861, 920, 78, 72 )
+
+[node name="BackL5" type="Sprite" parent="HUD"]
+position = Vector2( 387.5, 53 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 861, 920, 78, 72 )
+
+[node name="BackL6" type="Sprite" parent="HUD"]
+visible = false
+position = Vector2( 459.5, 53 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 861, 920, 78, 72 )
+
+[node name="L1" type="Sprite" parent="HUD"]
+position = Vector2( 100.5, 53 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L2" type="Sprite" parent="HUD"]
-position = Vector2( 232, 61 )
-texture = ExtResource( 6 )
+position = Vector2( 172.5, 53 )
+texture = ExtResource( 5 )
 region_enabled = true
-region_rect = Rect2( 29, 761, 150, 121 )
+region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L3" type="Sprite" parent="HUD"]
-position = Vector2( 384, 62 )
-texture = ExtResource( 6 )
+position = Vector2( 244.5, 53 )
+texture = ExtResource( 5 )
 region_enabled = true
-region_rect = Rect2( 29, 761, 150, 121 )
+region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L4" type="Sprite" parent="HUD"]
-position = Vector2( 533, 61.5 )
-texture = ExtResource( 6 )
+position = Vector2( 316.5, 53 )
+texture = ExtResource( 5 )
 region_enabled = true
-region_rect = Rect2( 29, 761, 150, 121 )
+region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L5" type="Sprite" parent="HUD"]
-position = Vector2( 688, 59.5 )
-texture = ExtResource( 6 )
+position = Vector2( 388.5, 53 )
+texture = ExtResource( 5 )
 region_enabled = true
-region_rect = Rect2( 29, 761, 150, 121 )
+region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L6" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 841, 57.5 )
-texture = ExtResource( 6 )
+position = Vector2( 460.5, 53 )
+texture = ExtResource( 5 )
 region_enabled = true
-region_rect = Rect2( 29, 761, 150, 121 )
+region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="Screen" type="Sprite" parent="HUD"]
 modulate = Color( 1, 1, 1, 0 )

@@ -1,13 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/Alley.png" type="Texture" id=2]
+[ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=3]
 [ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/sBackAlley.gd" type="Script" id=5]
-[ext_resource path="res://GameNodes/Activity.tscn" type="PackedScene" id=6]
-[ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=7]
-[ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=9]
+[ext_resource path="res://mindMap/BossDefeatedReplacer.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -93,101 +91,57 @@ tracks/2/keys = {
 position = Vector2( -6, -3 )
 script = ExtResource( 5 )
 
+[node name="BossDefeatedReplacer" parent="." instance=ExtResource( 6 )]
+position = Vector2( 956, 895 )
+
+[node name="BigText" parent="." instance=ExtResource( 2 )]
+margin_left = 551.0
+margin_top = 414.0
+margin_right = 1355.0
+margin_bottom = 745.0
+text = "sRatKing
+(Boss)"
+
 [node name="CatPaw" parent="." instance=ExtResource( 4 )]
 position = Vector2( -801, 605 )
 
-[node name="Exit2" parent="CatPaw" instance=ExtResource( 7 )]
-position = Vector2( -370.585, -733.091 )
-rotation = 2.87979
-scale = Vector2( 1, -1 )
-next_level = "res://Scenes/sTown.tscn"
-
 [node name="Floor6" type="Sprite" parent="CatPaw"]
-position = Vector2( -44.1833, -356.182 )
-rotation = -1.59094
-z_index = -1
-texture = ExtResource( 2 )
-region_enabled = true
-region_rect = Rect2( 31, 71, 822, 972 )
-
-[node name="Floor3" type="Sprite" parent="CatPaw"]
-position = Vector2( 413.332, -37.333 )
+position = Vector2( -13.1475, -205.777 )
 rotation = -1.59094
 z_index = -1
 texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( 15, 166, 275, 126 )
-
-[node name="Floor10" type="Sprite" parent="CatPaw"]
-position = Vector2( 364.563, -25.3483 )
-rotation = -1.59094
-z_index = -1
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 1450, 879, 64, 60 )
-
-[node name="ExitSign" parent="CatPaw" instance=ExtResource( 9 )]
-margin_left = -402.299
-margin_top = -779.415
-margin_right = -175.299
-margin_bottom = -708.415
-rect_rotation = -89.9999
-rect_scale = Vector2( 0.535874, 0.430526 )
+region_rect = Rect2( 1150, 18, 478, 559 )
 
 [node name="CatPaw2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 657, 1414 )
 rotation = -0.261799
 
 [node name="Floor4" type="Sprite" parent="CatPaw2"]
-position = Vector2( 37.6928, -142.604 )
+position = Vector2( 18.9495, -117.085 )
 rotation = 0.261799
 z_index = -1
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( 1136, 526, 711, 339 )
-
-[node name="Gsrbage" type="Sprite" parent="CatPaw2"]
-position = Vector2( -49.0764, -168.441 )
-rotation = 0.273956
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 1018, 912, 133, 129 )
-
-[node name="Activity" parent="CatPaw2/Gsrbage" instance=ExtResource( 6 )]
+region_rect = Rect2( 303, 13, 255, 261 )
 
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2914, 602 )
 rotation = -1.57079
 
+[node name="Exit2" parent="CatPaw3" instance=ExtResource( 1 )]
+position = Vector2( 491.996, -626.003 )
+rotation = -1.57081
+next_level = "res://Scenes/sRats.tscn"
+
 [node name="Floor9" type="Sprite" parent="CatPaw3"]
-position = Vector2( 69.999, -464 )
+position = Vector2( 24.9993, -216.003 )
 rotation = 1.57079
+scale = Vector2( -1, 1 )
 z_index = -1
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( 926, 15, 957, 1045 )
-
-[node name="Gsrbage" type="Sprite" parent="CatPaw3"]
-position = Vector2( -914.043, -1703.92 )
-rotation = 1.58295
-texture = ExtResource( 1 )
-offset = Vector2( 1125.82, -673.769 )
-region_enabled = true
-region_rect = Rect2( 1018, 912, 133, 129 )
-
-[node name="Activity2" parent="CatPaw3/Gsrbage" instance=ExtResource( 6 )]
-position = Vector2( 1127, -658.782 )
-
-[node name="Tree" type="Sprite" parent="CatPaw3"]
-position = Vector2( -296.001, -216.999 )
-rotation = 1.58295
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 753, 690, 189, 384 )
-
-[node name="Activity3" parent="CatPaw3/Tree" instance=ExtResource( 6 )]
-position = Vector2( -2.10571, -90.9811 )
-dialog_file = "timeline-1667587178.json"
+region_rect = Rect2( 1150, 18, 478, 559 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

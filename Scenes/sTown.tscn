@@ -1,10 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=3]
 [ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/sTown.gd" type="Script" id=5]
+[ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GameNodes/Exit.tscn" type="PackedScene" id=8]
+[ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=9]
+[ext_resource path="res://GameNodes/KnightB.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -185,6 +190,11 @@ region_rect = Rect2( 1104, 3, 517, 484 )
 [node name="CatPaw" parent="." instance=ExtResource( 4 )]
 position = Vector2( -341, 292 )
 
+[node name="Exit2" parent="CatPaw" instance=ExtResource( 6 )]
+position = Vector2( -384.966, -158.419 )
+scale = Vector2( -1, 1 )
+next_level = "res://Scenes/sHome.tscn"
+
 [node name="Floor3" type="Sprite" parent="CatPaw"]
 position = Vector2( 16.3374, -132.356 )
 rotation = -1.59094
@@ -201,9 +211,29 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 49, 56, 314, 236 )
 
+[node name="ExitSign" parent="CatPaw" instance=ExtResource( 7 )]
+margin_left = -417.004
+margin_top = -208.768
+margin_right = -190.004
+margin_bottom = -137.768
+rect_rotation = -89.9999
+rect_scale = Vector2( 0.418318, 0.391338 )
+text = "В Убежище"
+
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2261, 40 )
 rotation = 3.14159
+
+[node name="KnightB" parent="CatPaw3" instance=ExtResource( 10 )]
+position = Vector2( 88.0005, -134 )
+rotation = -3.14159
+scale = Vector2( 0.899867, 0.859867 )
+
+[node name="TalkInteractive" parent="CatPaw3/KnightB" instance=ExtResource( 9 )]
+position = Vector2( -8.46118, 7.10956 )
+rotation = -0.328716
+scale = Vector2( 1.16219, 1.32439 )
+dialog_file = "talkGuard"
 
 [node name="Floor5" type="Sprite" parent="CatPaw3"]
 position = Vector2( 8.00122, -270 )
@@ -237,6 +267,20 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 28, 354, 621, 689 )
 
+[node name="Exit" parent="CatPaw6/Floor6" instance=ExtResource( 8 )]
+position = Vector2( -188.001, 165.001 )
+scale = Vector2( 0.84001, 0.96 )
+next_level = "res://Scenes/sShop.tscn"
+
+[node name="ExitSign" parent="CatPaw6" instance=ExtResource( 7 )]
+margin_left = -39.8179
+margin_top = -494.779
+margin_right = 187.182
+margin_bottom = -423.779
+rect_rotation = 74.9999
+rect_scale = Vector2( 0.352977, 0.406912 )
+text = "Магазин"
+
 [node name="Floor8" type="Sprite" parent="CatPaw6"]
 position = Vector2( -91.0003, -121.5 )
 rotation = 1.57079
@@ -264,6 +308,11 @@ z_index = -1
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1136, 526, 711, 339 )
+
+[node name="Exit2" parent="CatPaw5" instance=ExtResource( 6 )]
+position = Vector2( -375.474, -441.941 )
+rotation = 0.785397
+next_level = "res://Scenes/sBackAlley.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fonts/Alterna.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Sprites/gfxUI.png" type="Texture" id=2]
+
+[node name="ExitSign" type="Label"]
+margin_left = -119.0
+margin_top = -42.0
+margin_right = 108.0
+margin_bottom = 29.0
+rect_scale = Vector2( 0.615858, 0.509703 )
+rect_pivot_offset = Vector2( 120, 42 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 0.580392, 0.486275, 0.294118, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "В Город"
+align = 1
+valign = 1
+
+[node name="Sign" type="Sprite" parent="."]
+position = Vector2( 123, 51 )
+scale = Vector2( 1.28933, 1 )
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 207, 771, 283, 88 )
