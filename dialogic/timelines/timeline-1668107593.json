@@ -51,6 +51,50 @@
 			"value": "1"
 		},
 		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Освободи Шляпника!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Какое тебе дело до Шляпника?"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Неважно! Быстро освободи его!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Не беси меня!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Fight_Levels/sBoss2.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"event_id": "dialogic_013"
 		}
 	],

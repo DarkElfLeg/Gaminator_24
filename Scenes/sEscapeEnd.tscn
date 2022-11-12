@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/sBackAlley.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Go_in"
+length = 3.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "Go_out"
+length = 2.0
+
+[node name="BackAlley" type="Node2D"]
+position = Vector2( -6, -3 )
+script = ExtResource( 5 )
+
+[node name="Exit2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1772, 587 )
+rotation = -1.57079
+next_level = "res://Scenes/sHome.tscn"
+
+[node name="BigText" parent="." instance=ExtResource( 2 )]
+margin_left = 442.0
+margin_top = 386.0
+margin_right = 1421.0
+margin_bottom = 717.0
+text = "sEscapeEnd"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Go_in = SubResource( 1 )
+anims/Go_out = SubResource( 2 )

@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=2]
 [ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/sDungeon.gd" type="Script" id=4]
-[ext_resource path="res://GameNodes/Exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GameNodes/Hatter.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -232,8 +233,18 @@ region_rect = Rect2( 19, 11, 206, 135 )
 position = Vector2( 987, -546 )
 rotation = 3.40339
 
+[node name="Hatter" parent="CatPaw3" instance=ExtResource( 5 )]
+position = Vector2( -119.402, -248.566 )
+rotation = 2.87979
+
+[node name="TalkInteractive" parent="CatPaw3" instance=ExtResource( 6 )]
+position = Vector2( -118.953, -250.757 )
+rotation = -0.261799
+scale = Vector2( 1.19999, 1.28375 )
+dialog_file = "talkHatter"
+
 [node name="Floor13" type="Sprite" parent="CatPaw3"]
-position = Vector2( 52.109, -218.947 )
+position = Vector2( 37.7396, -222.344 )
 rotation = 2.8798
 scale = Vector2( 0.739867, 0.739867 )
 z_index = -1
@@ -348,11 +359,6 @@ texture = ExtResource( 1 )
 flip_h = true
 region_enabled = true
 region_rect = Rect2( 1150, 18, 478, 559 )
-
-[node name="Exit" parent="CatPaw7" instance=ExtResource( 5 )]
-position = Vector2( 578.996, -581.004 )
-rotation = 1.57079
-next_level = "res://Scenes/sBackAlley.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://GameNodes/TV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://GameNodes/Cat.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/AlexScripts/StartDialogic.gd" type="Script" id=9]
 [ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=10]
+[ext_resource path="res://GameNodes/Exit3.tscn" type="PackedScene" id=11]
 [ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=12]
 
 [sub_resource type="Animation" id=1]
@@ -340,6 +341,12 @@ region_rect = Rect2( 216, 210, 220, 141 )
 position = Vector2( 624, 1428 )
 rotation = 6.54498
 
+[node name="Exit3" parent="CatPaw5" instance=ExtResource( 11 )]
+position = Vector2( -502.021, 114.606 )
+rotation = 0.523598
+scale = Vector2( -1, 1 )
+next_level = "res://Scenes/sEscapeEnd.tscn"
+
 [node name="Floor3" type="Sprite" parent="CatPaw5"]
 position = Vector2( 94.9987, -120.699 )
 rotation = -0.26179
@@ -355,7 +362,7 @@ z_index = -1
 
 [node name="TalkInteractive" parent="CatPaw5/Bed" instance=ExtResource( 10 )]
 position = Vector2( -1.00085, 26.9998 )
-scale = Vector2( 1.2, 1 )
+scale = Vector2( 1.12, 1 )
 dialog_file = "useBed"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

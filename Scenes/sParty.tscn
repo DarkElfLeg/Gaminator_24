@@ -1,0 +1,404 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=3]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/sBackAlley.gd" type="Script" id=5]
+[ext_resource path="res://mindMap/BossDefeatedReplacer.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Go_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.31864, 1 ),
+"update": 0,
+"values": [ Vector2( -801, 605 ), Vector2( 155, 548 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CatPaw2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.482968, 1 ),
+"update": 0,
+"values": [ Vector2( 657, 1414 ), Vector2( 672, 1041 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CatPaw3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.189465, 1 ),
+"update": 0,
+"values": [ Vector2( 2914, 602 ), Vector2( 1835, 610 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CatPaw4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, -222 ), Vector2( 707, 44 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Go_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 4.28709, 1 ),
+"update": 0,
+"values": [ Vector2( 155, 548 ), Vector2( -1253.75, 515 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CatPaw2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 4.43828, 1 ),
+"update": 0,
+"values": [ Vector2( 672, 1041 ), Vector2( 782.5, 1782.5 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CatPaw3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 3.605, 1 ),
+"update": 0,
+"values": [ Vector2( 1835, 610 ), Vector2( 3408.75, 628.75 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CatPaw4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 707, 44 ), Vector2( 699, -486 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 699, -486 ) ]
+}
+
+[node name="BackAlley" type="Node2D"]
+position = Vector2( -6, -3 )
+script = ExtResource( 5 )
+
+[node name="BossDefeatedReplacer" parent="." instance=ExtResource( 6 )]
+position = Vector2( 956, 895 )
+dialog_file = "killsParty"
+
+[node name="BigText" parent="." instance=ExtResource( 2 )]
+margin_left = 551.0
+margin_top = 414.0
+margin_right = 1355.0
+margin_bottom = 745.0
+text = "sParty
+(Boss)"
+
+[node name="CatPaw" parent="." instance=ExtResource( 4 )]
+position = Vector2( 155, 548 )
+
+[node name="Floor6" type="Sprite" parent="CatPaw"]
+position = Vector2( -25.8243, -338.549 )
+rotation = -1.83259
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 16, 9, 680, 169 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw"]
+position = Vector2( -326.298, -706.571 )
+rotation = -2.87979
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 711, 19, 368, 124 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw"]
+position = Vector2( -664.834, -729.757 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 711, 19, 368, 124 )
+
+[node name="CatPaw2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 672, 1041 )
+rotation = -0.261799
+
+[node name="Floor4" type="Sprite" parent="CatPaw2"]
+position = Vector2( 299.505, -3.08798 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 25, 202, 655, 210 )
+
+[node name="Floor6" type="Sprite" parent="CatPaw2"]
+position = Vector2( 436.676, -82.2841 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 972, 736, 202, 100 )
+
+[node name="Floor10" type="Sprite" parent="CatPaw2"]
+position = Vector2( 244.147, -144.225 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 665, 669, 163, 104 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw2"]
+position = Vector2( 129.077, -124.329 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 962, 576, 108, 52 )
+
+[node name="Floor9" type="Sprite" parent="CatPaw2"]
+position = Vector2( 466.564, -27.688 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 966, 636, 97, 52 )
+
+[node name="Floor12" type="Sprite" parent="CatPaw2"]
+position = Vector2( 817.123, 207.559 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 28, 438, 79, 185 )
+
+[node name="Floor13" type="Sprite" parent="CatPaw2"]
+position = Vector2( 898.431, 247.98 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 124, 435, 86, 199 )
+
+[node name="Floor14" type="Sprite" parent="CatPaw2"]
+position = Vector2( 992.238, 263.008 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 227, 434, 87, 187 )
+
+[node name="Floor15" type="Sprite" parent="CatPaw2"]
+position = Vector2( 1093.3, 268.346 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 333, 432, 91, 190 )
+
+[node name="Floor16" type="Sprite" parent="CatPaw2"]
+position = Vector2( 1195.83, 229.562 )
+rotation = -0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 441, 425, 94, 198 )
+
+[node name="Floor17" type="Sprite" parent="CatPaw2"]
+position = Vector2( -595.145, -238.297 )
+rotation = 0.785397
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 28, 438, 79, 185 )
+
+[node name="Floor18" type="Sprite" parent="CatPaw2"]
+position = Vector2( -533.262, -167.881 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 124, 435, 86, 199 )
+
+[node name="Floor19" type="Sprite" parent="CatPaw2"]
+position = Vector2( -450.28, -125.976 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 227, 434, 87, 187 )
+
+[node name="Floor20" type="Sprite" parent="CatPaw2"]
+position = Vector2( -358.466, -89.9865 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 333, 432, 91, 190 )
+
+[node name="Floor21" type="Sprite" parent="CatPaw2"]
+position = Vector2( -257.076, -89.7364 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 441, 425, 94, 198 )
+
+[node name="Floor11" type="Sprite" parent="CatPaw2"]
+position = Vector2( 380.569, 376.321 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 1402, 26, 56, 594 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw2"]
+position = Vector2( 186.774, -107.834 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 968, 381, 94, 75 )
+
+[node name="Floor5" type="Sprite" parent="CatPaw2"]
+position = Vector2( 329.13, -105.924 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 577, 430, 172, 165 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1835, 610 )
+rotation = -1.57079
+
+[node name="Floor9" type="Sprite" parent="CatPaw3"]
+position = Vector2( 111.001, -332.005 )
+rotation = 2.09439
+scale = Vector2( -1, 1 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 16, 9, 680, 169 )
+
+[node name="Floor10" type="Sprite" parent="CatPaw3"]
+position = Vector2( 471.019, -651.014 )
+rotation = 2.87979
+scale = Vector2( -1, 1 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 711, 19, 368, 124 )
+
+[node name="Floor11" type="Sprite" parent="CatPaw3"]
+position = Vector2( 796.042, -725.023 )
+rotation = 2.87979
+scale = Vector2( -1, 1 )
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 711, 19, 368, 124 )
+
+[node name="CatPaw4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 699, -486 )
+rotation = 2.87979
+
+[node name="Floor6" type="Sprite" parent="CatPaw4"]
+position = Vector2( -696.135, -218.626 )
+rotation = -3.14159
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 711, 19, 368, 124 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw4"]
+position = Vector2( -1062.97, -387.32 )
+rotation = -2.87979
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 840, 156, 91, 215 )
+
+[node name="Floor9" type="Sprite" parent="CatPaw4"]
+position = Vector2( 617.098, 57.6848 )
+rotation = -2.87979
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 840, 156, 91, 215 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw4"]
+position = Vector2( 141.164, 29.5433 )
+rotation = -2.35619
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 711, 19, 368, 124 )
+
+[node name="Floor4" type="Sprite" parent="CatPaw4"]
+position = Vector2( -260.499, -159.871 )
+rotation = 3.40339
+z_index = -1
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 18, 647, 614, 201 )
+
+[node name="Floor5" type="Sprite" parent="CatPaw4"]
+position = Vector2( -674.482, 94.6539 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 1402, 26, 56, 594 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Go_in = SubResource( 1 )
+anims/Go_out = SubResource( 2 )
+anims/RESET = SubResource( 3 )
