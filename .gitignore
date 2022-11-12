@@ -9,3 +9,6 @@ export_presets.cfg
 # Mono-specific ignores
 .mono/
 data_*/
+music/Sources/Alise_and_dispare.mmpz.bak
+music/Sources/Alise_and_fight.mmpz.bak
+*.import
