@@ -28,12 +28,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668183998-894",
-			"name": "isInfoAboutAlley",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668103247-785",
 			"name": "isDefeated_sPartyEnd",
 			"type": 0,
@@ -108,6 +102,12 @@
 		{
 			"id": "1668102559-648",
 			"name": "isDefeated_sBoss",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668183998-894",
+			"name": "isInfoAboutAlley",
 			"type": 0,
 			"value": "0"
 		},

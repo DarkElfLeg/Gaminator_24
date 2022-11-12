@@ -24,6 +24,20 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Теперь я настоящая принцесса!"
+		},
+		{
+			"definition": "1668244784-483",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"call_node": {
 				"arguments": [
 
@@ -36,7 +50,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sPrincess.tscn"
+					"res://Scenes/sCastle.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"
