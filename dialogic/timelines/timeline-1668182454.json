@@ -32,9 +32,9 @@
 		{
 			"call_node": {
 				"arguments": [
-
+					"6"
 				],
-				"method_name": "_set_max_helth",
+				"method_name": "_heal",
 				"target_node_path": "Singletone"
 			},
 			"event_id": "dialogic_042"

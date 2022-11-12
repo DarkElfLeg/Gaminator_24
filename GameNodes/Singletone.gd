@@ -1,7 +1,7 @@
 extends Node2D
 export var Glob_pause = false
-export var Max_Helth_Player = 5 # Очевидно...
-export var Helth_Player = 5 # некое начальное значение...
+export var Max_Helth_Player = 3 # Очевидно...
+export var Helth_Player = 3 # некое начальное значение...
 export var sweets = 0 # местная валюта снов.
 
 func pause_on():
@@ -28,6 +28,7 @@ func check_helth():
 		pause_on()
 		$"../Game/HUD/AnimationPlayer".play("fade_out")
 		yield(get_tree().create_timer(1.0), "timeout")
+		_calm();
 		$"../Game/HUD/AnimationPlayer".play("fade_in")
 		for child in $"../Game/Level".get_children():
 			child.queue_free();
@@ -112,20 +113,20 @@ func check_helth():
 		# анимация, спавн в кроватке.
 
 func _set_helth(helth):
-	Helth_Player = helth
+	Helth_Player = int(helth)
 	check_helth()
 
 func _set_max_helth(helth):
-	Max_Helth_Player = helth
+	Max_Helth_Player = int(helth)
 	check_helth()
 
 func _heal(heal):
-	Helth_Player += heal
+	Helth_Player += int(heal)
 	check_helth()
 	# Почему это отдельно он damage? Чтобы запускать анимацию в ноде Alice!
 
 func _damage(damage):
-	Helth_Player -= damage
+	Helth_Player -= int(damage)
 	check_helth()
 
 func _collect_sweets():
