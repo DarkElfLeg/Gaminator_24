@@ -6,9 +6,9 @@
 [ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/sCastle.gd" type="Script" id=5]
 [ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=7]
 [ext_resource path="res://GameNodes/Queen.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/Knight.tscn" type="PackedScene" id=9]
-[ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -118,7 +118,7 @@ tracks/3/keys = {
 script = ExtResource( 5 )
 
 [node name="CatPaw4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 973, 60 )
+position = Vector2( 909, -378 )
 rotation = 3.14159
 
 [node name="Floor15" type="Sprite" parent="CatPaw4"]
@@ -130,7 +130,7 @@ region_enabled = true
 region_rect = Rect2( 1052, 689, 364, 299 )
 
 [node name="CatPaw" parent="." instance=ExtResource( 4 )]
-position = Vector2( 162, 737 )
+position = Vector2( -744, 839 )
 
 [node name="Floor10" type="Sprite" parent="CatPaw"]
 position = Vector2( -296.191, -205.076 )
@@ -178,25 +178,17 @@ region_enabled = true
 region_rect = Rect2( 16, 9, 680, 169 )
 
 [node name="CatPaw2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 918, 990 )
+position = Vector2( 624, 1711 )
 rotation = 0.261799
 
 [node name="Knight" parent="CatPaw2" instance=ExtResource( 9 )]
-position = Vector2( -447.374, -220.733 )
+position = Vector2( -444.823, -242.122 )
 rotation = -0.261799
-
-[node name="TalkInteractive" parent="CatPaw2/Knight" instance=ExtResource( 10 )]
-position = Vector2( -3, -3.00012 )
-dialog_file = "talkBodyguards"
 
 [node name="Knight2" parent="CatPaw2" instance=ExtResource( 9 )]
-position = Vector2( 391.864, -431.812 )
+position = Vector2( 339.08, -452.536 )
 rotation = -0.261799
 scale = Vector2( -1, 1 )
-
-[node name="TalkInteractive" parent="CatPaw2/Knight2" instance=ExtResource( 10 )]
-position = Vector2( 2.27246, -2.323 )
-dialog_file = "talkBodyguards"
 
 [node name="Floor11" type="Sprite" parent="CatPaw2"]
 position = Vector2( -59.3723, -414.766 )
@@ -221,18 +213,20 @@ position = Vector2( -62.2057, -467.841 )
 rotation = -0.261799
 scale = Vector2( 0.75, 0.75 )
 
-[node name="TalkInteractive" parent="CatPaw2/Queen" instance=ExtResource( 10 )]
-position = Vector2( -7, 53.6666 )
-scale = Vector2( 2, 2 )
-dialog_file = "talkQueen"
+[node name="ExitSign" parent="CatPaw2" instance=ExtResource( 7 )]
+margin_left = 64.2203
+margin_top = -166.208
+margin_right = 291.22
+margin_bottom = -95.2083
+rect_rotation = -15.0
 
 [node name="Exit2" parent="CatPaw2" instance=ExtResource( 6 )]
-position = Vector2( 151.271, -34.3213 )
+position = Vector2( 199.432, -38.3816 )
 rotation = -0.261799
 next_level = "res://Scenes/sTown.tscn"
 
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1695, 545 )
+position = Vector2( 2726, 352 )
 rotation = 4.45058
 
 [node name="Floor6" type="Sprite" parent="CatPaw3"]

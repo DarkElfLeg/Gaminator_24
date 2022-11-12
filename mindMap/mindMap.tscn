@@ -211,6 +211,14 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 14, 12, 196, 74 )
 
+[node name="Gray8" type="Sprite" parent="Scenes"]
+position = Vector2( 9675, -4002 )
+scale = Vector2( 5.94898, 7.13513 )
+z_index = -10
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 14, 12, 196, 74 )
+
 [node name="Arrow" type="Sprite" parent="Scenes"]
 position = Vector2( 1815, -508 )
 rotation = 0.601804
@@ -389,6 +397,16 @@ texture = ExtResource( 1 )
 offset = Vector2( 71.2, -2 )
 region_enabled = true
 region_rect = Rect2( 59.25, 100, 147.75, 31 )
+
+[node name="Arrow29" type="Sprite" parent="Scenes"]
+position = Vector2( 8333, -4008 )
+rotation = -6.28318
+scale = Vector2( 5.05356, 8.64031 )
+z_index = -10
+texture = ExtResource( 1 )
+offset = Vector2( 71.2, -2 )
+region_enabled = true
+region_rect = Rect2( 78.25, 307.25, 135, 37 )
 
 [node name="Arrow20" type="Sprite" parent="Scenes"]
 position = Vector2( 8367, 3259 )
@@ -695,6 +713,20 @@ text = "*Алиса: Освободи Шляпника!
 *Блохастика: Не беси меня!"
 valign = 1
 
+[node name="Comment32" type="Label" parent="Texts"]
+margin_left = 9250.0
+margin_top = -4194.0
+margin_right = 10162.0
+margin_bottom = -3794.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "	>>>Фанфары?
+	>>>Алиса становится принцессой
+	>>>Корона падает на голову?"
+valign = 1
+
 [node name="Comment21" type="Label" parent="Texts"]
 margin_left = 3408.0
 margin_top = 310.0
@@ -977,6 +1009,19 @@ custom_colors/font_color = Color( 1, 0.380392, 0.917647, 1 )
 custom_fonts/font = ExtResource( 2 )
 text = "Попросить корону у Королевы
 второй раз"
+valign = 1
+
+[node name="Comment33" type="Label" parent="Texts"]
+margin_left = 8458.0
+margin_top = -4268.0
+margin_right = 8872.0
+margin_bottom = -4122.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 0.380392, 0.917647, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Коронация Алисы
+после победы"
 valign = 1
 
 [node name="MidComment" type="Label" parent="Texts"]
@@ -1633,6 +1678,19 @@ text = "Бой с королевой за корону"
 align = 1
 valign = 1
 
+[node name="MidComment25" type="Label" parent="Texts"]
+margin_left = 9082.0
+margin_top = -4435.0
+margin_right = 10244.0
+margin_bottom = -4281.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 0.243137, 1, 0.180392, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "Катсцена Коронации"
+align = 1
+valign = 1
+
 [node name="BigComment17" type="Label" parent="Texts"]
 margin_left = 6469.0
 margin_top = -4887.0
@@ -1643,6 +1701,19 @@ size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
 custom_fonts/font = ExtResource( 3 )
 text = "sQueen"
+align = 1
+valign = 1
+
+[node name="BigComment27" type="Label" parent="Texts"]
+margin_left = 9241.0
+margin_top = -4588.0
+margin_right = 10092.0
+margin_bottom = -4424.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
+custom_fonts/font = ExtResource( 3 )
+text = "sPrincess"
 align = 1
 valign = 1
 

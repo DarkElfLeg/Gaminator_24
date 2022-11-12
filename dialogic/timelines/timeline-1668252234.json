@@ -8,12 +8,12 @@
 		},
 		{
 			"condition": "<=",
-			"definition": "1668103247-785",
+			"definition": "1668103216-713",
 			"event_id": "dialogic_012",
 			"value": "0"
 		},
 		{
-			"definition": "1668103247-785",
+			"definition": "1668103216-713",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -22,6 +22,14 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1668107919-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
 		},
 		{
 			"call_node": {
