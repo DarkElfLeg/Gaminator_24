@@ -58,12 +58,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668102559-648",
-			"name": "isDefeated_sBoss",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668014886-648",
 			"name": "isFirstTimeIn_sHome",
 			"type": 0,
@@ -104,6 +98,24 @@
 			"name": "localCount",
 			"type": 0,
 			"value": ""
+		},
+		{
+			"id": "1668272115-918",
+			"name": "isAngryQueen",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668102559-648",
+			"name": "isDefeated_sBoss",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668281810-483",
+			"name": "isDefeated_sGate",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }

@@ -4,16 +4,16 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "BOSS KILLED sParty End!"
+			"text": "BOSS KILLED sQueen End!"
 		},
 		{
 			"condition": "<=",
-			"definition": "1668103247-785",
+			"definition": "1668102862-483",
 			"event_id": "dialogic_012",
 			"value": "0"
 		},
 		{
-			"definition": "1668103247-785",
+			"definition": "1668102862-483",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -36,7 +36,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sSecretEnd.tscn"
+					"res://Scenes/sPrincess.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"
@@ -46,7 +46,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1668252234.json",
-		"name": "killsPartyEnd"
+		"file": "timeline-1668281853.json",
+		"name": "killsQueen"
 	}
 }
