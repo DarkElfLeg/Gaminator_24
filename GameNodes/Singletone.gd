@@ -10,6 +10,17 @@ func pause_on():
 func pause_off():
 	Glob_pause = false;
 
+func _calm():
+	$"../Game/Singletone/fight_music".stop()
+	$"../Game/Singletone/calm_music".play()
+	pass
+	
+func _fight():
+	$"/root/Game/Singletone/fight_music".play()
+	$"/root/Game/Singletone/calm_music".stop()
+	pass
+
+
 func check_helth():
 	if Helth_Player > Max_Helth_Player:
 		Helth_Player = Max_Helth_Player
@@ -26,30 +37,77 @@ func check_helth():
 		yield(get_tree().create_timer(4.0), "timeout")
 		pause_off()
 		Helth_Player = Max_Helth_Player
-	if Helth_Player < 1:
-		$"../Game/HUD/L1".visible = false
-	else:
-		$"../Game/HUD/L1".visible = true
-	if Helth_Player < 2:
-		$"../Game//HUD/L2".visible = false
-	else:
-		$"../Game/HUD/L2".visible = true
-	if Helth_Player < 3:
-		$"../Game//HUD/L3".visible = false
-	else:
-		$"../Game/HUD/L3".visible = true
-	if Helth_Player < 4:
-		$"../Game//HUD/L4".visible = false
-	else:
-		$"../Game/HUD/L4".visible = true
-	if Helth_Player < 5:
-		$"../Game//HUD/L5".visible = false
-	else:
-		$"../Game/HUD/L5".visible = true
-	if Helth_Player < 6:
-		$"../Game//HUD/L6".visible = false
-	else:
-		$"../Game/HUD/L6".visible = true
+	match Max_Helth_Player:
+		3:
+			$"../Game/HUD/BackL3".visible = true
+			$"../Game/HUD/BackL4".visible = false
+			$"../Game/HUD/BackL5".visible = false
+			$"../Game/HUD/BackL6".visible = false
+		4:
+			$"../Game/HUD/BackL3".visible = true
+			$"../Game/HUD/BackL4".visible = true
+			$"../Game/HUD/BackL5".visible = false
+			$"../Game/HUD/BackL6".visible = false
+		5:
+			$"../Game/HUD/BackL3".visible = true
+			$"../Game/HUD/BackL4".visible = true
+			$"../Game/HUD/BackL5".visible = true
+			$"../Game/HUD/BackL6".visible = false
+		6:
+			$"../Game/HUD/BackL3".visible = true
+			$"../Game/HUD/BackL4".visible = true
+			$"../Game/HUD/BackL5".visible = true
+			$"../Game/HUD/BackL6".visible = true
+	match Helth_Player:
+		0:
+			$"../Game/HUD/L1".visible = false
+			$"../Game/HUD/L2".visible = false
+			$"../Game/HUD/L3".visible = false
+			$"../Game/HUD/L4".visible = false
+			$"../Game/HUD/L5".visible = false
+			$"../Game/HUD/L6".visible = false
+		1:
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L2".visible = false
+			$"../Game/HUD/L3".visible = false
+			$"../Game/HUD/L4".visible = false
+			$"../Game/HUD/L5".visible = false
+			$"../Game/HUD/L6".visible = false
+		2: 
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L2".visible = true
+			$"../Game/HUD/L3".visible = false
+			$"../Game/HUD/L4".visible = false
+			$"../Game/HUD/L5".visible = false
+			$"../Game/HUD/L6".visible = false
+		3:
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L2".visible = true
+			$"../Game/HUD/L3".visible = true
+			$"../Game/HUD/L4".visible = false
+			$"../Game/HUD/L5".visible = false
+			$"../Game/HUD/L6".visible = false
+		4:
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L2".visible = true
+			$"../Game/HUD/L3".visible = true
+			$"../Game/HUD/L4".visible = true
+			$"../Game/HUD/L5".visible = false
+			$"../Game/HUD/L6".visible = false
+		5:
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L2".visible = true
+			$"../Game/HUD/L3".visible = true
+			$"../Game/HUD/L4".visible = true
+			$"../Game/HUD/L5".visible = true
+			$"../Game/HUD/L6".visible = false
+		6:
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L1".visible = true
+			$"../Game/HUD/L1".visible = true
 	print(Helth_Player)
 		# анимация, спавн в кроватке.
 
