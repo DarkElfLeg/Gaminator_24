@@ -85,6 +85,7 @@ region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL3" type="Sprite" parent="HUD"]
+visible = false
 position = Vector2( 243.5, 53 )
 texture = ExtResource( 5 )
 region_enabled = true
@@ -124,6 +125,7 @@ region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L3" type="Sprite" parent="HUD"]
+visible = false
 position = Vector2( 244.5, 53 )
 texture = ExtResource( 5 )
 region_enabled = true
