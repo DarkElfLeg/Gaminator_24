@@ -11,7 +11,7 @@ func _ready():
 
 func check_var():
 	if not var_name == "None":
-		if not Dialogic.get_variable(var_name):
+		if not Dialogic.get_variable(var_name) == "0":
 			$Intrract.visible = false
 			$CollisionPolygon2D.disabled = true
 			$"../Sprite".visible = false
