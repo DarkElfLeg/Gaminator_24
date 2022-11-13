@@ -45,7 +45,7 @@ tracks/0/keys = {
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource( 3 )
-first_level = "res://Scenes/sStart.tscn"
+first_level = "res://Scenes/sCastle.tscn"
 
 [node name="Fon" parent="." instance=ExtResource( 1 )]
 
@@ -61,10 +61,12 @@ Helth_Player = 1
 
 [node name="calm_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 8 )
+volume_db = -15.0
 autoplay = true
 
 [node name="fight_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 6 )
+volume_db = -15.0
 
 [node name="HUD" type="Control" parent="."]
 margin_right = 40.0
@@ -89,12 +91,14 @@ region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL4" type="Sprite" parent="HUD"]
+visible = false
 position = Vector2( 315.5, 53 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL5" type="Sprite" parent="HUD"]
+visible = false
 position = Vector2( 387.5, 53 )
 texture = ExtResource( 5 )
 region_enabled = true
@@ -126,12 +130,14 @@ region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L4" type="Sprite" parent="HUD"]
+visible = false
 position = Vector2( 316.5, 53 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L5" type="Sprite" parent="HUD"]
+visible = false
 position = Vector2( 388.5, 53 )
 texture = ExtResource( 5 )
 region_enabled = true
