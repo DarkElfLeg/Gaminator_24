@@ -26,7 +26,7 @@ func _physics_process(delta):
 		
 		SetFlip(direction_speed.x) # Поменял поворот для команды с Диалога
 			
-		if Input.is_action_pressed("ui_accept"):
+		if Input.is_action_just_pressed("ui_accept"):
 			emit_signal("Interact")
 				
 		move_and_slide(direction_speed * 100 * delta)
