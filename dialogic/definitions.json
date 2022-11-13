@@ -4,12 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1668102770-366",
-			"name": "isDefeated_sRatKing",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668102862-483",
 			"name": "isDefeated_sQueen",
 			"type": 0,
@@ -36,18 +30,6 @@
 		{
 			"id": "1668103231-339",
 			"name": "isDefeated_sParty",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668103216-713",
-			"name": "isDefeated_sBoss2",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668102957-970",
-			"name": "isDefeated_sTree",
 			"type": 0,
 			"value": "0"
 		},
@@ -116,6 +98,36 @@
 			"name": "isDefeated_sGate",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1668335013-648",
+			"name": "isTraderRelation",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668102957-970",
+			"name": "isDefeated_sHole",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668102770-366",
+			"name": "isDefeated_sRatKing",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668103216-713",
+			"name": "isDefeated_sBoss2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668344907-648",
+			"name": "isMaxHealthInShop",
+			"type": 0,
+			"value": ""
 		}
 	]
 }

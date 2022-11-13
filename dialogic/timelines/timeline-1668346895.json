@@ -1,0 +1,144 @@
+{
+	"events": [
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Это секретная дверь для побега! Тут нужен Золотой Ключик."
+		},
+		{
+			"condition": ">=",
+			"definition": "1668243121-918",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Уже уходишь?"
+		},
+		{
+			"choice": "Останусь ещё ненадолго.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Мне нужно домой!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Жаль что ты не осталась на чаепитие!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ты больше никогда не сможешь сюда вернуться! Точно уходишь?"
+		},
+		{
+			"choice": "Ну ладно, так уж и быть, останусь!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Да, ухожу! Прощай!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Печаль, в следующий раз придётся похитить побольше для себя друзей!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Будем брать не качеством, а количеством. Может хоть кто-то не сбежит от меня так быстро."
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Прощай, Алиса!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sEscapeEnd.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "Yay"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Я очень рад! Мы должны это срочно отпраздновать чаепитием!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668346895.json",
+		"name": "sEscapeEnd"
+	}
+}
