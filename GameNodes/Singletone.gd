@@ -1,7 +1,7 @@
 extends Node2D
 export var Glob_pause = false
-export var Max_Helth_Player = 3 # Очевидно...
-export var Helth_Player = 3 # некое начальное значение...
+export var Max_Helth_Player = 2 # Очевидно...
+export var Helth_Player = 2 # некое начальное значение...
 export var sweets = 0 # местная валюта снов.
 
 func pause_on():
@@ -39,6 +39,11 @@ func check_helth():
 		pause_off()
 		Helth_Player = Max_Helth_Player
 	match Max_Helth_Player:
+		2:
+			$"../Game/HUD/BackL3".visible = false
+			$"../Game/HUD/BackL4".visible = false
+			$"../Game/HUD/BackL5".visible = false
+			$"../Game/HUD/BackL6".visible = false
 		3:
 			$"../Game/HUD/BackL3".visible = true
 			$"../Game/HUD/BackL4".visible = false
