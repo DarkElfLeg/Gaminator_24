@@ -61,10 +61,12 @@ Helth_Player = 1
 
 [node name="calm_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 8 )
+volume_db = -15.0
 autoplay = true
 
 [node name="fight_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 6 )
+volume_db = -15.0
 
 [node name="HUD" type="Control" parent="."]
 margin_right = 40.0
