@@ -137,6 +137,9 @@ func _damage(damage):
 func _collect_sweets():
 	pass
 
+func _get_crowned():
+	$"../Game/Alice/Body/Head/Crown".visible = true
+
 
 func _out():
 	$"../Game/Level"._out()

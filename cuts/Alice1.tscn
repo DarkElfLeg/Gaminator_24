@@ -531,6 +531,7 @@ bones = [ "bodyB", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 internal_vertex_count = 17
 
 [node name="Crown" type="Sprite" parent="Body/Head"]
+visible = false
 position = Vector2( -5, -66 )
 rotation = -0.157455
 scale = Vector2( 0.862157, 0.862157 )

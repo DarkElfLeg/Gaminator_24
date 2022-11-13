@@ -8,12 +8,11 @@ var oldVariableTest = "-";
 export var isInvert = false; # true -> Show By Variable (Not Hide)
 
 func _ready():
-	#oldVariableTest = Dialogic.get_variable(variableName); # old != new variable in first time
-	CheckHide();
-	
-func _process(delta):
-	CheckHide();
+	pass
 
+func _process(delta):
+	pass
+	
 func CheckHide(): # Check if we Hide or Show Node by Dialogic Variable
 	var booleanTest = true;
 	if (oldVariableTest != Dialogic.get_variable(variableName)): #Check Update of Variable
@@ -31,4 +30,4 @@ func CheckHide(): # Check if we Hide or Show Node by Dialogic Variable
 			print (child.name);
 			if (child.name == childName):
 				child.visible = booleanTest;
-				#child.get_node("CollisionPolygon2D").disabled = booleanTest;
+				child.get_node("CollisionPolygon2D").disabled = booleanTest;
