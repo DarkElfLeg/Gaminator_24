@@ -56,8 +56,6 @@ collision_mask = 13
 speed = 330
 
 [node name="Singletone" parent="." instance=ExtResource( 4 )]
-Max_Helth_Player = 1
-Helth_Player = 1
 
 [node name="calm_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 8 )
