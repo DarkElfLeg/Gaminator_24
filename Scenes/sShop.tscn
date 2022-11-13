@@ -445,13 +445,13 @@ region_rect = Rect2( 941, 434, 127, 114 )
 [node name="MaxHP2" type="Node2D" parent="CatPaw5"]
 position = Vector2( -39.1075, -483.299 )
 rotation = 0.523598
-scale = Vector2( 1, 1 )
 
 [node name="TalkInteractive2" parent="CatPaw5/MaxHP2" instance=ExtResource( 9 )]
 position = Vector2( 7.6582, 6.19263 )
 rotation = -0.90408
 scale = Vector2( 0.6, 0.6 )
 dialog_file = "buyGoldenKey"
+var_name = "GoldenKey"
 
 [node name="Sprite" type="Sprite" parent="CatPaw5/MaxHP2"]
 position = Vector2( 9.31189, 1.55444 )
