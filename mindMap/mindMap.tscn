@@ -107,14 +107,6 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 234, 143, 196, 112 )
 
-[node name="Boss16" type="Sprite" parent="Scenes"]
-position = Vector2( 10091, 5356 )
-scale = Vector2( 10, 10 )
-z_index = -10
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 13, 145, 196, 112 )
-
 [node name="Boss10" type="Sprite" parent="Scenes"]
 position = Vector2( 10177, -1962 )
 scale = Vector2( 10, 10 )
@@ -476,15 +468,6 @@ offset = Vector2( 71.2, -2 )
 region_enabled = true
 region_rect = Rect2( 59.25, 100, 147.75, 31 )
 
-[node name="Arrow13" type="Sprite" parent="Scenes"]
-position = Vector2( 8383.88, 5304 )
-scale = Vector2( 4.29786, 8.64031 )
-z_index = -10
-texture = ExtResource( 1 )
-offset = Vector2( 71.2, -2 )
-region_enabled = true
-region_rect = Rect2( 59.25, 100, 147.75, 31 )
-
 [node name="Boss15" type="Sprite" parent="Scenes"]
 position = Vector2( 10126, 3235 )
 scale = Vector2( 10, 10 )
@@ -645,23 +628,6 @@ custom_fonts/font = ExtResource( 2 )
 text = "*Блохастика: Не очень то и хотелось.
 *Блохастика: Прощай!"
 align = 1
-valign = 1
-
-[node name="Comment22" type="Label" parent="Texts"]
-margin_left = 9613.0
-margin_top = 5510.0
-margin_right = 10668.0
-margin_bottom = 5849.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_fonts/font = ExtResource( 2 )
-text = "Поговорив с Зайкой:
-*Алиса: Кролик, куда ты торопишься?
-*Зайка: Я спешу к Коту в гости.
-*Алиса: К Блохастику?
-*Зайка: Да! Отведи меня к нему, пожалуйста!
-*Алиса: Да без проблем."
 valign = 1
 
 [node name="Comment18" type="Label" parent="Texts"]
@@ -1203,10 +1169,10 @@ align = 1
 valign = 1
 
 [node name="BigComment38" type="Label" parent="Texts"]
-margin_left = 10357.0
-margin_top = 4855.0
-margin_right = 11002.0
-margin_bottom = 4988.0
+margin_left = 7595.0
+margin_top = 4820.0
+margin_right = 8240.0
+margin_bottom = 4953.0
 rect_pivot_offset = Vector2( 349, 66 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -1708,32 +1674,6 @@ size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
 custom_fonts/font = ExtResource( 3 )
 text = "sRats"
-align = 1
-valign = 1
-
-[node name="MidComment23" type="Label" parent="Texts"]
-margin_left = 9139.0
-margin_top = 4633.0
-margin_right = 9939.0
-margin_bottom = 4787.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-custom_colors/font_color = Color( 0.243137, 1, 0.180392, 1 )
-custom_fonts/font = ExtResource( 5 )
-text = "В глубине дерева"
-align = 1
-valign = 1
-
-[node name="BigComment24" type="Label" parent="Texts"]
-margin_left = 9083.0
-margin_top = 4454.0
-margin_right = 9954.0
-margin_bottom = 4618.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
-custom_fonts/font = ExtResource( 3 )
-text = "sDarkHole"
 align = 1
 valign = 1
 
