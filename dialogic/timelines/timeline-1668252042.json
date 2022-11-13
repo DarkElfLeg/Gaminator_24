@@ -1,12 +1,6 @@
 {
 	"events": [
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "BOSS KILLED sParty!"
-		},
-		{
 			"condition": "<=",
 			"definition": "1668103231-339",
 			"event_id": "dialogic_012",
@@ -19,6 +13,24 @@
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "BOSS KILLED sParty!"
+		},
+		{
+			"character": "character-1668270660.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Забрали Корону, так ещё и веселитесь без меня!"
+		},
+		{
+			"character": "character-1668270660.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Сейчас я вам покажу настоящую вечеринку!"
 		},
 		{
 			"event_id": "dialogic_013"

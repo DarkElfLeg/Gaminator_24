@@ -1,0 +1,84 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "BOSS KILLED sHole!"
+		},
+		{
+			"condition": "<=",
+			"definition": "1668102957-970",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"definition": "1668102957-970",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"definition": "1668244823-970",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
+		},
+		{
+			"character": "character-1668342317.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Простите, вы не подскажете как пройти в Блохастикатеку? Я очень спешу!"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Куда? Вы про Блохастика?"
+		},
+		{
+			"character": "character-1668342317.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Да! Отведите меня к нему, пожалуйста!"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Да без проблем. Тут недалеко."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sHome.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668341967.json",
+		"name": "killsHole"
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"events": [
+		{
+			"condition": "<=",
+			"definition": "1668244882-713",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1668334467.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Желаете приобрести Праздничный Торт? Я сам его испёк, люблю готовить различные блюда."
+		},
+		{
+			"choice": "Нет, спасибо.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Купить.",
+			"condition": ">=",
+			"definition": "1668185782-171",
+			"event_id": "dialogic_011",
+			"value": "100"
+		},
+		{
+			"definition": "1668244882-713",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"definition": "1668185782-171",
+			"event_id": "dialogic_014",
+			"operation": "-",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "100"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы Купили [color=#FF00EE]Праздничный Торт![/color]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668344850.json",
+		"name": "buyCake"
+	}
+}

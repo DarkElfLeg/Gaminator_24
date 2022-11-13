@@ -1,11 +1,11 @@
 {
-	"color": "#ffee5d4a",
+	"color": "#ffe0e3bf",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
-	"id": "character-1668270660.json",
+	"id": "character-1668342317.json",
 	"mirror_portraits": false,
-	"name": "Королева",
+	"name": "Зайка",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -17,5 +17,5 @@
 		}
 	],
 	"scale": 100,
-	"theme": "theme2.cfg"
+	"theme": ""
 }

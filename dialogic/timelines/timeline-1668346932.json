@@ -1,0 +1,147 @@
+{
+	"events": [
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Это была улётная вечеринка!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Я давно так не веселился."
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Теперь я могу вернуться домой?"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Так быстро уходишь? А может ещё одно чаепитие устроим?"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А знаешь. Мне тоже надоела бездна."
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Пожалуйста! Возьми меня с собой, в свой мир! Я буду послушным котом, честное кошачье слово!"
+		},
+		{
+			"choice": "НЕТ! Ты Опасен!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Не очень то и хотелось."
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Прощай!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sTheEnd1.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"choice": "ДА! Я куплю для тебя лоток!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ура! Теперь, будет не скучно, будем всегда устраивать чаепития!"
+		},
+		{
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Боюсь, что я пожалею об этом решении!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Упс!"
+		},
+		{
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Я хотел сказать: Мяу!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sTheEnd2.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668346932.json",
+		"name": "sSecretEnd"
+	}
+}
