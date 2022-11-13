@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://Scenes/sShop.gd" type="Script" id=5]
 [ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GameNodes/PigC.tscn" type="PackedScene" id=8]
+[ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -239,12 +242,37 @@ region_enabled = true
 region_rect = Rect2( 1559, 746, 346, 131 )
 
 [node name="Floor26" type="Sprite" parent="CatPaw2"]
-position = Vector2( -184.574, -304.134 )
+position = Vector2( -197.667, -290.043 )
 rotation = 0.261799
 z_index = -1
 texture = ExtResource( 2 )
 region_enabled = true
-region_rect = Rect2( 906, 14, 80, 120 )
+region_rect = Rect2( 832, 19, 54, 77 )
+
+[node name="Cake" type="Node2D" parent="CatPaw2"]
+position = Vector2( -53.3972, -272.091 )
+
+[node name="TalkInteractive2" parent="CatPaw2/Cake" instance=ExtResource( 9 )]
+position = Vector2( 0.965881, 0.258789 )
+rotation = -0.90408
+scale = Vector2( 0.6, 0.6 )
+dialog_file = "buyCake"
+
+[node name="Sprite" type="Sprite" parent="CatPaw2/Cake"]
+position = Vector2( 6.33179, -15.9031 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 577, 430, 172, 165 )
+
+[node name="ExitSign" parent="CatPaw2/Cake" instance=ExtResource( 7 )]
+margin_left = -130.1
+margin_top = 31.2565
+margin_right = 96.9003
+margin_bottom = 102.256
+rect_rotation = 15.0
+text = "100 конфет"
 
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 747, -282 )
@@ -372,20 +400,84 @@ region_enabled = true
 region_rect = Rect2( 1569, 916, 331, 135 )
 
 [node name="Floor6" type="Sprite" parent="CatPaw5"]
-position = Vector2( 37.4763, -294.863 )
+position = Vector2( 129.4, -242.538 )
 rotation = 0.785397
 z_index = -1
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 1559, 746, 346, 131 )
 
-[node name="Floor13" type="Sprite" parent="CatPaw5"]
-position = Vector2( 47.376, -142.128 )
+[node name="MaxHP" type="Node2D" parent="CatPaw5"]
+position = Vector2( 182.924, -306.523 )
+rotation = 0.523598
+
+[node name="TalkInteractive2" parent="CatPaw5/MaxHP" instance=ExtResource( 9 )]
+position = Vector2( 3.51709, 21.6472 )
+rotation = -0.90408
+scale = Vector2( 0.6, 0.6 )
+dialog_file = "buyMaxHealth"
+
+[node name="Sprite" type="Sprite" parent="CatPaw5/MaxHP"]
+position = Vector2( 0.910034, 25.1854 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 970, 495, 78, 63 )
+
+[node name="ExitSign" parent="CatPaw5/MaxHP" instance=ExtResource( 7 )]
+margin_left = -124.782
+margin_top = 30.9645
+margin_right = 102.218
+margin_bottom = 101.964
+rect_rotation = 15.0
+rect_scale = Vector2( 0.415878, 0.389683 )
+text = "25 конфет"
+
+[node name="Floor7" type="Sprite" parent="CatPaw5"]
+position = Vector2( -89.0962, -415.779 )
 rotation = 0.785397
 z_index = -1
 texture = ExtResource( 2 )
 region_enabled = true
-region_rect = Rect2( 1670, 23, 211, 141 )
+region_rect = Rect2( 941, 434, 127, 114 )
+
+[node name="MaxHP2" type="Node2D" parent="CatPaw5"]
+position = Vector2( -39.1075, -483.299 )
+rotation = 0.523598
+scale = Vector2( 1, 1 )
+
+[node name="TalkInteractive2" parent="CatPaw5/MaxHP2" instance=ExtResource( 9 )]
+position = Vector2( 7.6582, 6.19263 )
+rotation = -0.90408
+scale = Vector2( 0.6, 0.6 )
+dialog_file = "buyGoldenKey"
+
+[node name="Sprite" type="Sprite" parent="CatPaw5/MaxHP2"]
+position = Vector2( 9.31189, 1.55444 )
+rotation = 0.261799
+z_index = -1
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 963, 925, 81, 117 )
+
+[node name="ExitSign" parent="CatPaw5/MaxHP2" instance=ExtResource( 7 )]
+margin_left = -131.202
+margin_top = 33.0691
+margin_right = 95.7985
+margin_bottom = 104.069
+rect_rotation = 15.0
+rect_scale = Vector2( 0.415878, 0.389683 )
+text = "50 конфет"
+
+[node name="PigA" parent="CatPaw5" instance=ExtResource( 8 )]
+position = Vector2( -21.2134, -155.563 )
+rotation = 0.785397
+scale = Vector2( -1, 1 )
+
+[node name="TalkInteractive" parent="CatPaw5/PigA" instance=ExtResource( 9 )]
+position = Vector2( 8.00024, -5.00012 )
+dialog_file = "talkTrader"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

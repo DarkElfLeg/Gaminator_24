@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Alley.png" type="Texture" id=2]
@@ -7,7 +7,9 @@
 [ext_resource path="res://Scenes/sBackAlley.gd" type="Script" id=5]
 [ext_resource path="res://GameNodes/Activity.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=9]
+[ext_resource path="res://GameNodes/PigB.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -119,12 +121,34 @@ region_enabled = true
 region_rect = Rect2( 15, 166, 275, 126 )
 
 [node name="Floor10" type="Sprite" parent="CatPaw"]
-position = Vector2( 364.563, -25.3483 )
+position = Vector2( 396.436, -31.9917 )
 rotation = -1.59094
 z_index = -1
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 1450, 879, 64, 60 )
+region_rect = Rect2( 1441.94, 974.777, 235.873, 93.0388 )
+
+[node name="TalkInteractive" parent="CatPaw/Floor10" instance=ExtResource( 8 )]
+position = Vector2( -1.00006, -2.00024 )
+dialog_file = "useHole"
+
+[node name="Floor11" type="Sprite" parent="CatPaw"]
+position = Vector2( 236.766, -189.258 )
+rotation = -1.59094
+scale = Vector2( 0.775164, 0.775164 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 49, 56, 314, 236 )
+
+[node name="Floor12" type="Sprite" parent="CatPaw"]
+position = Vector2( 289.157, -441.914 )
+rotation = -1.59094
+scale = Vector2( 0.775164, 0.775164 )
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1441.34, 871.464, 83.9218, 76.0541 )
 
 [node name="ExitSign" parent="CatPaw" instance=ExtResource( 9 )]
 margin_left = -402.299
@@ -138,6 +162,15 @@ rect_scale = Vector2( 0.535874, 0.430526 )
 position = Vector2( 657, 1414 )
 rotation = -0.261799
 
+[node name="PigB" parent="CatPaw2" instance=ExtResource( 10 )]
+position = Vector2( 3.48108, -163.676 )
+rotation = 0.261799
+scale = Vector2( -1, 1 )
+
+[node name="TalkInteractive" parent="CatPaw2/PigB" instance=ExtResource( 8 )]
+position = Vector2( -2.99994, 2.99976 )
+dialog_file = "talkShadePig"
+
 [node name="Floor4" type="Sprite" parent="CatPaw2"]
 position = Vector2( 37.6928, -142.604 )
 rotation = 0.261799
@@ -145,15 +178,6 @@ z_index = -1
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1136, 526, 711, 339 )
-
-[node name="Gsrbage" type="Sprite" parent="CatPaw2"]
-position = Vector2( -49.0764, -168.441 )
-rotation = 0.273956
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 1018, 912, 133, 129 )
-
-[node name="Activity" parent="CatPaw2/Gsrbage" instance=ExtResource( 6 )]
 
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2914, 602 )
@@ -177,6 +201,7 @@ region_rect = Rect2( 1018, 912, 133, 129 )
 
 [node name="Activity2" parent="CatPaw3/Gsrbage" instance=ExtResource( 6 )]
 position = Vector2( 1127, -658.782 )
+dialog_file = "useGarbage"
 
 [node name="Tree" type="Sprite" parent="CatPaw3"]
 position = Vector2( -296.001, -216.999 )
@@ -187,7 +212,7 @@ region_rect = Rect2( 753, 690, 189, 384 )
 
 [node name="Activity3" parent="CatPaw3/Tree" instance=ExtResource( 6 )]
 position = Vector2( -2.10571, -90.9811 )
-dialog_file = "timeline-1667587178.json"
+dialog_file = "useTree"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

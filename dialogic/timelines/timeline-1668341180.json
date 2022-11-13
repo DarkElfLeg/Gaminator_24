@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"condition": "<=",
+			"definition": "1668107919-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Псст! Девочка, продам инфу о том, где можно найти Шляпника. Всего 20 конфет."
+		},
+		{
+			"choice": "Уйти отсюда",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Купить",
+			"condition": ">=",
+			"definition": "1668185782-171",
+			"event_id": "dialogic_011",
+			"value": "20"
+		},
+		{
+			"definition": "1668185782-171",
+			"event_id": "dialogic_014",
+			"operation": "-",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "20"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">=",
+			"definition": "1668107919-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1668340467.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Шляпник в плену у Многокота Блохастика."
+		},
+		{
+			"character": "character-1668340467.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Кот уже 1000 лет мечтает о чаепитии, и хочет чтобы Шляпник для него устроил вечеринку."
+		},
+		{
+			"character": "character-1668340467.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Но вежливо он просить не умеет."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668341180.json",
+		"name": "talkShadePig"
+	}
+}

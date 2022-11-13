@@ -861,7 +861,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.380392, 0.917647, 1 )
 custom_fonts/font = ExtResource( 7 )
-text = "Нужен Золотой Ключ"
+text = "Нужна инфа о Зайке"
 valign = 1
 
 [node name="Comment4" type="Label" parent="Texts"]
@@ -1169,10 +1169,17 @@ align = 1
 valign = 1
 
 [node name="BigComment38" type="Label" parent="Texts"]
+<<<<<<< Updated upstream
 margin_left = 7595.0
 margin_top = 4820.0
 margin_right = 8240.0
 margin_bottom = 4953.0
+=======
+margin_left = 7627.0
+margin_top = 4812.0
+margin_right = 8272.0
+margin_bottom = 4945.0
+>>>>>>> Stashed changes
 rect_pivot_offset = Vector2( 349, 66 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -1569,7 +1576,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 0.243137, 1, 0.180392, 1 )
 custom_fonts/font = ExtResource( 5 )
-text = "Дупло Дерева"
+text = "Заячья Нора"
 align = 1
 valign = 1
 
@@ -1582,7 +1589,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.870588, 0.180392, 1 )
 custom_fonts/font = ExtResource( 3 )
-text = "sTree"
+text = "sHole"
 align = 1
 valign = 1
 

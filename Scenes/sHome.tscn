@@ -345,7 +345,12 @@ rotation = 6.54498
 position = Vector2( -502.021, 114.606 )
 rotation = 0.523598
 scale = Vector2( -1, 1 )
-next_level = "res://Scenes/sEscapeEnd.tscn"
+
+[node name="TalkInteractive" parent="CatPaw5/Exit3" instance=ExtResource( 10 )]
+position = Vector2( -4.22717, -7.31714 )
+rotation = 7.06857
+scale = Vector2( 0.926062, 1 )
+dialog_file = "sEscapeEnd"
 
 [node name="Floor3" type="Sprite" parent="CatPaw5"]
 position = Vector2( 94.9987, -120.699 )

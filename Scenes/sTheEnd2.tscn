@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=2]
-[ext_resource path="res://GameNodes/AlexScripts/StartDialogic.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/sBackAlley.gd" type="Script" id=5]
 
 [sub_resource type="Animation" id=1]
@@ -17,21 +16,17 @@ length = 2.0
 position = Vector2( -6, -3 )
 script = ExtResource( 5 )
 
-[node name="StartScene" type="Node" parent="."]
-script = ExtResource( 3 )
-dialogueOnStart = "sSecretEnd"
-
 [node name="Exit2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1772, 587 )
 rotation = -1.57079
 next_level = "res://Scenes/sHome.tscn"
 
 [node name="BigText" parent="." instance=ExtResource( 2 )]
-margin_left = 459.0
-margin_top = 379.0
-margin_right = 1414.0
-margin_bottom = 710.0
-text = "sSecretEnd"
+margin_left = 439.0
+margin_top = 137.0
+margin_right = 1418.0
+margin_bottom = 468.0
+text = "sTheEnd2"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

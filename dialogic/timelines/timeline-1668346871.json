@@ -1,0 +1,84 @@
+{
+	"events": [
+		{
+			"condition": "<=",
+			"definition": "1668335013-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"definition": "1668335013-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1668334467.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Добро Пожаловать в мой скромный магазин!"
+		},
+		{
+			"character": "character-1668334467.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А если у вас нехватает конфет, то у меня есть работа для вас."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1668334467.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Желаете поработать?"
+		},
+		{
+			"choice": "Уйти.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Поработать.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_out",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/sWork.tscn"
+				],
+				"method_name": "_in",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668346871.json",
+		"name": "talkTrader"
+	}
+}

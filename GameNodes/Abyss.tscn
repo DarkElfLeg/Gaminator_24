@@ -45,7 +45,11 @@ tracks/0/keys = {
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource( 3 )
+<<<<<<< Updated upstream
 first_level = "res://Scenes/sCastle.tscn"
+=======
+first_level = "res://Scenes/sTown.tscn"
+>>>>>>> Stashed changes
 
 [node name="Fon" parent="." instance=ExtResource( 1 )]
 
