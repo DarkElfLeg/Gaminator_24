@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
 [ext_resource path="res://cuts/Alice1.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=3]
+[ext_resource path="res://GameNodes/AlexScripts/HideByVariable.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -486,6 +488,9 @@ internal_vertex_count = 19
 
 [node name="Head" type="Node2D" parent="Body"]
 position = Vector2( 3, -8 )
+script = ExtResource( 4 )
+childName = "Crown"
+variableName = "QueenCrown"
 
 [node name="Ribbon" type="Sprite" parent="Body/Head"]
 position = Vector2( -5, -70 )
@@ -524,6 +529,16 @@ uv = PoolVector2Array( 26.6667, 318.889, 43.3333, 301.111, 62.2222, 293.333, 76.
 polygons = [ PoolIntArray( 0, 24, 28, 1 ), PoolIntArray( 0, 23, 25, 24 ), PoolIntArray( 23, 22, 26, 25 ), PoolIntArray( 24, 25, 29, 28 ), PoolIntArray( 28, 30, 2, 1 ), PoolIntArray( 29, 31, 30, 28 ), PoolIntArray( 26, 27, 29, 25 ), PoolIntArray( 22, 21, 26 ), PoolIntArray( 26, 21, 20, 27 ), PoolIntArray( 20, 19, 27 ), PoolIntArray( 27, 19, 31, 29 ), PoolIntArray( 19, 18, 32, 31 ), PoolIntArray( 31, 32, 3, 30 ), PoolIntArray( 2, 30, 3 ), PoolIntArray( 18, 17, 4, 3, 32 ), PoolIntArray( 17, 16, 15, 33, 34, 6, 5, 4 ), PoolIntArray( 15, 14, 35, 33 ), PoolIntArray( 14, 13, 37, 35 ), PoolIntArray( 13, 12, 11, 39 ), PoolIntArray( 39, 37, 13 ), PoolIntArray( 11, 10, 40, 39 ), PoolIntArray( 10, 9, 40 ), PoolIntArray( 9, 8, 38, 40 ), PoolIntArray( 40, 38, 37, 39 ), PoolIntArray( 8, 7, 36, 38 ), PoolIntArray( 38, 36, 35, 37 ), PoolIntArray( 35, 36, 34, 33 ), PoolIntArray( 36, 7, 6, 34 ) ]
 bones = [ "bodyB", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/dressB", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/dressB/x", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB", PoolRealArray( 0, 0, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0 ), "bodyB/bodyB/hairR", PoolRealArray( 0, 0, 0, 0, 0, 0, 0.45, 0.9, 0.9, 0.45, 0, 0, 0.45, 0.9, 0.9, 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 0.45, 0.9, 0.9, 0.9, 0.9, 0.45, 0.45 ), "bodyB/bodyB/hairR/hairR2", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.9, 0.9, 0.9, 0.9, 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.9, 0.9 ), "bodyB/bodyB/hairL", PoolRealArray( 0, 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 0.9, 0.45, 0, 0.45, 0.9, 1, 0.45, 0.9, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB/hairL/hairL2", PoolRealArray( 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 0.45, 0.45, 0.9, 0.9, 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB/hairB", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB/hairB/hairB2", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB/hairB/hairB2/hairB3", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB/hairB/hairB2/hairB3/hairB4", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "bodyB/bodyB/hairB/hairB2/hairB3/hairB4/hairB5", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 internal_vertex_count = 17
+
+[node name="Crown" type="Sprite" parent="Body/Head"]
+position = Vector2( -5, -66 )
+rotation = -0.157455
+scale = Vector2( 0.862157, 0.862157 )
+z_index = 10
+texture = ExtResource( 3 )
+offset = Vector2( 0, -34 )
+region_enabled = true
+region_rect = Rect2( 970, 178, 107, 67 )
 
 [node name="DressSkelet" type="Skeleton2D" parent="Body"]
 position = Vector2( 1, -1 )
