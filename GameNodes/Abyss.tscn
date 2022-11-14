@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://cuts/Abyss1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://cuts/Alice1.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://music/Alise_and_fight.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Sprites/Black_Screen.png" type="Texture" id=7]
 [ext_resource path="res://music/Alise_and_dispare.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Fonts/CataneoCandyUI.tres" type="DynamicFont" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade_in"
@@ -69,6 +70,32 @@ volume_db = -15.0
 [node name="HUD" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
+
+[node name="Candy2" type="Sprite" parent="HUD"]
+position = Vector2( 1736.5, 54 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 451, 959, 139, 66 )
+
+[node name="Candy" type="Sprite" parent="HUD/Candy2"]
+position = Vector2( 74, 8 )
+rotation = -0.523598
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 1216, 739, 119, 92 )
+
+[node name="CandyCountUI" type="Label" parent="HUD"]
+margin_left = 1681.0
+margin_top = 29.0
+margin_right = 1793.0
+margin_bottom = 89.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 0.658824, 0.819608, 1 )
+custom_fonts/font = ExtResource( 9 )
+text = "99"
+align = 1
+valign = 1
 
 [node name="BackL1" type="Sprite" parent="HUD"]
 position = Vector2( 99.5, 53 )

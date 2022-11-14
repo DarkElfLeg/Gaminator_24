@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://mindMap/MindMapArts.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/Alterna.tres" type="DynamicFont" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://GameNodes/Hatter.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Enemies/JawFoe2.tscn" type="PackedScene" id=20]
 [ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=22]
+[ext_resource path="res://Fonts/CataneoCandyUI.tres" type="DynamicFont" id=23]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -6261, -73 )
@@ -390,6 +392,22 @@ texture = ExtResource( 1 )
 offset = Vector2( 71.2, -2 )
 region_enabled = true
 region_rect = Rect2( 72.25, 347.25, 143, 42 )
+
+[node name="Arrow29" type="Sprite" parent="Scenes"]
+position = Vector2( 10480, 2141 )
+z_index = -10
+texture = ExtResource( 22 )
+offset = Vector2( 71.2, -2 )
+region_enabled = true
+region_rect = Rect2( 452, 960, 138, 65 )
+
+[node name="Arrow30" type="Sprite" parent="Scenes"]
+position = Vector2( 10530, 2176 )
+z_index = -10
+texture = ExtResource( 22 )
+offset = Vector2( 71.2, -2 )
+region_enabled = true
+region_rect = Rect2( 1216, 739, 119, 92 )
 
 [node name="Arrow22" type="Sprite" parent="Scenes"]
 position = Vector2( 4596.78, 1152.78 )
@@ -850,6 +868,19 @@ custom_colors/font_color = Color( 1, 0.380392, 0.917647, 1 )
 custom_fonts/font = ExtResource( 7 )
 text = "Нужно победить
 sRatKing"
+valign = 1
+
+[node name="CandyCountUI" type="Label" parent="Texts"]
+margin_left = 10497.0
+margin_top = 2114.0
+margin_right = 10609.0
+margin_bottom = 2174.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 0.658824, 0.819608, 1 )
+custom_fonts/font = ExtResource( 23 )
+text = "10"
+align = 1
 valign = 1
 
 [node name="Comment23" type="Label" parent="Texts"]
