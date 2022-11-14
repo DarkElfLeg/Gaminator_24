@@ -71,24 +71,42 @@ volume_db = -15.0
 margin_right = 40.0
 margin_bottom = 40.0
 
+[node name="BackUI" type="Sprite" parent="HUD"]
+position = Vector2( 1800.5, 57 )
+z_index = 120
+texture = ExtResource( 5 )
+flip_v = true
+region_enabled = true
+region_rect = Rect2( 658, 808, 173, 102 )
+
+[node name="BackUI2" type="Sprite" parent="HUD"]
+position = Vector2( 117.5, 57 )
+z_index = 120
+texture = ExtResource( 5 )
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2( 658, 808, 173, 102 )
+
 [node name="Candy2" type="Sprite" parent="HUD"]
-position = Vector2( 1754.5, 62 )
+position = Vector2( 1752.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 451, 959, 139, 66 )
 
 [node name="Candy" type="Sprite" parent="HUD/Candy2"]
-position = Vector2( 74, 8 )
+position = Vector2( 74, 11 )
 rotation = -0.523598
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 1216, 739, 119, 92 )
 
-[node name="CandyCountUI" type="Label" parent="HUD"]
-margin_left = 1699.0
-margin_top = 37.0
-margin_right = 1811.0
-margin_bottom = 97.0
+[node name="CandyCountUI" type="Label" parent="HUD/Candy2"]
+margin_left = -55.5
+margin_top = -25.0
+margin_right = 56.5
+margin_bottom = 35.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.658824, 0.819608, 1 )
@@ -98,81 +116,93 @@ align = 1
 valign = 1
 
 [node name="BackL1" type="Sprite" parent="HUD"]
-position = Vector2( 99.5, 53 )
+position = Vector2( 99.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL2" type="Sprite" parent="HUD"]
-position = Vector2( 171.5, 53 )
+position = Vector2( 171.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL3" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 243.5, 53 )
+position = Vector2( 243.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL4" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 315.5, 53 )
+position = Vector2( 315.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL5" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 387.5, 53 )
+position = Vector2( 387.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="BackL6" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 459.5, 53 )
+position = Vector2( 459.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 861, 920, 78, 72 )
 
 [node name="L1" type="Sprite" parent="HUD"]
-position = Vector2( 100.5, 53 )
+position = Vector2( 100.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L2" type="Sprite" parent="HUD"]
-position = Vector2( 172.5, 53 )
+position = Vector2( 172.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L3" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 244.5, 53 )
+position = Vector2( 244.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L4" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 316.5, 53 )
+position = Vector2( 316.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L5" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 388.5, 53 )
+position = Vector2( 388.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
 
 [node name="L6" type="Sprite" parent="HUD"]
 visible = false
-position = Vector2( 460.5, 53 )
+position = Vector2( 460.5, 59 )
+z_index = 120
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 875, 1008, 51, 48 )
