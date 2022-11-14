@@ -122,7 +122,7 @@ func _set_helth(helth):
 	check_helth()
 
 func _set_max_helth(helth):
-	Max_Helth_Player = int(helth)
+	Max_Helth_Player += int(helth)
 	check_helth()
 
 func _heal(heal):

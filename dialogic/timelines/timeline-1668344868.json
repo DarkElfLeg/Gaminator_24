@@ -46,10 +46,20 @@
 			"set_value": "25"
 		},
 		{
+			"call_node": {
+				"arguments": [
+					"1"
+				],
+				"method_name": "_set_max_helth",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Вы Купили [color=#FF00EE]Праздничный Торт![/color]"
+			"text": "Вы Купили [color=#FF00EE]Волшебное сердечко![/color]"
 		},
 		{
 			"event_id": "dialogic_013"

@@ -88,12 +88,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668185782-171",
-			"name": "CandyCount",
-			"type": 0,
-			"value": "1000"
-		},
-		{
 			"id": "1668281810-483",
 			"name": "isDefeated_sGate",
 			"type": 0,
@@ -146,6 +140,12 @@
 			"name": "isDefeated_sRatKing",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1668185782-171",
+			"name": "CandyCount",
+			"type": 0,
+			"value": "1000"
 		}
 	]
 }
