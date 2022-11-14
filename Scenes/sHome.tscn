@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://GameNodes/TV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -12,6 +12,10 @@
 [ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=10]
 [ext_resource path="res://GameNodes/Exit3.tscn" type="PackedScene" id=11]
 [ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=12]
+[ext_resource path="res://GameNodes/Hatter.tscn" type="PackedScene" id=13]
+[ext_resource path="res://GameNodes/Hare.tscn" type="PackedScene" id=14]
+[ext_resource path="res://GameNodes/AlexScripts/HideByVariable.gd" type="Script" id=15]
+[ext_resource path="res://Sprites/Creatures.png" type="Texture" id=16]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -23,67 +27,43 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 0.233258, 1 ),
 "update": 0,
-"values": [ Vector2( -483, 998 ), Vector2( 158, 785 ) ]
+"values": [ Vector2( -899, 1102 ), Vector2( 158, 785 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("CatPaw2:position")
+tracks/1/path = NodePath("CatPaw3:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 0.233258, 1 ),
 "update": 0,
-"values": [ Vector2( 514, -333 ), Vector2( 739, 35 ) ]
+"values": [ Vector2( 2480, 270 ), Vector2( 1851, 362 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("CatPaw6:position")
+tracks/2/path = NodePath("CatPaw4:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 0.233258, 1 ),
 "update": 0,
-"values": [ Vector2( 1312, -254 ), Vector2( 1115, 206 ) ]
+"values": [ Vector2( 2400, 1203 ), Vector2( 1775, 882 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("CatPaw3:position")
+tracks/3/path = NodePath("CatPaw5:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 3 ),
-"transitions": PoolRealArray( 0.233258, 1 ),
-"update": 0,
-"values": [ Vector2( 2480, 270 ), Vector2( 1851, 362 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("CatPaw4:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 3 ),
-"transitions": PoolRealArray( 0.233258, 1 ),
-"update": 0,
-"values": [ Vector2( 2400, 1203 ), Vector2( 1775, 882 ) ]
-}
-tracks/5/type = "value"
-tracks/5/path = NodePath("CatPaw5:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 0.233258, 1 ),
 "update": 0,
 "values": [ Vector2( 624, 1428 ), Vector2( 767, 1006 ) ]
@@ -99,78 +79,159 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 4, 1 ),
 "update": 0,
-"values": [ Vector2( 158, 785 ), Vector2( -496, 823 ) ]
+"values": [ Vector2( 158, 785 ), Vector2( -962, 980 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("CatPaw2:position")
+tracks/1/path = NodePath("CatPaw3:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2.9 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 4, 1 ),
 "update": 0,
-"values": [ Vector2( 739, 35 ), Vector2( 736, -327 ) ]
+"values": [ Vector2( 1851, 362 ), Vector2( 1508, 1451 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("CatPaw6:position")
+tracks/2/path = NodePath("CatPaw4:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 4, 1 ),
 "update": 0,
-"values": [ Vector2( 1115, 206 ), Vector2( 1267, -235 ) ]
+"values": [ Vector2( 1775, 882 ), Vector2( 1915, -76.9999 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("CatPaw3:position")
+tracks/3/path = NodePath("CatPaw5:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 4, 1 ),
 "update": 0,
-"values": [ Vector2( 1851, 362 ), Vector2( 1508, 1451 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("CatPaw4:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 2.9 ),
-"transitions": PoolRealArray( 4, 1 ),
-"update": 0,
-"values": [ Vector2( 1775, 882 ), Vector2( 1915, -76.9999 ) ]
-}
-tracks/5/type = "value"
-tracks/5/path = NodePath("CatPaw5:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"times": PoolRealArray( 0, 3 ),
-"transitions": PoolRealArray( 4, 1 ),
-"update": 0,
-"values": [ Vector2( 767, 1006 ), Vector2( 2088, 1079 ) ]
+"values": [ Vector2( 767, 1006 ), Vector2( 716, 1612 ) ]
 }
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="CatPaw" parent="." instance=ExtResource( 4 )]
-position = Vector2( -483, 998 )
+position = Vector2( -899, 1102 )
 rotation = 1.309
+
+[node name="Floor6" type="Sprite" parent="CatPaw"]
+position = Vector2( -179.045, -214.654 )
+rotation = -1.57079
+scale = Vector2( 1, 0.459596 )
+z_index = -1
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 1402, 26, 56, 594 )
+
+[node name="Floor4" type="Sprite" parent="CatPaw"]
+position = Vector2( -354.067, -372.842 )
+rotation = -1.309
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1569, 916, 331, 135 )
+
+[node name="Floor5" type="Sprite" parent="CatPaw"]
+position = Vector2( -238.335, -677.261 )
+rotation = -1.309
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 525, 182, 544, 182 )
+
+[node name="Table" type="Sprite" parent="CatPaw"]
+position = Vector2( -370.967, -622.731 )
+rotation = -1.309
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 464, 397, 289, 199 )
+
+[node name="Node2D4" type="Node2D" parent="CatPaw"]
+position = Vector2( -838.987, -724.841 )
+rotation = -1.309
+script = ExtResource( 15 )
+childName = "Hare"
+variableName = "isHareSaved"
+
+[node name="Hare" parent="CatPaw/Node2D4" instance=ExtResource( 14 )]
+position = Vector2( -216.5, 467.5 )
+
+[node name="TalkInteractive" parent="CatPaw/Node2D4/Hare" instance=ExtResource( 10 )]
+dialog_file = "talkHare"
+
+[node name="Node2D3" type="Node2D" parent="CatPaw"]
+position = Vector2( -838.987, -724.841 )
+rotation = -1.309
+script = ExtResource( 15 )
+childName = "Hatter"
+variableName = "isHatterSaved"
+
+[node name="Hatter" parent="CatPaw/Node2D3" instance=ExtResource( 13 )]
+position = Vector2( 195.34, 476.026 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="TalkInteractive" parent="CatPaw/Node2D3/Hatter" instance=ExtResource( 10 )]
+dialog_file = "talkHatter"
+
+[node name="Node2D2" type="Node2D" parent="CatPaw"]
+script = ExtResource( 15 )
+childName = "Cake"
+variableName = "Cake"
+
+[node name="Cake" type="Sprite" parent="CatPaw/Node2D2"]
+position = Vector2( -475.287, -650.683 )
+rotation = -1.309
+z_index = -1
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 577, 430, 172, 165 )
+
+[node name="Table2" type="Sprite" parent="CatPaw/Node2D2/Cake"]
+position = Vector2( -113.5, -0.5 )
+z_index = -1
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 840, 156, 91, 215 )
+
+[node name="Table3" type="Sprite" parent="CatPaw/Node2D2/Cake"]
+position = Vector2( 80.4999, -39.5 )
+z_index = -1
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 840, 156, 91, 215 )
+
+[node name="Floor7" type="Sprite" parent="CatPaw"]
+position = Vector2( -282.191, -807.291 )
+rotation = -1.309
+scale = Vector2( -1, 1 )
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 789, 401, 133, 152 )
+
+[node name="Floor8" type="Sprite" parent="CatPaw"]
+position = Vector2( -390.652, -375.398 )
+rotation = -1.309
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 702, 25, 102, 92 )
 
 [node name="Floor" type="Sprite" parent="CatPaw"]
 position = Vector2( -24.2343, -203.196 )
@@ -180,52 +241,46 @@ texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 525, 182, 544, 182 )
 
-[node name="TV" parent="CatPaw" instance=ExtResource( 1 )]
-position = Vector2( -210.487, -234.468 )
+[node name="Floor2" type="Sprite" parent="CatPaw"]
+position = Vector2( -306.977, -158.346 )
 rotation = -1.309
+z_index = -1
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1569, 916, 331, 135 )
 
-[node name="Exit" parent="CatPaw" instance=ExtResource( 7 )]
-position = Vector2( -179.643, -280.036 )
-rotation = 0.261799
+[node name="Node2D6" type="Node2D" parent="CatPaw"]
+position = Vector2( -838.987, -724.841 )
+rotation = -1.309
+script = ExtResource( 15 )
+childName = "Ratz"
+variableName = "isInfoAboutRats"
+
+[node name="Ratz" type="Node2D" parent="CatPaw/Node2D6"]
+
+[node name="TV" type="Node2D" parent="CatPaw/Node2D6/Ratz"]
+position = Vector2( -310.999, 734.001 )
+z_index = -1
+
+[node name="TV" parent="CatPaw/Node2D6/Ratz/TV" instance=ExtResource( 1 )]
+position = Vector2( -3.05176e-05, 0 )
+
+[node name="Exit" parent="CatPaw/Node2D6/Ratz" instance=ExtResource( 7 )]
+position = Vector2( -259, 752 )
+rotation = 1.5708
 scale = Vector2( 1.36, 1.2 )
 next_level = "res://Scenes/sRats.tscn"
+
+[node name="ExitSign" parent="CatPaw/Node2D6/Ratz" instance=ExtResource( 12 )]
+margin_left = -365.903
+margin_top = 590.593
+margin_right = -138.903
+margin_bottom = 661.593
+text = "В Подвал"
 
 [node name="Node2D" type="Node2D" parent="CatPaw"]
 position = Vector2( -299.796, -318.443 )
 z_index = 1
-
-[node name="ExitSign" parent="CatPaw/Node2D" instance=ExtResource( 12 )]
-margin_left = -89.4861
-margin_top = -40.8817
-margin_right = 137.514
-margin_bottom = 30.1183
-rect_rotation = -74.9999
-text = "В Подвал"
-
-[node name="CatPaw2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 514, -333 )
-rotation = 2.87979
-
-[node name="Floor14" type="Sprite" parent="CatPaw2"]
-position = Vector2( 11.3188, -38.3781 )
-rotation = -2.87979
-z_index = -1
-texture = ExtResource( 2 )
-offset = Vector2( 8, 107 )
-region_enabled = true
-region_rect = Rect2( 44, 25, 126, 276 )
-
-[node name="CatPaw6" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1312, -254 )
-rotation = 3.40339
-
-[node name="Floor6" type="Sprite" parent="CatPaw6"]
-position = Vector2( -10.8241, -109.945 )
-rotation = 2.8798
-z_index = -1
-texture = ExtResource( 5 )
-region_enabled = true
-region_rect = Rect2( 773, 382, 177, 214 )
 
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2480, 270 )

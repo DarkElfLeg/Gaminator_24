@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1668342317.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "У меня совсем нету времени, нужно срочно пить чай!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1668400279.json",
+		"name": "talkHare"
+	}
+}

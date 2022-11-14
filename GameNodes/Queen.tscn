@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Party.png" type="Texture" id=2]
+[ext_resource path="res://GameNodes/AlexScripts/HideByVariable.gd" type="Script" id=3]
 
 [node name="Queen" type="Node2D"]
 
@@ -52,6 +53,10 @@ region_rect = Rect2( 986, 505, 111, 139 )
 
 [node name="Head" type="Node2D" parent="Body"]
 position = Vector2( 0, -72 )
+script = ExtResource( 3 )
+childName = "Crown"
+variableName = "QueenCrown"
+isInvert = true
 
 [node name="HairBack" type="Sprite" parent="Body/Head"]
 position = Vector2( 8.46967, -28.6339 )

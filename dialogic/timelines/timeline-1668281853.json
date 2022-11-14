@@ -42,6 +42,16 @@
 				"arguments": [
 
 				],
+				"method_name": "_get_crowned",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
 				"method_name": "_out",
 				"target_node_path": "Singletone"
 			},

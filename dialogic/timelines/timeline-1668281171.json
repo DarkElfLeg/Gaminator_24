@@ -29,7 +29,7 @@
 			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "2"
+			"set_value": "1"
 		},
 		{
 			"call_node": {

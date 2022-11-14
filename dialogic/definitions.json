@@ -22,20 +22,8 @@
 			"value": "0"
 		},
 		{
-			"id": "1668102862-483",
-			"name": "isDefeated_sQueen",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668102957-970",
 			"name": "isDefeated_sHole",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668102770-366",
-			"name": "isDefeated_sRatKing",
 			"type": 0,
 			"value": "0"
 		},
@@ -58,18 +46,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668183998-894",
-			"name": "isInfoAboutAlley",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668185782-171",
-			"name": "CandyCount",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668185974-991",
 			"name": "isGuardGetBribe",
 			"type": 0,
@@ -78,18 +54,6 @@
 		{
 			"id": "1668243121-918",
 			"name": "GoldenKey",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668244784-483",
-			"name": "QueenCrown",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1668244823-970",
-			"name": "isInfoAboutHare",
 			"type": 0,
 			"value": "0"
 		},
@@ -106,10 +70,28 @@
 			"value": "0"
 		},
 		{
-			"id": "1668272115-918",
-			"name": "isAngryQueen",
+			"id": "1668244823-970",
+			"name": "isInfoAboutHare",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1668344907-648",
+			"name": "isMaxHealthInShop",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668401360-787",
+			"name": "isHatterSaved",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668185782-171",
+			"name": "CandyCount",
+			"type": 0,
+			"value": "1000"
 		},
 		{
 			"id": "1668281810-483",
@@ -124,8 +106,44 @@
 			"value": "0"
 		},
 		{
-			"id": "1668344907-648",
-			"name": "isMaxHealthInShop",
+			"id": "1668272115-918",
+			"name": "isAngryQueen",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668183998-894",
+			"name": "isInfoAboutAlley",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668402205-366",
+			"name": "isInfoAboutRats",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668401190-648",
+			"name": "isHareSaved",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668244784-483",
+			"name": "QueenCrown",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668102862-483",
+			"name": "isDefeated_sQueen",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668102770-366",
+			"name": "isDefeated_sRatKing",
 			"type": 0,
 			"value": "0"
 		}

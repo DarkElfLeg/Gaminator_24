@@ -254,9 +254,9 @@ position = Vector2( -53.3972, -272.091 )
 
 [node name="TalkInteractive2" parent="CatPaw2/Cake" instance=ExtResource( 9 )]
 position = Vector2( 0.965881, 0.258789 )
-rotation = -0.90408
-scale = Vector2( 0.6, 0.6 )
+rotation = 0.261799
 dialog_file = "buyCake"
+var_name = "Cake"
 
 [node name="Sprite" type="Sprite" parent="CatPaw2/Cake"]
 position = Vector2( 6.33179, -15.9031 )
@@ -413,9 +413,9 @@ rotation = 0.523598
 
 [node name="TalkInteractive2" parent="CatPaw5/MaxHP" instance=ExtResource( 9 )]
 position = Vector2( 3.51709, 21.6472 )
-rotation = -0.90408
-scale = Vector2( 0.6, 0.6 )
+rotation = 0.261799
 dialog_file = "buyMaxHealth"
+var_name = "isMaxHealthInShop"
 
 [node name="Sprite" type="Sprite" parent="CatPaw5/MaxHP"]
 position = Vector2( 0.910034, 25.1854 )
@@ -448,8 +448,7 @@ rotation = 0.523598
 
 [node name="TalkInteractive2" parent="CatPaw5/MaxHP2" instance=ExtResource( 9 )]
 position = Vector2( 7.6582, 6.19263 )
-rotation = -0.90408
-scale = Vector2( 0.6, 0.6 )
+rotation = 0.261799
 dialog_file = "buyGoldenKey"
 var_name = "GoldenKey"
 

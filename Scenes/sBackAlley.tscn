@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Alley.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/ExitSign.tscn" type="PackedScene" id=9]
 [ext_resource path="res://GameNodes/PigB.tscn" type="PackedScene" id=10]
+[ext_resource path="res://GameNodes/AlexScripts/HideByVariable.gd" type="Script" id=11]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -120,7 +121,13 @@ texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 15, 166, 275, 126 )
 
-[node name="Floor10" type="Sprite" parent="CatPaw"]
+[node name="Node2D" type="Node2D" parent="CatPaw"]
+script = ExtResource( 11 )
+childName = "HareHole"
+variableName = "isHareSaved"
+isInvert = true
+
+[node name="HareHole" type="Sprite" parent="CatPaw/Node2D"]
 position = Vector2( 396.436, -31.9917 )
 rotation = -1.59094
 z_index = -1
@@ -128,7 +135,7 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1441.94, 974.777, 235.873, 93.0388 )
 
-[node name="TalkInteractive" parent="CatPaw/Floor10" instance=ExtResource( 8 )]
+[node name="TalkInteractive" parent="CatPaw/Node2D/HareHole" instance=ExtResource( 8 )]
 position = Vector2( -1.00006, -2.00024 )
 dialog_file = "useHole"
 

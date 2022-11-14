@@ -33,6 +33,14 @@
 			"set_value": "2"
 		},
 		{
+			"definition": "1668401360-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"character": "character-1668242458.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -51,7 +59,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sDungeon.tscn"
+					"res://Scenes/sHome.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"
