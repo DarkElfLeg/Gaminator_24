@@ -72,7 +72,7 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Candy2" type="Sprite" parent="HUD"]
-position = Vector2( 1736.5, 54 )
+position = Vector2( 1754.5, 62 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 451, 959, 139, 66 )
@@ -85,10 +85,10 @@ region_enabled = true
 region_rect = Rect2( 1216, 739, 119, 92 )
 
 [node name="CandyCountUI" type="Label" parent="HUD"]
-margin_left = 1681.0
-margin_top = 29.0
-margin_right = 1793.0
-margin_bottom = 89.0
+margin_left = 1699.0
+margin_top = 37.0
+margin_right = 1811.0
+margin_bottom = 97.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.658824, 0.819608, 1 )
