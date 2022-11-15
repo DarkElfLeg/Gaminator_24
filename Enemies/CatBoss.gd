@@ -1,7 +1,7 @@
 extends KinematicBody2D
 export var life = 1
 export var speed = 10
-export var NameOfBossVar = ""
+export var NameOfBossVar = "isDefeated_sBoss"
 var direction = Vector2.ZERO
 var spavn = Vector2.ZERO
 var go_spawn = false
