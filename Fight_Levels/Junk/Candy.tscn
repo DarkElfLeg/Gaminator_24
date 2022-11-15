@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Party.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Junk/Candy.gd" type="Script" id=2]
+
+[node name="Candy" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 717, 934, 129, 103 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -12, -25, 16, -30, 34, -21, 36, 0, 20, 26, -12, 30, -34, 20, -32, -8 )
+
+[connection signal="body_entered" from="." to="." method="_on_Candy_body_entered"]

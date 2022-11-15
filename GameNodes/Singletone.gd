@@ -135,6 +135,9 @@ func _damage(damage):
 	check_helth()
 
 func _collect_sweets():
+	sweets += 1
+	Dialogic.set_variable("CandyCount",sweets)
+	$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
 	pass
 
 func _get_crowned():
