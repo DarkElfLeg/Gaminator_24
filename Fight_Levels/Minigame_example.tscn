@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fight_Levels/Minigame.gd" type="Script" id=1]
+
+[node name="Minigame_example" type="Node2D"]
+script = ExtResource( 1 )
+List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Spikes.tscn", "res://Fight_Levels/Junk/Spikes.tscn" ]
