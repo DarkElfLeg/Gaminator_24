@@ -4,3 +4,6 @@ func _ready():
 
 func _clear():
 	queue_free()
+
+func _out():
+	queue_free()

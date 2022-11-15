@@ -1,11 +1,12 @@
 extends KinematicBody2D
 export var life = 1
 export var speed = 10
+export var NameOfBossVar = ""
 var direction = Vector2.ZERO
 var spavn = Vector2.ZERO
 var go_spawn = false
 var time = 0
-export var moveDuration = 3
+var moveDuration = 3
 var timeDirection = 1
 
 export var Do_swords = false;
@@ -78,6 +79,7 @@ func _hert():
 		$AnimationPlayer.play("Defeat")
 		yield(get_tree().create_timer(0.3), "timeout")
 		$"/root/Singletone"._out()
+		Dialogic.set_variable(NameOfBossVar,"1")
 		yield(get_tree().create_timer(5.0), "timeout")
 		$"/root/Singletone"._in($"../".next_level)
 	Singletone.pause_mode = false
