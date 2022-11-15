@@ -660,8 +660,7 @@ custom_fonts/font = ExtResource( 2 )
 text = "Поговорив со Шляпником:
 *Алиса: Господин Шляпник, теперь вы свободны!
 *Шляпник: Наконец-то, а то я уже соскучился по чаепитию!
-*Алиса: Чаепитию?..
-*Шляпника: В благодарность прими этот Золотой Ключ."
+*Алиса: Чаепитию?.."
 valign = 1
 
 [node name="Comment20" type="Label" parent="Texts"]
@@ -1195,7 +1194,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_colors/font_color = Color( 1, 0.466667, 0.905882, 1 )
 custom_fonts/font = ExtResource( 5 )
-text = "Бонус: Золотой Ключ + Шляпник"
+text = "Бонус: Шляпник"
 align = 1
 valign = 1
 
