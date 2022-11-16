@@ -12,7 +12,7 @@ func spawn_junk():
 	var rand_index:int = randi() % List_of_spawn_nodes.size()
 	var junk = load(List_of_spawn_nodes[rand_index])
 	var loaded = junk.instance()
-	loaded.position.x = rand_range(100, 1000)
+	loaded.position.x = rand_range(100, 1820)
 	loaded.position.y = rand_range(1180, 1280)
 	add_child(loaded)
 	# Спавнить в нужном месте...
