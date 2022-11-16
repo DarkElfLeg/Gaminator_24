@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Fight_Levels/Minigame_example.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/sGate.gd" type="Script" id=7]
-[ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -15,20 +14,11 @@ length = 3.0
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 7 )
 
-[node name="BigText" parent="." instance=ExtResource( 9 )]
-margin_left = 446.0
-margin_top = 226.0
-margin_right = 1446.0
-margin_bottom = 557.0
-text = "sWork
-(mini-game)"
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )
 anims/Go_out = SubResource( 2 )
 
-[node name="Exit2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 133, 659 )
-rotation = 1.57079
-scale = Vector2( -1, 1 )
+[node name="Minigame" parent="." instance=ExtResource( 2 )]
+List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/TV.tscn", "res://Fight_Levels/Junk/TV.tscn" ]
 next_level = "res://Scenes/sShop.tscn"
+time_for_spawn_delay = 0.4
