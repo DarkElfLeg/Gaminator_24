@@ -137,7 +137,6 @@ region_rect = Rect2( 1387, 505, 266, 530 )
 
 [node name="BossDefeatedReplacer" parent="." instance=ExtResource( 4 )]
 position = Vector2( 946, 811 )
-scale = Vector2( 1.35159, 1.35159 )
 dialog_file = "killsGuards"
 
 [node name="BigText" parent="." instance=ExtResource( 5 )]

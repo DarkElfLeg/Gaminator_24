@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/sDungeon.gd" type="Script" id=4]
 [ext_resource path="res://GameNodes/Hatter.tscn" type="PackedScene" id=5]
 [ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprites/AlexParticles/FireX.tscn" type="PackedScene" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -255,6 +256,12 @@ region_rect = Rect2( 593, 24, 531, 604 )
 [node name="CatPaw4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2245, -162 )
 rotation = 3.92699
+
+[node name="FireX" parent="CatPaw4" instance=ExtResource( 7 )]
+position = Vector2( 85.5601, -68.5895 )
+rotation = 2.35619
+scale = Vector2( 0.5, 0.5 )
+z_index = -1
 
 [node name="Floor23" type="Sprite" parent="CatPaw4"]
 position = Vector2( 35.3557, -65.0536 )

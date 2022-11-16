@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=9]
 [ext_resource path="res://GameNodes/KnightB.tscn" type="PackedScene" id=10]
 [ext_resource path="res://GameNodes/AlexScripts/HideByVariable.gd" type="Script" id=11]
+[ext_resource path="res://Sprites/AlexParticles/FireX.tscn" type="PackedScene" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -248,6 +249,20 @@ region_rect = Rect2( 1169, 515, 365, 558 )
 position = Vector2( -475, 569 )
 rotation = 0.261799
 
+[node name="FireX" parent="CatPaw4" instance=ExtResource( 12 )]
+position = Vector2( -14.0764, -340.524 )
+rotation = -0.187412
+scale = Vector2( 0.625027, 0.510738 )
+z_index = -1
+
+[node name="Floor3" type="Sprite" parent="CatPaw4"]
+position = Vector2( -56.7995, -283.458 )
+rotation = -0.261799
+z_index = -1
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1200, 884, 227, 167 )
+
 [node name="Floor4" type="Sprite" parent="CatPaw4"]
 position = Vector2( 57.0627, -169.546 )
 rotation = -0.261799
@@ -301,6 +316,7 @@ region_rect = Rect2( 1243, 36, 429, 456 )
 [node name="CatPaw5" parent="." instance=ExtResource( 4 )]
 position = Vector2( 332, 1416 )
 rotation = -0.785397
+z_index = 1
 
 [node name="Node2D" type="Node2D" parent="CatPaw5"]
 script = ExtResource( 11 )

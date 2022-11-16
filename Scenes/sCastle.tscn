@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Sprites/Party.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://GameNodes/Queen.tscn" type="PackedScene" id=8]
 [ext_resource path="res://GameNodes/Knight.tscn" type="PackedScene" id=9]
 [ext_resource path="res://GameNodes/TalkInteractive.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Sprites/AlexParticles/FireX.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -141,6 +142,12 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1104, 20, 342, 701 )
 
+[node name="FireX3" parent="CatPaw" instance=ExtResource( 11 )]
+position = Vector2( -249.588, -565.811 )
+rotation = -1.5708
+scale = Vector2( 0.223023, 0.152428 )
+z_index = -1
+
 [node name="Floor12" type="Sprite" parent="CatPaw"]
 position = Vector2( -134.602, -502.316 )
 rotation = -1.59094
@@ -150,6 +157,12 @@ texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 1387, 505, 266, 530 )
 
+[node name="FireX2" parent="CatPaw" instance=ExtResource( 11 )]
+position = Vector2( -301.055, -451.535 )
+rotation = -1.5708
+scale = Vector2( 0.398489, 0.216298 )
+z_index = -1
+
 [node name="Floor13" type="Sprite" parent="CatPaw"]
 position = Vector2( -127.561, -351.427 )
 rotation = -1.59094
@@ -158,6 +171,12 @@ z_index = -1
 texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 1387, 505, 266, 530 )
+
+[node name="FireX" parent="CatPaw" instance=ExtResource( 11 )]
+position = Vector2( -328.756, -263.067 )
+rotation = 4.71238
+scale = Vector2( 0.57762, 0.33891 )
+z_index = -1
 
 [node name="Floor14" type="Sprite" parent="CatPaw"]
 position = Vector2( -89.2176, -136.156 )
