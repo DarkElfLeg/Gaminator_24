@@ -5,4 +5,4 @@
 [node name="Minigame_example" type="Node2D"]
 script = ExtResource( 1 )
 List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Spikes.tscn", "res://Fight_Levels/Junk/Spikes.tscn" ]
-time_for_win = 30
+time_for_spawn_delay = 0.6
