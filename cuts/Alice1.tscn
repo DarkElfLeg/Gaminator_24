@@ -6,7 +6,6 @@
 
 [sub_resource type="Animation" id=3]
 resource_name = "Hurt"
-loop = true
 step = 0.0166667
 tracks/0/type = "bezier"
 tracks/0/path = NodePath("Body/HandL:position:x")
@@ -453,6 +452,20 @@ tracks/43/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
+}
+tracks/44/type = "method"
+tracks/44/path = NodePath("AnimationPlayer")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/keys = {
+"times": PoolRealArray( 0.969 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "Idle" ],
+"method": "play"
+} ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -912,11 +925,12 @@ collision_mask = 5
 script = ExtResource( 2 )
 
 [node name="Body" type="Node2D" parent="."]
-position = Vector2( -12, -13 )
+position = Vector2( -12, -12.9939 )
+rotation = -0.349066
 
 [node name="HandL" type="Sprite" parent="Body"]
 position = Vector2( -17, 7 )
-rotation = 0.261799
+rotation = 1.22306
 z_index = 10
 texture = ExtResource( 1 )
 offset = Vector2( -13, 8 )
@@ -925,7 +939,7 @@ region_rect = Rect2( 196, 206, 40, 36 )
 
 [node name="HandR" type="Sprite" parent="Body"]
 position = Vector2( 29, 3 )
-rotation = 0.0802851
+rotation = -0.873731
 z_index = 10
 texture = ExtResource( 1 )
 offset = Vector2( 11, 2 )
@@ -934,6 +948,7 @@ region_rect = Rect2( 262, 205, 33, 22 )
 
 [node name="LegL" type="Sprite" parent="Body"]
 position = Vector2( 1, 49 )
+rotation = 0.000399723
 z_index = 10
 texture = ExtResource( 1 )
 offset = Vector2( -3, 10 )
@@ -942,6 +957,7 @@ region_rect = Rect2( 228, 243, 28, 36 )
 
 [node name="LegR" type="Sprite" parent="Body"]
 position = Vector2( 45, 40 )
+rotation = -0.000399723
 z_index = 10
 texture = ExtResource( 1 )
 offset = Vector2( 8, 8 )
@@ -962,10 +978,11 @@ internal_vertex_count = 19
 
 [node name="Head" type="Node2D" parent="Body"]
 position = Vector2( 3, -8 )
+rotation = -8.74135e-05
 
 [node name="Ribbon" type="Sprite" parent="Body/Head"]
 position = Vector2( -5, -70 )
-rotation = -0.261799
+rotation = -0.244348
 z_index = 9
 texture = ExtResource( 1 )
 region_enabled = true
@@ -998,7 +1015,6 @@ region_enabled = true
 region_rect = Rect2( 1492, 31, 59, 52 )
 
 [node name="Hurt" type="Sprite" parent="Body/Head/Face"]
-visible = false
 position = Vector2( 11, 16 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -34 )
@@ -1036,7 +1052,7 @@ rest = Transform2D( 0.965926, -0.258819, 0.258819, 0.965926, 0, 0 )
 
 [node name="dressB" type="Bone2D" parent="Body/DressSkelet/bodyB"]
 position = Vector2( 0, 33 )
-rotation = 1.8326
+rotation = 1.8318
 rest = Transform2D( 0.258821, 0.965925, -0.965925, 0.258821, 0, 33 )
 
 [node name="x" type="Bone2D" parent="Body/DressSkelet/bodyB/dressB"]
@@ -1049,47 +1065,47 @@ rest = Transform2D( 1, 0, 0, 1, 16.5644, -61.8193 )
 
 [node name="hairR" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB"]
 position = Vector2( 33.1375, 9.78559 )
-rotation = 1.309
+rotation = 1.3086
 rest = Transform2D( 0.258821, 0.965925, -0.965925, 0.258821, 33.1375, 9.78559 )
 
 [node name="hairR2" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB/hairR"]
 position = Vector2( 20.0597, -0.495491 )
-rotation = 0.523599
+rotation = 0.524398
 rest = Transform2D( 0.707108, 0.707106, -0.707106, 0.707108, 20.0597, -0.495491 )
 
 [node name="hairL" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB"]
 position = Vector2( -29.5648, -1.71018 )
-rotation = 2.35619
+rotation = 2.35579
 rest = Transform2D( -0.707104, 0.707109, -0.707109, -0.707104, -29.5648, -1.71018 )
 
 [node name="hairL2" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB/hairL"]
 position = Vector2( 28.4879, 0.906448 )
-rotation = 1.0472
+rotation = 1.048
 rest = Transform2D( 0.258821, 0.965925, -0.965925, 0.258821, 28.4879, 0.906448 )
 
 [node name="hairB" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB"]
 position = Vector2( -21.3569, 29.4768 )
-rotation = 2.35619
+rotation = 2.35579
 rest = Transform2D( -0.707104, 0.707109, -0.707109, -0.707104, -21.3569, 29.4768 )
 
 [node name="hairB2" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB/hairB"]
 position = Vector2( 30.1841, -8.15573 )
-rotation = 0.785396
+rotation = 0.786956
 rest = Transform2D( -0.258817, 0.965927, -0.965927, -0.258817, 30.1841, -8.15573 )
 
 [node name="hairB3" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB/hairB/hairB2"]
 position = Vector2( 0.998262, -30.5307 )
-rotation = -1.0472
+rotation = -1.0464
 rest = Transform2D( 0.866026, -0.499999, 0.499999, 0.866026, 0.998262, -30.5307 )
 
 [node name="hairB4" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB/hairB/hairB2/hairB3"]
 position = Vector2( 22.0962, 1.32639 )
-rotation = -1.0472
+rotation = -1.0456
 rest = Transform2D( 1, 0, 0, 1, 22.0962, 1.32639 )
 
 [node name="hairB5" type="Bone2D" parent="Body/DressSkelet/bodyB/bodyB/hairB/hairB2/hairB3/hairB4"]
 position = Vector2( 10.9719, 17.7657 )
-rotation = 1.309
+rotation = 1.30979
 rest = Transform2D( 0.258821, 0.965925, -0.965925, 0.258821, 10.9719, 17.7657 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
