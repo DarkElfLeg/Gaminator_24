@@ -7,6 +7,9 @@ export var time_for_spawn_delay = 30.0/60.0
 var timer = 0.0
 var timer1 = 0.0
 
+func _ready():
+	Singletone._clear_sweets()
+	# В начале проверяем, что не получим лишних конфет...
 
 func spawn_junk():
 	if not Singletone.pause_mode:

@@ -137,6 +137,9 @@ func _damage(damage):
 	Helth_Player -= int(damage)
 	check_helth()
 
+func _clear_sweets():
+	temp_sweets = 0;
+
 func _collect_sweets():
 	temp_sweets += 1
 	#Dialogic.set_variable("CandyCount",sweets)
