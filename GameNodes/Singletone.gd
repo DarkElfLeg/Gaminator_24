@@ -39,7 +39,7 @@ func check_helth():
 		print("Death! Go to home.")
 		$"../Game/Alice".position = Vector2(900,850)
 		yield(get_tree().create_timer(4.0), "timeout")
-		pause_off()
+		pause_off()#?! TODO!
 		Helth_Player = Max_Helth_Player
 	match Max_Helth_Player:
 		2:
