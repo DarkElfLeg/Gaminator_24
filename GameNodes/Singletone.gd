@@ -140,6 +140,11 @@ func _damage(damage):
 func _clear_sweets():
 	temp_sweets = 0;
 
+func _spare_sweets(amount):
+	sweets -= int(amount)
+	Dialogic.set_variable("CandyCount",sweets)
+	$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
+
 func _collect_sweets():
 	temp_sweets += 1
 	Dialogic.set_variable("CandyCount",sweets)
