@@ -3,6 +3,7 @@ export var Glob_pause = false
 export var Max_Helth_Player = 2 # Очевидно...
 export var Helth_Player = 2 # некое начальное значение...
 export var sweets = 0 # местная валюта снов.
+var temp_sweets = 0;
 
 func pause_on():
 	Glob_pause = true;
@@ -26,6 +27,8 @@ func check_helth():
 		Helth_Player = Max_Helth_Player
 	if Helth_Player < 0:
 		pause_on()
+		temp_sweets = 0;
+		$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
 		$"../Game/HUD/AnimationPlayer".play("fade_out")
 		yield(get_tree().create_timer(1.0), "timeout")
 		_calm();
@@ -135,10 +138,15 @@ func _damage(damage):
 	check_helth()
 
 func _collect_sweets():
-	sweets += 1
+	temp_sweets += 1
+	#Dialogic.set_variable("CandyCount",sweets)
+	$"../Game/HUD/Candy2/CandyCountUI".text = str(temp_sweets)
+	pass
+
+func _save_sweets():
+	sweets += temp_sweets
 	Dialogic.set_variable("CandyCount",sweets)
 	$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
-	pass
 
 func _get_crowned():
 	$"../Game/Alice/Body/Head/Crown".visible = true
