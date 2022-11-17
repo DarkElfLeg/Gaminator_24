@@ -142,7 +142,7 @@ func _clear_sweets():
 
 func _collect_sweets():
 	temp_sweets += 1
-	#Dialogic.set_variable("CandyCount",sweets)
+	Dialogic.set_variable("CandyCount",sweets)
 	$"../Game/HUD/Candy2/CandyCountUI".text = str(temp_sweets)
 	pass
 

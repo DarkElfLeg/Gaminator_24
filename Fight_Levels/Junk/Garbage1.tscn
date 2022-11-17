@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Junk/Spikes.gd" type="Script" id=2]
+
+[node name="Spikes" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1670, 23, 211, 141 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -19, -27, 49, -66, 93, -13, 100, 23, 9, 68, -89, 52, -98, -41, -48, -58 )
+
+[connection signal="body_entered" from="." to="." method="_on_Spikes_body_entered"]
