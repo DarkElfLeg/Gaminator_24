@@ -17,7 +17,7 @@ func _hert():
 	$Sprite.modulate = Color(1.0,0.5,0.5);
 	if life < 1:
 		var r = rand_range(0.0,1.0)
-		if r > Candy_chance:
+		if r < Candy_chance:
 			var candy = load("res://Fight_Levels/Junk/Candy.tscn")
 			var loaded = candy.instance()
 			loaded.position = position
