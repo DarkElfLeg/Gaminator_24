@@ -18,7 +18,7 @@ func spawn_junk():
 		var loaded = junk.instance()
 		loaded.position.x = rand_range(100, 1820)
 		loaded.position.y = rand_range(1180, 1280)
-		add_child(loaded)
+		$"/root/Game/Level".add_child(loaded)
 	# Спавнить в нужном месте...
 	#print(List_of_spawn_nodes[rand_index])
 	#print(timer)
