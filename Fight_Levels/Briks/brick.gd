@@ -5,6 +5,7 @@ var from_position
 var time = 0
 var go_spawn = false
 
+export var Candy_chance = 0.8
 export var moveDuration = 3
 var timeDirection = 1
 
@@ -13,8 +14,14 @@ var Maxlife = 2
 
 func _hert():
 	life -= 1
-	$Sprite.modulate = Color(1,(0.5),(0.5))
+	$Sprite.modulate = Color(1.0,0.5,0.5);
 	if life < 1:
+		var r = rand_range(0.0,1.0)
+		if r > Candy_chance:
+			var candy = load("res://Fight_Levels/Junk/Candy.tscn")
+			var loaded = candy.instance()
+			loaded.position = position
+			$"/root/Game/Level".add_child(loaded)
 		_clear()
 
 func _clear():
