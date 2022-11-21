@@ -50,12 +50,22 @@
 			"value": "20"
 		},
 		{
-			"definition": "1668185782-171",
+			"definition": "1668107919-648",
 			"event_id": "dialogic_014",
-			"operation": "-",
+			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "20"
+			"set_value": "1"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"20"
+				],
+				"method_name": "_spare_sweets",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"event_id": "dialogic_013"

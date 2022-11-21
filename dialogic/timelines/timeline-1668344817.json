@@ -58,12 +58,14 @@
 			"set_value": "1"
 		},
 		{
-			"definition": "1668185782-171",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "50"
+			"call_node": {
+				"arguments": [
+					"50"
+				],
+				"method_name": "_spare_sweets",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"character": "",
