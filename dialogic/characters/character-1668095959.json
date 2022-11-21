@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Sprites/faces/faceCat.png"
 		}
 	],
 	"scale": 100,

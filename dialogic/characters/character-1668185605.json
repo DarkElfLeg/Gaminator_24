@@ -13,7 +13,11 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Sprites/faces/facePigGuard.png"
+		},
+		{
+			"name": "faceKnight",
+			"path": "res://Sprites/faces/faceKnight.png"
 		}
 	],
 	"scale": 100,

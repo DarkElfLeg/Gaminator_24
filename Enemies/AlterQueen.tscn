@@ -462,7 +462,6 @@ rest = Transform2D( -0.0690375, -0.997614, 0.997614, -0.0690375, 1, -46 )
 [node name="Head" type="Bone2D" parent="Skeleton2D/Hips/Body/Throat"]
 position = Vector2( 30.9951, 1.14255 )
 rotation = 1.76852
-scale = Vector2( 1, 1 )
 rest = Transform2D( -0.0690375, 0.997614, -0.997614, -0.0690375, 30.9951, 1.14255 )
 
 [node name="Skirt_UPM" type="Bone2D" parent="Skeleton2D/Hips"]

@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Sprites/faces/faceDark.png"
 		}
 	],
 	"scale": 100,
