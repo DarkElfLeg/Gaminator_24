@@ -4,6 +4,7 @@
 			"animation": "1-fade_in.gd",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
+			"change_position": false,
 			"change_z_index": false,
 			"character": "character-1666948708.json",
 			"event_id": "dialogic_002",
@@ -11,7 +12,7 @@
 			"portrait": "Default",
 			"portrait_definition": "",
 			"position": {
-				"0": false,
+				"0": true,
 				"1": false,
 				"2": false,
 				"3": false,
@@ -25,66 +26,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "О!\nДеревце.\nСмогу ли я отломать ветку?\n[shake]Попробуем...[/shake]\nНе. Не смогу."
-		},
-		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "_out",
-				"target_node_path": "Singletone"
-			},
-			"event_id": "dialogic_042"
-		},
-		{
-			"call_node": {
-				"arguments": [
-					"res://Scenes/sBackAlley.tscn"
-				],
-				"method_name": "_in",
-				"target_node_path": "Singletone"
-			},
-			"event_id": "dialogic_042"
-		},
-		{
-			"animation": "4-fade_out.gd",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666948708.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
-		},
-		{
-			"animation": "4-fade_out.gd",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666948708.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
 		}
 	],
 	"metadata": {

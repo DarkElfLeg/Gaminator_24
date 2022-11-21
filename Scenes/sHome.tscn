@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://GameNodes/TV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -16,9 +16,6 @@
 [ext_resource path="res://GameNodes/Hare.tscn" type="PackedScene" id=14]
 [ext_resource path="res://GameNodes/AlexScripts/HideByVariable.gd" type="Script" id=15]
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/AlexParticles/ExplosionFX.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Sprites/AlexParticles/StarsFX.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Sprites/AlexParticles/FireX.tscn" type="PackedScene" id=19]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -432,13 +429,3 @@ dialog_file = "useBed"
 autoplay = "Go_in"
 anims/Go_in = SubResource( 1 )
 anims/Go_out = SubResource( 2 )
-
-[node name="ExplosionFX" parent="." instance=ExtResource( 17 )]
-position = Vector2( 679, 421 )
-
-[node name="StarsFX" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1221, 652 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="FireX" parent="." instance=ExtResource( 19 )]
-position = Vector2( 1417, 467 )

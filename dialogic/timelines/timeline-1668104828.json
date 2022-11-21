@@ -1,16 +1,6 @@
 {
 	"events": [
 		{
-			"call_node": {
-				"arguments": [
-					"1"
-				],
-				"method_name": "FlipFromDialogue",
-				"target_node_path": "Game/Alice"
-			},
-			"event_id": "dialogic_042"
-		},
-		{
 			"condition": "<=",
 			"definition": "1668014886-648",
 			"event_id": "dialogic_012",
@@ -25,6 +15,26 @@
 			"set_value": "1"
 		},
 		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -35,6 +45,26 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Если ты устанешь, то всегда можешь тут отдохнуть."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666948708.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
 		},
 		{
 			"character": "character-1666948708.json",
@@ -66,6 +96,26 @@
 			"set_value": "2"
 		},
 		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -93,6 +143,34 @@
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "2"
+		},
+		{
+			"definition": "1668183998-894",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
 		},
 		{
 			"character": "character-1668095959.json",

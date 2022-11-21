@@ -1,8 +1,14 @@
 {
 	"events": [
 		{
-			"animation": "[Default]",
-			"animation_length": 0,
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
 			"change_mirror_portrait": false,
 			"change_position": false,
 			"change_z_index": false,
@@ -61,6 +67,27 @@
 			"text": "Привет! Я Блохастик Многокот."
 		},
 		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -83,6 +110,28 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Нет, я хочу домой!"
+		},
+		{
+			"animation": "tada.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_position": true,
+			"change_z_index": true,
+			"character": "character-1668095959.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 1
 		},
 		{
 			"character": "character-1668095959.json",

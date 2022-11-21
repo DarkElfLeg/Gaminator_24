@@ -1,6 +1,26 @@
 {
 	"events": [
 		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1668185605.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": true,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
 			"condition": "<=",
 			"definition": "1668185974-991",
 			"event_id": "dialogic_012",
