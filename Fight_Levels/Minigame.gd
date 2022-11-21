@@ -9,6 +9,7 @@ var timer1 = 0.0
 
 func _ready():
 	Singletone._clear_sweets()
+	Singletone.is_in_minigame = true
 	# В начале проверяем, что не получим лишних конфет...
 
 func spawn_junk():
@@ -34,6 +35,7 @@ func _process(delta):
 		timer1 += delta
 		if(timer1 >= time_for_win):
 			Singletone._in(next_level)
+			Singletone.is_in_minigame = false
 			Singletone._save_sweets()
 			queue_free();
 			pass #win!

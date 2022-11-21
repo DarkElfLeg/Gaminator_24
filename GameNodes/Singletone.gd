@@ -4,12 +4,22 @@ export var Max_Helth_Player = 2 # Очевидно...
 export var Helth_Player = 2 # некое начальное значение...
 export var sweets = 0 # местная валюта снов.
 var temp_sweets = 0;
+var back_pause = false
+var is_in_minigame = false
 
 func pause_on():
-	Glob_pause = true;
-	
+	Glob_pause = true
+
 func pause_off():
 	Glob_pause = false;
+
+func _process(delta):
+	if not Glob_pause == back_pause:
+		back_pause = Glob_pause
+		if Glob_pause:
+			$"/root/Game/HUD/AnimationPlayer".play("Get_dark")
+		else:
+			$"/root/Game/HUD/AnimationPlayer".play("Dark_out")
 
 func _calm():
 	$"../Game/Singletone/fight_music".stop()
@@ -28,6 +38,7 @@ func check_helth():
 	if Helth_Player < 0:
 		pause_on()
 		temp_sweets = 0;
+		Singletone.is_in_minigame = false
 		$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
 		$"../Game/HUD/AnimationPlayer".play("fade_out")
 		yield(get_tree().create_timer(1.0), "timeout")
@@ -146,9 +157,14 @@ func _spare_sweets(amount):
 	$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
 
 func _collect_sweets():
-	temp_sweets += 1
-	Dialogic.set_variable("CandyCount",sweets)
-	$"../Game/HUD/Candy2/CandyCountUI".text = str(temp_sweets)
+	if is_in_minigame:
+		temp_sweets += 1
+		Dialogic.set_variable("CandyCount",sweets)
+		$"../Game/HUD/Candy2/CandyCountUI".text = str(temp_sweets)
+	else:
+		sweets += 1
+		Dialogic.set_variable("CandyCount",sweets)
+		$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
 	pass
 
 func _save_sweets():

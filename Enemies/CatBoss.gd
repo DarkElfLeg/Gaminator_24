@@ -17,6 +17,7 @@ func _set_spawn_point():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Singletone.is_in_minigame = true
 	$AnimationPlayer.play("idle")
 	yield(get_tree().create_timer(3.0), "timeout")
 	for child in $"../3".get_children():# Почему 3? А просто хочу 3 жизни...
@@ -76,6 +77,8 @@ func _hert():
 	spawn()
 	if life <= 0:
 		$AnimationPlayer.play("Defeat")
+		Singletone._save_sweets()
+		Singletone.is_in_minigame = false
 		yield(get_tree().create_timer(0.3), "timeout")
 		$"/root/Singletone"._out()
 		yield(get_tree().create_timer(5.0), "timeout")
