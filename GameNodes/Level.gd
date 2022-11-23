@@ -26,7 +26,7 @@ func _in(Level):
 			for child in $"/root/Game/Level".get_children():
 				if n1>0:
 					child.queue_free()
-				n1+=n1
+				n1+=1
 	add_child(loaded)
 
 func _out():
