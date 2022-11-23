@@ -1,14 +1,104 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+loop = true
+step = 0.0142857
+tracks/0/type = "value"
+tracks/0/path = NodePath("Body:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.442857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -15.0, 5.8633, -15.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body/HandB:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.442857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3.86776, -21.2317, 3.86776 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Body/Legs:rotation_degrees")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.442857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -30.0, -59.9999, -30.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Body/Head:rotation_degrees")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.442857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 9.28675, -6.84273, 9.28675 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Body/HandA:rotation_degrees")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.442857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 30.0, 5.91553, 30.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Body/Legs:scale")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.214286, 0.471429, 0.742857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.08481, 0.922199 ), Vector2( 0.927766, 1.14103 ), Vector2( 0.955233, 0.993265 ), Vector2( 0.833166, 1.15991 ), Vector2( 1.08481, 0.922199 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Body/HandA:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.442857, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -26.9766, -11.3694 ), Vector2( -27.8803, -7.18949 ), Vector2( -26.9766, -11.3694 ) ]
+}
 
 [node name="PigB" type="Node2D"]
 
 [node name="Body" type="Node2D" parent="."]
+rotation = -0.261799
 
 [node name="HandB" type="Sprite" parent="Body"]
 position = Vector2( 20, -8 )
-rotation = -0.261799
+rotation = 0.0675051
 scale = Vector2( 0.802326, 0.802326 )
 texture = ExtResource( 1 )
 offset = Vector2( -4.18091, 19.6496 )
@@ -24,7 +114,9 @@ region_enabled = true
 region_rect = Rect2( 408, 853, 34, 28 )
 
 [node name="Legs" type="Sprite" parent="Body"]
-position = Vector2( 0, 35 )
+position = Vector2( -1.67119, 31.818 )
+rotation = -0.523599
+scale = Vector2( 1.08481, 0.922199 )
 texture = ExtResource( 1 )
 offset = Vector2( -30, 12 )
 flip_h = true
@@ -38,8 +130,8 @@ region_enabled = true
 region_rect = Rect2( 565, 768, 60, 76 )
 
 [node name="HandA" type="Sprite" parent="Body"]
-position = Vector2( -28.5, -13 )
-rotation = 0.523598
+position = Vector2( -26.9766, -11.3694 )
+rotation = 0.523599
 texture = ExtResource( 1 )
 offset = Vector2( 5.3971, 20.6686 )
 flip_h = true
@@ -48,8 +140,13 @@ region_rect = Rect2( 669, 791, 43, 71 )
 
 [node name="Head" type="Sprite" parent="Body"]
 position = Vector2( 1, -30 )
+rotation = 0.162084
 texture = ExtResource( 1 )
 offset = Vector2( 2, -26 )
 flip_h = true
 region_enabled = true
 region_rect = Rect2( 560, 672, 89, 82 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 1 )

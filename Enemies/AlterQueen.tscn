@@ -397,7 +397,7 @@ bones = [ "Hips", PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), "Hips/Body", PoolRealArr
 
 [node name="Hips" type="Bone2D" parent="Skeleton2D"]
 position = Vector2( 0, 2 )
-rotation = -0.102903
+rotation = -0.108951
 rest = Transform2D( 1, 0, 0, 1, 0, 2 )
 
 [node name="Body" type="Bone2D" parent="Skeleton2D/Hips"]
@@ -406,107 +406,107 @@ rest = Transform2D( 1, 0, 0, 1, 2, -120 )
 
 [node name="SholderR" type="Bone2D" parent="Skeleton2D/Hips/Body"]
 position = Vector2( 79, -18 )
-rotation = 0.281915
+rotation = 0.299465
 rest = Transform2D( 1, 0, 0, 1, 79, -18 )
 
 [node name="HandR" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderR"]
 position = Vector2( 46, 35 )
-rotation = 0.0994744
+rotation = 0.115221
 rest = Transform2D( 1, 0, 0, 1, 46, 35 )
 
 [node name="HandR2" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderR/HandR"]
 position = Vector2( 60, 1 )
-rotation = -0.192367
+rotation = -0.202445
 rest = Transform2D( 1, 0, 0, 1, 60, 1 )
 
 [node name="HandR3" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderR/HandR/HandR2"]
 position = Vector2( 80, 14 )
-rotation = -0.369383
+rotation = -0.397478
 rest = Transform2D( 1, 0, 0, 1, 80, 14 )
 
 [node name="HandR4" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderR/HandR/HandR2/HandR3"]
 position = Vector2( 31, 38 )
-rotation = 1.50778
+rotation = 1.4631
 rest = Transform2D( -0.320541, 0.947235, -0.947235, -0.320541, 31, 38 )
 
 [node name="SholderL" type="Bone2D" parent="Skeleton2D/Hips/Body"]
 position = Vector2( -90, -18 )
-rotation = 0.46718
+rotation = 0.502848
 rest = Transform2D( 1, 0, 0, 1, -90, -18 )
 
 [node name="HandL" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderL"]
 position = Vector2( -51, 38 )
-rotation = -0.457832
+rotation = -0.492997
 rest = Transform2D( 1, 0, 0, 1, -51, 38 )
 
 [node name="HandL2" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderL/HandL"]
 position = Vector2( -65, 2 )
-rotation = -0.450558
+rotation = -0.49468
 rest = Transform2D( 1, 0, 0, 1, -65, 2 )
 
 [node name="HandL3" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderL/HandL/HandL2"]
 position = Vector2( -69, 8 )
-rotation = -0.312113
+rotation = -0.339351
 rest = Transform2D( 1, 0, 0, 1, -69, 8 )
 
 [node name="HandL4" type="Bone2D" parent="Skeleton2D/Hips/Body/SholderL/HandL/HandL2/HandL3"]
 position = Vector2( -31, 44 )
-rotation = 0.774717
+rotation = 0.7482
 rest = Transform2D( 0.506058, 0.8625, -0.8625, 0.506058, -31, 44 )
 
 [node name="Throat" type="Bone2D" parent="Skeleton2D/Hips/Body"]
 position = Vector2( 1, -46 )
-rotation = -1.41025
+rotation = -1.39324
 rest = Transform2D( -0.0690375, -0.997614, 0.997614, -0.0690375, 1, -46 )
 
 [node name="Head" type="Bone2D" parent="Skeleton2D/Hips/Body/Throat"]
 position = Vector2( 30.9951, 1.14255 )
-rotation = 1.76852
+rotation = 1.7774
 rest = Transform2D( -0.0690375, 0.997614, -0.997614, -0.0690375, 30.9951, 1.14255 )
 
 [node name="Skirt_UPM" type="Bone2D" parent="Skeleton2D/Hips"]
 position = Vector2( 0, 24 )
-rotation = -0.164649
+rotation = -0.174914
 rest = Transform2D( 1, 0, 0, 1, 0, 24 )
 
 [node name="Skirt_KneeM" type="Bone2D" parent="Skeleton2D/Hips/Skirt_UPM"]
 position = Vector2( 4, 139 )
-rotation = -0.130347
+rotation = -0.148561
 rest = Transform2D( 1, 0, 0, 1, 4, 139 )
 
 [node name="Skirt_DownM" type="Bone2D" parent="Skeleton2D/Hips/Skirt_UPM/Skirt_KneeM"]
 position = Vector2( -3, 149 )
-rotation = 1.91324
+rotation = 1.93507
 rest = Transform2D( -0.0598814, 0.998205, -0.998205, -0.0598814, -3, 149 )
 
 [node name="Skirt_UPR" type="Bone2D" parent="Skeleton2D/Hips"]
 position = Vector2( 103, 6 )
-rotation = -0.200382
+rotation = -0.211124
 rest = Transform2D( 1, 0, 0, 1, 103, 6 )
 
 [node name="Skirt_KneeR" type="Bone2D" parent="Skeleton2D/Hips/Skirt_UPR"]
 position = Vector2( 82, 92 )
-rotation = -0.160632
+rotation = -0.171122
 rest = Transform2D( 1, 0, 0, 1, 82, 92 )
 
 [node name="Skirt_DownR" type="Bone2D" parent="Skeleton2D/Hips/Skirt_UPR/Skirt_KneeR"]
 position = Vector2( 76, 74 )
-rotation = 0.51091
+rotation = 0.487758
 rest = Transform2D( 0.77507, 0.631875, -0.631875, 0.77507, 76, 74 )
 
 [node name="Skirt_UPL" type="Bone2D" parent="Skeleton2D/Hips"]
 position = Vector2( -105, 9 )
-rotation = -0.16843
+rotation = -0.180731
 rest = Transform2D( 1, 0, 0, 1, -105, 9 )
 
 [node name="Skirt_KneeL" type="Bone2D" parent="Skeleton2D/Hips/Skirt_UPL"]
 position = Vector2( -77, 79 )
-rotation = -0.198081
+rotation = -0.222241
 rest = Transform2D( 1, 0, 0, 1, -77, 79 )
 
 [node name="Skirt_DownL" type="Bone2D" parent="Skeleton2D/Hips/Skirt_UPL/Skirt_KneeL"]
 position = Vector2( -72, 86 )
-rotation = 1.9739
+rotation = 1.93003
 rest = Transform2D( -0.704509, 0.709695, -0.709695, -0.704509, -72, 86 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -1,15 +1,94 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+loop = true
+step = 0.02
+tracks/0/type = "value"
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.46, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -8 ), Vector2( 0, 16 ), Vector2( 0, -8 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body/Tongue:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.46, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.810045, 1.44018 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Body/Jaw1:rotation_degrees")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.46, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 255.0, 285.0, 255.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Body/Jaw2:rotation_degrees")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.46, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 285.0, 255.0, 285.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Body/Eye:rotation_degrees")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.46, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -105.0, -15.0, -105.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Body/Eye2:rotation_degrees")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.46, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -255.0, -374.999, -255.0 ]
+}
 
 [node name="JawFoe2" type="Node2D"]
 position = Vector2( -1, -4 )
 
 [node name="Body" type="Node2D" parent="."]
+position = Vector2( 0, 0.194221 )
 
 [node name="Tongue" type="Sprite" parent="Body"]
-position = Vector2( 0.489929, -37.2399 )
+position = Vector2( 0.705286, -40.8034 )
 rotation = 4.71238
+scale = Vector2( 0.935144, 1.15029 )
 texture = ExtResource( 1 )
 offset = Vector2( -46.2405, -0.489322 )
 region_enabled = true
@@ -17,7 +96,7 @@ region_rect = Rect2( 1972, 26, 130, 51 )
 
 [node name="Jaw1" type="Sprite" parent="Body"]
 position = Vector2( 1.82477, -73.2806 )
-rotation = 4.71238
+rotation = 4.62935
 texture = ExtResource( 1 )
 offset = Vector2( -83.2807, -59.8244 )
 region_enabled = true
@@ -25,7 +104,7 @@ region_rect = Rect2( 1673, 17, 278, 170 )
 
 [node name="Jaw2" type="Sprite" parent="Body"]
 position = Vector2( -0.844913, -74.6154 )
-rotation = 4.71238
+rotation = 4.79541
 texture = ExtResource( 1 )
 offset = Vector2( -85.6164, 58.8453 )
 flip_v = true
@@ -34,7 +113,7 @@ region_rect = Rect2( 1673, 17, 278, 170 )
 
 [node name="Eye" type="Sprite" parent="Body"]
 position = Vector2( 31.1912, -66.6064 )
-rotation = -1.5708
+rotation = -1.29628
 texture = ExtResource( 1 )
 offset = Vector2( -0.846836, 1.31976 )
 region_enabled = true
@@ -42,8 +121,12 @@ region_rect = Rect2( 343, 207, 54, 57 )
 
 [node name="Eye2" type="Sprite" parent="Body"]
 position = Vector2( -38.2204, -65.2715 )
-rotation = -2.61799
+rotation = -5.16566
 texture = ExtResource( 1 )
 offset = Vector2( 0.48801, -0.269 )
 region_enabled = true
 region_rect = Rect2( 346, 151, 41, 41 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 1 )

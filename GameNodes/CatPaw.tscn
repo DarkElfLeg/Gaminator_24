@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+loop = true
+step = 0.02
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.999491, 1.00476 ), Vector2( 1.04897, 1 ), Vector2( 0.999491, 1.00476 ) ]
+}
 
 [node name="CatPaw" type="Sprite"]
 position = Vector2( -7, 2 )
@@ -10,7 +27,13 @@ offset = Vector2( 3.04199, 260.898 )
 region_rect = Rect2( 1402, 26, 56, 594 )
 
 [node name="Arm" type="Sprite" parent="."]
-position = Vector2( 3.27782, 261.987 )
+position = Vector2( 3.29206, 260.573 )
+scale = Vector2( 0.999491, 1.00476 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1402, 26, 56, 594 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Arm")
+autoplay = "idle"
+anims/idle = SubResource( 2 )

@@ -1,14 +1,93 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Bosses.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+loop = true
+step = 0.02
+tracks/0/type = "value"
+tracks/0/path = NodePath("Body:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.48, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 15.0, -15.0, 15.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body/Part1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.24, 0.48, 0.72, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.19416, 0.935112 ), Vector2( 1, 1 ), Vector2( 1.19416, 0.935112 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Body/Part2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.24, 0.48, 0.72, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.10964, 0.943693 ), Vector2( 1, 1 ), Vector2( 1.10964, 0.943693 ), Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Body/Part3:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.24, 0.48, 0.72, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.16905, 0.923391 ), Vector2( 1, 1 ), Vector2( 1.16905, 0.923391 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Body/Part4:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.24, 0.48, 0.72, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.09902, 0.92025 ), Vector2( 1, 1 ), Vector2( 1.09902, 0.92025 ), Vector2( 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Body/Body:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.24, 0.48, 0.72, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.898477, 1.11301 ), Vector2( 0.977184, 1.02688 ), Vector2( 0.898477, 1.11301 ), Vector2( 1, 1 ) ]
+}
 
 [node name="SquareBoss" type="Node2D"]
 position = Vector2( -1, -4 )
 
 [node name="Body" type="Node2D" parent="."]
+rotation = 0.110761
 
 [node name="Part1" type="Sprite" parent="Body"]
-position = Vector2( -141, 6 )
+position = Vector2( -146.631, 5.35112 )
+scale = Vector2( 1.10402, 0.965239 )
 texture = ExtResource( 1 )
 offset = Vector2( -29, 88 )
 flip_h = true
@@ -16,14 +95,16 @@ region_enabled = true
 region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Part2" type="Sprite" parent="Body"]
-position = Vector2( 146, 6 )
+position = Vector2( 149.837, 5.60585 )
+scale = Vector2( 1.05873, 0.969835 )
 texture = ExtResource( 1 )
 offset = Vector2( 23, 91 )
 region_enabled = true
 region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Part3" type="Sprite" parent="Body"]
-position = Vector2( -140, -2 )
+position = Vector2( -145.41, -2.15321 )
+scale = Vector2( 1.09056, 0.958959 )
 texture = ExtResource( 1 )
 offset = Vector2( -26, -100 )
 flip_h = true
@@ -32,7 +113,8 @@ region_enabled = true
 region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Part4" type="Sprite" parent="Body"]
-position = Vector2( 145, -6 )
+position = Vector2( 147.971, -5.60124 )
+scale = Vector2( 1.05305, 0.957277 )
 texture = ExtResource( 1 )
 offset = Vector2( 28, -93 )
 flip_v = true
@@ -40,7 +122,12 @@ region_enabled = true
 region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Body" type="Sprite" parent="Body"]
-position = Vector2( 1, 4 )
+position = Vector2( 2.29736, 7.57664 )
+scale = Vector2( 0.945613, 1.06054 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1385, 221, 394, 292 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 1 )

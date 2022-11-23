@@ -286,7 +286,7 @@ rest = Transform2D( 0.0736667, 0.997283, -0.997283, 0.0736667, -11, 12 )
 
 [node name="Tail" type="Bone2D" parent="Body/Skeleton2D/Body"]
 position = Vector2( -27, 1 )
-rotation = 2.97222
+rotation = 2.97223
 rest = Transform2D( -0.985691, 0.168563, -0.168563, -0.985691, -27, 1 )
 
 [node name="Head" type="Bone2D" parent="Body/Skeleton2D/Body"]
@@ -295,7 +295,7 @@ rest = Transform2D( 1, 0, 0, 1, 16, -16 )
 
 [node name="EarA" type="Bone2D" parent="Body/Skeleton2D/Body/Head"]
 position = Vector2( 8, -29 )
-rotation = -1.85849
+rotation = -1.8585
 rest = Transform2D( -0.283742, -0.958901, 0.958901, -0.283742, 8, -29 )
 
 [node name="EarB" type="Bone2D" parent="Body/Skeleton2D/Body/Head"]

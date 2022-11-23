@@ -1,14 +1,153 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+loop = true
+step = 0.02
+tracks/0/type = "value"
+tracks/0/path = NodePath("Body:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.48, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 15.0, -1.37621, 15.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body/Legs:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -30.0, 30.0, -30.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Body/Legs:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.26, 0.52, 0.76, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.16219, 0.880878 ), Vector2( 1, 1 ), Vector2( 1.16219, 0.880878 ), Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Body/Head:rotation_degrees")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.44, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -15.0, 9.59693, -15.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Body/Head/Decor:rotation_degrees")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.54, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 15.0, -30.0, 15.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Body/HandA:rotation_degrees")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.52, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 30.0, 44.9999, 30.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Body/HandA/HandA2:rotation_degrees")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.52, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 34.7315, 30.0, 34.7315 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Body/HandB:rotation_degrees")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.52, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -15.0, 0.0, -15.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Body/HandB/HandB3:rotation_degrees")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 15.0, -3.94808, 15.0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Body/HandA/HandA2/Alebard:rotation_degrees")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.52, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 15.0, 4.92909, 15.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Body/HandA/HandA2/HandA2:rotation_degrees")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 30.0, 30.0 ]
+}
 
 [node name="Knight" type="Node2D"]
 
 [node name="Body" type="Node2D" parent="."]
 position = Vector2( 0, -2 )
+rotation = 0.261799
 
 [node name="Legs" type="Sprite" parent="Body"]
-position = Vector2( 2, 56 )
+position = Vector2( 5.11775, 53.8611 )
+rotation = -0.523599
 texture = ExtResource( 1 )
 offset = Vector2( -16, 33 )
 region_enabled = true
@@ -25,6 +164,7 @@ region_rect = Rect2( 205, 890, 42, 81 )
 
 [node name="HandB3" type="Sprite" parent="Body/HandB"]
 position = Vector2( 5.98235, 40.1985 )
+rotation = 0.261799
 scale = Vector2( 1.04456, 1.04456 )
 texture = ExtResource( 1 )
 offset = Vector2( 6.38053, 22.2797 )
@@ -39,9 +179,12 @@ region_rect = Rect2( 154, 370, 91, 120 )
 
 [node name="Head" type="Node2D" parent="Body"]
 position = Vector2( 0, -51 )
+rotation = -0.261799
 
 [node name="Decor" type="Sprite" parent="Body/Head"]
 position = Vector2( -8, -77 )
+rotation = 0.261799
+z_index = -1
 texture = ExtResource( 1 )
 offset = Vector2( -41, 21 )
 region_enabled = true
@@ -56,7 +199,7 @@ region_rect = Rect2( 30, 364, 96, 88 )
 
 [node name="HandA" type="Sprite" parent="Body"]
 position = Vector2( -33, -28 )
-rotation = 0.261799
+rotation = 0.523599
 texture = ExtResource( 1 )
 offset = Vector2( -9.08485, 14.1428 )
 region_enabled = true
@@ -64,7 +207,7 @@ region_rect = Rect2( 193, 786, 54, 81 )
 
 [node name="HandA2" type="Node2D" parent="Body/HandA"]
 position = Vector2( 6.10108, 47.3042 )
-rotation = 0.785397
+rotation = 0.606179
 scale = Vector2( 0.871429, 0.871429 )
 
 [node name="Alebard" type="Sprite" parent="Body/HandA/HandA2"]
@@ -79,9 +222,13 @@ region_rect = Rect2( 10, 637, 158, 358 )
 
 [node name="HandA2" type="Sprite" parent="Body/HandA/HandA2"]
 position = Vector2( 1.73317, 0.304461 )
-rotation = 0.261799
+rotation = 0.523599
 scale = Vector2( 1.14754, 1.14754 )
 texture = ExtResource( 1 )
 offset = Vector2( 20.3218, -7.58875 )
 region_enabled = true
 region_rect = Rect2( 183, 629, 74, 44 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 1 )

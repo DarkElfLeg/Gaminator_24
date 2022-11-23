@@ -246,41 +246,41 @@ bones = [ "Body", PoolRealArray( 0, 0, 0, 0 ), "Body/HandR", PoolRealArray( 0, 0
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
 
 [node name="Body" type="Bone2D" parent="Skeleton2D"]
-rotation = -1.4416
+rotation = -1.44159
 rest = Transform2D( 0.128842, -0.991665, 0.991665, 0.128842, 0, 0 )
 
 [node name="HandR" type="Bone2D" parent="Skeleton2D/Body"]
-position = Vector2( 48.6138, 169.267 )
-rotation = 0.993179
+position = Vector2( 60.5678, 151.836 )
+rotation = -0.0939528
 rest = Transform2D( 0.586983, 0.809599, -0.809599, 0.586983, 16.0587, 216.737 )
 
 [node name="HandL" type="Bone2D" parent="Skeleton2D/Body"]
-position = Vector2( 19.9852, -174.867 )
-rotation = -1.51313
+position = Vector2( -6.28979, -193.661 )
+rotation = -1.61534
 rest = Transform2D( 0.0768802, -0.99704, 0.99704, 0.0768802, -48.2176, -223.652 )
 
 [node name="EarR" type="Bone2D" parent="Skeleton2D/Body"]
 position = Vector2( 173.136, 98.514 )
-rotation = 0.433513
+rotation = 0.450981
 rest = Transform2D( 0.90002, 0.435848, -0.435848, 0.90002, 173.136, 98.514 )
 
 [node name="EarL" type="Bone2D" parent="Skeleton2D/Body"]
 position = Vector2( 145.833, -134.914 )
-rotation = -0.846045
+rotation = -0.85585
 rest = Transform2D( 0.655577, -0.755128, 0.755128, 0.655577, 145.833, -134.914 )
 
 [node name="Eyes" type="Bone2D" parent="Skeleton2D/Body"]
-position = Vector2( 91.3443, -16.2216 )
-rotation = 0.0201793
+position = Vector2( 86.5051, -40.4829 )
+rotation = -0.0954311
 rest = Transform2D( 1, 0, 0, 1, 92.2249, -11.9823 )
 
 [node name="Mouth" type="Bone2D" parent="Skeleton2D/Body"]
-position = Vector2( 14.5521, -1.86327 )
+position = Vector2( -4.37031, 0.229342 )
 rest = Transform2D( 1, 0, 0, 1, 14.875, -1.93263 )
 
 [node name="Tail" type="Bone2D" parent="Skeleton2D/Body"]
-position = Vector2( -148.717, -111.446 )
-rotation = -2.38218
+position = Vector2( -192.2, -167.634 )
+rotation = -1.9773
 rest = Transform2D( -0.749859, -0.661597, 0.661597, -0.749859, -146.658, -112.038 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

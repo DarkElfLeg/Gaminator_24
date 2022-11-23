@@ -224,7 +224,7 @@ scale = Vector2( 1, -1 )
 
 [node name="TalkInteractive" parent="CatPaw2/Node2D/Guards/Knight2" instance=ExtResource( 10 )]
 position = Vector2( 2.27246, -2.323 )
-dialog_file = "talkBodyguards"
+dialog_file = "talkBodyguard2"
 
 [node name="Floor11" type="Sprite" parent="CatPaw2"]
 position = Vector2( -59.3723, -414.766 )
@@ -266,7 +266,7 @@ rotation = 4.45058
 [node name="Floor6" type="Sprite" parent="CatPaw3"]
 position = Vector2( 139.291, -233.919 )
 rotation = 1.8326
-z_index = -1
+z_index = -2
 texture = ExtResource( 1 )
 flip_h = true
 region_enabled = true

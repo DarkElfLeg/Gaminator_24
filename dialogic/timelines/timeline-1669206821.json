@@ -7,7 +7,7 @@
 			"change_z_index": false,
 			"character": "character-1668185605.json",
 			"event_id": "dialogic_002",
-			"mirror_portrait": true,
+			"mirror_portrait": false,
 			"portrait": "faceKnight",
 			"portrait_definition": "",
 			"position": {
@@ -24,12 +24,12 @@
 			"character": "character-1668185605.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Дальше вы не пройдёте, пока не получите бумаги!"
+			"text": "Когда-то меня вела пропасть вниз, а потом я узнал, что торт это ложь."
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1668270514.json",
-		"name": "talkBodyguards"
+		"file": "timeline-1669206821.json",
+		"name": "talkBodyguard2"
 	}
 }

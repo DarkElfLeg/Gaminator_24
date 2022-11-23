@@ -1,6 +1,59 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+loop = true
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/path = NodePath("TV:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 4.31211, 3.18786, 4.31211 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Mouth:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 4.07387, -7.27353, 4.07387 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("EyeB:rotation_degrees")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -44.9999, 15.0, -44.9999 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EyeA:rotation_degrees")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -15.0, 120.0, -15.0 ]
+}
 
 [node name="TVBoss" type="Node2D"]
 position = Vector2( -1, -4 )
@@ -14,6 +67,7 @@ region_rect = Rect2( 217, 30, 106, 114 )
 
 [node name="TV" type="Sprite" parent="."]
 position = Vector2( 8, 0 )
+rotation = 0.0752605
 texture = ExtResource( 1 )
 offset = Vector2( 17, -21 )
 region_enabled = true
@@ -21,18 +75,25 @@ region_rect = Rect2( 47, 624, 380, 384 )
 
 [node name="Mouth" type="Sprite" parent="."]
 position = Vector2( -35, 47 )
+rotation = 0.0711024
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 368, 103, 123, 71 )
 
 [node name="EyeB" type="Sprite" parent="."]
 position = Vector2( -77, -42 )
+rotation = -0.785397
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 368, 33, 36, 47 )
 
 [node name="EyeA" type="Sprite" parent="."]
 position = Vector2( -1, -45 )
+rotation = -0.261799
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 442, 22, 43, 58 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/idle = SubResource( 2 )

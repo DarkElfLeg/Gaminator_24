@@ -1,7 +1,51 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Creatures.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("TV3:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.281848 ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+loop = true
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("TV2:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.466667, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -5.41191, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TV3:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.466668, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.88776, 0.281848, 0.88776 ]
+}
 
 [node name="TV" type="Node2D"]
 position = Vector2( -8, -25 )
@@ -20,6 +64,7 @@ scale = Vector2( 0.591559, 0.719672 )
 
 [node name="Rat7" type="Sprite" parent="TV2/RatTV"]
 position = Vector2( 16.5321, 21.0246 )
+rotation = -0.523599
 scale = Vector2( 0.670713, 0.670713 )
 texture = ExtResource( 2 )
 flip_h = true
@@ -28,6 +73,7 @@ region_rect = Rect2( 481, 494, 34, 22 )
 
 [node name="Rat4" type="Sprite" parent="TV2/RatTV"]
 position = Vector2( 5.83488, -29.4344 )
+rotation = 0.261799
 scale = Vector2( 0.670713, 0.670713 )
 texture = ExtResource( 2 )
 flip_h = true
@@ -52,6 +98,7 @@ region_rect = Rect2( 474, 337, 91, 68 )
 
 [node name="Rat3" type="Sprite" parent="TV2/RatTV"]
 position = Vector2( -22.367, -32.2377 )
+rotation = 0.261799
 scale = Vector2( 0.670713, 0.670713 )
 texture = ExtResource( 2 )
 flip_h = true
@@ -60,6 +107,7 @@ region_rect = Rect2( 528, 296, 38, 32 )
 
 [node name="Rat6" type="Sprite" parent="TV2/RatTV"]
 position = Vector2( -12.6422, 21.4918 )
+rotation = -0.261799
 scale = Vector2( 0.670713, 0.670713 )
 texture = ExtResource( 2 )
 flip_h = true
@@ -76,7 +124,13 @@ region_enabled = true
 region_rect = Rect2( 479, 429, 85, 46 )
 
 [node name="TV3" type="Sprite" parent="."]
+rotation = 0.00491917
 texture = ExtResource( 1 )
 flip_h = true
 region_enabled = true
 region_rect = Rect2( 47, 624, 380, 384 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/RESET = SubResource( 2 )
+anims/idle = SubResource( 1 )

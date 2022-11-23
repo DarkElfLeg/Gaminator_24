@@ -282,8 +282,9 @@ rotation = 3.14159
 [node name="FireX" parent="CatPaw3" instance=ExtResource( 11 )]
 position = Vector2( 11.0009, -246 )
 rotation = -3.14159
-scale = Vector2( 0.640002, 0.24 )
+scale = Vector2( 0.640002, 0.359999 )
 z_index = -1
+speed_scale = 1.0
 
 [node name="Floor25" type="Sprite" parent="CatPaw3"]
 position = Vector2( 12.0006, -130 )
