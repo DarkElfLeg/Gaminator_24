@@ -34,6 +34,7 @@ func _process(delta):
 		timer += delta
 		timer1 += delta
 		if(timer1 >= time_for_win):
+			Singletone._out()
 			Singletone._in(next_level)
 			Singletone.is_in_minigame = false
 			Singletone._save_sweets()
