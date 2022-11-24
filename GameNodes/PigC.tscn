@@ -157,8 +157,9 @@ tracks/11/keys = {
 rotation = 0.178903
 
 [node name="HandB" type="Sprite" parent="Body"]
-position = Vector2( 19, 18 )
+position = Vector2( 16.4455, 18.9534 )
 rotation = -0.523599
+scale = Vector2( 0.826518, 0.949826 )
 texture = ExtResource( 1 )
 offset = Vector2( -1, 9 )
 flip_h = true
