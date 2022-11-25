@@ -60,7 +60,7 @@
 			"character": "character-1668342317.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Простите, вы не подскажете как пройти в Блохастикатеку? Я очень спешу!"
+			"text": "Простите, вы не подскажете, как пройти в Блохастикатеку? Я очень спешу!"
 		},
 		{
 			"animation": "[Default]",
@@ -98,7 +98,7 @@
 			"character": "character-1666948708.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Да без проблем. Тут недалеко."
+			"text": "Да, конечно. Тут недалеко."
 		},
 		{
 			"event_id": "dialogic_013"

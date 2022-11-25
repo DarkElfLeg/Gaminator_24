@@ -27,7 +27,7 @@
 
 			],
 			"portrait": "",
-			"question": "Чё, как!? Хочешь поиграть?"
+			"question": "Ну что? Хочешь поиграть?"
 		},
 		{
 			"choice": "Я лучше пойду!",
@@ -100,7 +100,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Какое тебе дело до Шляпника?"
+			"text": "Какое тебе до него дело?"
 		},
 		{
 			"character": "character-1666948708.json",
@@ -112,7 +112,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Не беси меня!"
+			"text": "Не раздражай меня!"
 		},
 		{
 			"call_node": {

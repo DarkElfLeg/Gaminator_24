@@ -98,7 +98,7 @@
 			"character": "character-1668270660.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Да делай что хочешь?!"
+			"text": "Да делай, что хочешь!"
 		},
 		{
 			"choice": "Мне очень нужна Ваша корона!",
@@ -131,13 +131,13 @@
 			"character": "character-1668270660.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Да как ты осмелилась!?"
+			"text": "Да как ты посмела!?"
 		},
 		{
 			"character": "character-1668270660.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Стража!! Казнить этого червя!"
+			"text": "Стража!! Казнить эту букашку!"
 		},
 		{
 			"call_node": {
@@ -176,13 +176,13 @@
 			"character": "character-1668270660.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Червяки из навоза смеют высовывать голову из грязи?!"
+			"text": "Навозые жуки смеют высовывать голову из грязи?!"
 		},
 		{
 			"character": "character-1668270660.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Позволь я покажу где твоё место!"
+			"text": "Я сейчас тебе покажу, где твоё место!"
 		},
 		{
 			"call_node": {

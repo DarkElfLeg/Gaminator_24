@@ -24,7 +24,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Это была улётная вечеринка!"
+			"text": "Это была потрясающая вечеринка!"
 		},
 		{
 			"character": "character-1668095959.json",
@@ -62,7 +62,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Так быстро уходишь? А может ещё одно чаепитие устроим?"
+			"text": "Так быстро уходишь? А может, ещё одно чаепитие устроим?"
 		},
 		{
 			"character": "character-1666948708.json",
@@ -74,7 +74,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "А знаешь. Мне тоже надоела бездна."
+			"text": "А знаешь... Мне тоже надоела бездна."
 		},
 		{
 			"character": "character-1668095959.json",
@@ -83,10 +83,10 @@
 
 			],
 			"portrait": "",
-			"question": "Пожалуйста! Возьми меня с собой, в свой мир! Я буду послушным котом, честное кошачье слово!"
+			"question": "Пожалуйста, возьми меня с собой в свой мир! Я буду послушным котом, честное кошачье слово!"
 		},
 		{
-			"choice": "НЕТ! Ты Опасен!",
+			"choice": "НЕТ! Ты опасен!",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -96,7 +96,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Не очень то и хотелось."
+			"text": "Не очень-то и хотелось."
 		},
 		{
 			"character": "character-1668095959.json",
@@ -135,13 +135,13 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ура! Теперь, будет не скучно, будем всегда устраивать чаепития!"
+			"text": "Ура! Теперь будет не скучно, будем каждый день устраивать чаепития!"
 		},
 		{
 			"character": "character-1666948708.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Боюсь, что я пожалею об этом решении!"
+			"text": "Боюсь, я скоро пожалею, что согласилась..."
 		},
 		{
 			"character": "character-1668095959.json",

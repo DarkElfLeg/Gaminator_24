@@ -58,7 +58,7 @@
 			"character": "character-1666948708.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Г-говорящий кот?! Наверное я сплю."
+			"text": "Г-говорящий кот?! Наверное, я сплю."
 		},
 		{
 			"character": "character-1667759486.json",
@@ -137,7 +137,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Сыграем в кошки-мышки! Чур я вожу!"
+			"text": "Сыграем в кошки-мышки! Чур, я вожу!"
 		},
 		{
 			"call_node": {

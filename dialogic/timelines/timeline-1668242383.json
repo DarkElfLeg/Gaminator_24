@@ -84,7 +84,7 @@
 			"character": "character-1668242458.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Спасибо за помощь! Пойдём уже отсюда!"
+			"text": "Спасибо за помощь! Пойдёмте отсюда!"
 		},
 		{
 			"call_node": {
@@ -137,7 +137,7 @@
 			"character": "character-1668095959.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Я тоже жду с нетерпением вечеринку!"
+			"text": "Я тоже жду вашу вечеринку с нетерпением!"
 		},
 		{
 			"event_id": "dialogic_013"
