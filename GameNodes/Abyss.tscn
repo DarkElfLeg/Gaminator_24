@@ -77,7 +77,7 @@ tracks/0/keys = {
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource( 3 )
-first_level = "res://Scenes/sBackAlley.tscn"
+first_level = "res://Fight_Levels/sPartyEnd.tscn"
 
 [node name="Fon" parent="." instance=ExtResource( 1 )]
 
@@ -92,7 +92,6 @@ speed = 330
 [node name="calm_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 8 )
 volume_db = -15.0
-autoplay = true
 
 [node name="fight_music" type="AudioStreamPlayer" parent="Singletone"]
 stream = ExtResource( 6 )

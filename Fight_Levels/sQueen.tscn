@@ -1,14 +1,15 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Fight_Levels/Briks/brick_octa.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Enemies/CatBoss.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies/Queen.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Fight_Levels/Briks/brick_rhomb.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Fight_Levels/Briks/brick_t_up.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Fight_Levels/Briks/brick_box_g.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Fight_Levels/Ball.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Fight_Levels/Briks/brick_t_down.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sprites/Castle.png" type="Texture" id=7]
 [ext_resource path="res://Fight_Levels/sBoss.gd" type="Script" id=8]
 [ext_resource path="res://GameNodes/Shield.tscn" type="PackedScene" id=9]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -23,7 +24,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 2430, 293 ), Vector2( 1600, 255 ) ]
+"values": [ Vector2( -228, 497 ), Vector2( 270, 772 ) ]
 }
 tracks/1/type = "method"
 tracks/1/path = NodePath("CatBoss")
@@ -39,40 +40,65 @@ tracks/1/keys = {
 "method": "_set_spawn_point"
 } ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("CatPaw:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -419, 642 ), Vector2( 305, 495 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CatPaw3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2288, 574 ), Vector2( 1711, 495 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Go_out"
 length = 3.0
-tracks/0/type = "method"
-tracks/0/path = NodePath("CatBoss")
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray(  ),
-"transitions": PoolRealArray(  ),
-"values": [  ]
+"times": PoolRealArray( 0.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 305, 495 ), Vector2( -419, 642 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CatPaw3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1711, 495 ), Vector2( 2288, 574 ) ]
 }
 
 [sub_resource type="Animation" id=3]
 resource_name = "Hide"
-tracks/0/type = "value"
-tracks/0/path = NodePath("CatBoss:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2430, 293 ) ]
-}
 
 [node name="Fight_with_red_cat" type="Node2D"]
 script = ExtResource( 8 )
-next_level = "res://Scenes/killsBoss.tscn"
+next_level = "res://Scenes/killsQueen.tscn"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Hide"
@@ -80,184 +106,384 @@ anims/Go_in = SubResource( 1 )
 anims/Go_out = SubResource( 2 )
 anims/Hide = SubResource( 3 )
 
-[node name="CatBoss" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2430, 293 )
-
 [node name="3" type="Node2D" parent="."]
 
 [node name="Brick" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1040, 313 )
+position = Vector2( 509, 979 )
 
 [node name="Brick2" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1039, 421 )
+position = Vector2( 557, 863 )
 
 [node name="Brick3" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1040, 204 )
+position = Vector2( 520, 749 )
 
 [node name="Brick4" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1039, 97 )
+position = Vector2( 451, 634 )
 
 [node name="Brick5" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1060, 531 )
+position = Vector2( 385, 508 )
 
 [node name="Brick6" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1085, 645 )
+position = Vector2( 264, 462 )
 
 [node name="Brick7" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1198, 695 )
+position = Vector2( 140, 480 )
 
 [node name="Brick8" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1309, 766 )
+position = Vector2( 140, 212 )
 
 [node name="Brick9" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1423, 791 )
+position = Vector2( 249, 215 )
 
 [node name="Brick10" parent="3" instance=ExtResource( 5 )]
-position = Vector2( 1486, 902 )
+position = Vector2( 363, 211 )
+
+[node name="Brick11" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 472, 215 )
+
+[node name="Brick12" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 587, 214 )
+
+[node name="Brick13" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 704, 218 )
+
+[node name="Brick14" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 819, 212 )
+
+[node name="Brick15" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 930, 221 )
+
+[node name="Brick16" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1042, 248 )
+
+[node name="Brick17" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1153, 308 )
+
+[node name="Brick18" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1271, 363 )
+
+[node name="Brick19" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1373, 442 )
+
+[node name="Brick20" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1392, 559 )
+
+[node name="Brick21" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1368, 670 )
+
+[node name="Brick22" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1338, 781 )
+
+[node name="Brick23" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1298, 887 )
+
+[node name="Brick24" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1240, 993 )
 
 [node name="KinematicBody2D" parent="3" instance=ExtResource( 6 )]
-position = Vector2( 209, 158 )
+position = Vector2( 1544, 313 )
 
 [node name="2" type="Node2D" parent="."]
 
 [node name="Brick" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1239, 130 )
+position = Vector2( 436, 515 )
 
 [node name="Brick2" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1259, 250 )
+position = Vector2( 517, 590 )
 
 [node name="Brick3" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1305, 354 )
+position = Vector2( 590, 675 )
 
 [node name="Brick4" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1347, 458 )
+position = Vector2( 669, 759 )
 
 [node name="Brick5" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1409, 558 )
+position = Vector2( 750, 832 )
 
 [node name="Brick6" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1481, 654 )
+position = Vector2( 823, 917 )
 
 [node name="Brick7" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1569, 724 )
+position = Vector2( 898, 996 )
 
 [node name="Brick8" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1657, 654 )
+position = Vector2( 348, 437 )
 
 [node name="Brick9" parent="2" instance=ExtResource( 3 )]
-position = Vector2( 1759, 612 )
+position = Vector2( 269, 356 )
 
-[node name="Brick_t" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1042, 124 )
+[node name="Brick10" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 197, 283 )
 
-[node name="Brick_t2" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1058, 300 )
+[node name="Brick11" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 124, 208 )
 
-[node name="Brick_t3" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1136, 470 )
+[node name="Brick12" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 706, 518 )
 
-[node name="Brick_t4" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1224, 640 )
+[node name="Brick13" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 787, 593 )
 
-[node name="Brick_t5" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1376, 784 )
+[node name="Brick14" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 860, 678 )
 
-[node name="Brick_t6" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1526, 918 )
+[node name="Brick15" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 939, 762 )
 
-[node name="Brick_t7" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1736, 934 )
+[node name="Brick16" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1020, 835 )
 
-[node name="Brick_t8" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 1144, 960 )
+[node name="Brick17" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1093, 920 )
 
-[node name="Brick_t9" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 868, 748 )
+[node name="Brick18" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1168, 999 )
 
-[node name="Brick_t10" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 736, 474 )
+[node name="Brick19" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 618, 440 )
 
-[node name="Brick_t11" parent="2" instance=ExtResource( 7 )]
-position = Vector2( 688, 152 )
+[node name="Brick20" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 539, 359 )
+
+[node name="Brick21" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 467, 286 )
+
+[node name="Brick22" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 394, 211 )
+
+[node name="Brick23" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 847, 371 )
+
+[node name="Brick24" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 928, 446 )
+
+[node name="Brick25" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1001, 531 )
+
+[node name="Brick26" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1080, 615 )
+
+[node name="Brick27" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1161, 688 )
+
+[node name="Brick28" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1234, 773 )
+
+[node name="Brick29" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1309, 852 )
+
+[node name="Brick30" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 759, 293 )
+
+[node name="Brick31" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 680, 212 )
+
+[node name="Brick32" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 608, 139 )
+
+[node name="Brick33" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 535, 64 )
+
+[node name="Brick34" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1198, 509 )
+
+[node name="Brick35" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1279, 584 )
+
+[node name="Brick36" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1352, 669 )
+
+[node name="Brick37" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1431, 753 )
+
+[node name="Brick38" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1512, 826 )
+
+[node name="Brick39" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1585, 911 )
+
+[node name="Brick40" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1660, 990 )
+
+[node name="Brick41" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1110, 431 )
+
+[node name="Brick42" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1031, 350 )
+
+[node name="Brick43" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 959, 277 )
+
+[node name="Brick44" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 886, 202 )
 
 [node name="KinematicBody2D" parent="2" instance=ExtResource( 6 )]
-position = Vector2( 215, 158 )
+position = Vector2( 1230, 333 )
 
 [node name="1" type="Node2D" parent="."]
 
 [node name="O" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 862, 107 )
+position = Vector2( 522, 448 )
 
 [node name="O2" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 899, 262 )
+position = Vector2( 635, 486 )
 
 [node name="O3" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 912, 403 )
+position = Vector2( 745, 550 )
 
 [node name="O4" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 907, 561 )
+position = Vector2( 817, 649 )
 
 [node name="O5" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 870, 700 )
+position = Vector2( 864, 765 )
 
 [node name="O6" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 870, 850 )
+position = Vector2( 865, 884 )
 
 [node name="O7" parent="1" instance=ExtResource( 1 )]
-position = Vector2( 865, 1002 )
+position = Vector2( 854, 1006 )
 
 [node name="A" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1153, 150 )
+position = Vector2( 751, 105 )
 
 [node name="A2" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1180, 275 )
+position = Vector2( 834, 185 )
 
 [node name="A3" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1204, 441 )
+position = Vector2( 741, 270 )
 
 [node name="A4" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1249, 591 )
+position = Vector2( 834, 345 )
 
 [node name="A5" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1326, 714 )
+position = Vector2( 759, 436 )
 
 [node name="A6" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1422, 834 )
+position = Vector2( 1069, 658 )
 
 [node name="A7" parent="1" instance=ExtResource( 3 )]
-position = Vector2( 1553, 1000 )
+position = Vector2( 1152, 738 )
+
+[node name="A8" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1059, 823 )
+
+[node name="A9" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1152, 898 )
+
+[node name="A10" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1077, 989 )
+
+[node name="A11" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1291, 119 )
+
+[node name="A12" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1374, 199 )
+
+[node name="A13" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1281, 284 )
+
+[node name="A14" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1374, 359 )
+
+[node name="A15" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1299, 450 )
+
+[node name="A16" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1550, 664 )
+
+[node name="A17" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1633, 744 )
+
+[node name="A18" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1540, 829 )
+
+[node name="A19" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1633, 904 )
+
+[node name="A20" parent="1" instance=ExtResource( 3 )]
+position = Vector2( 1558, 995 )
 
 [node name="B" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1033, 147 )
+position = Vector2( 1011, 279 )
 
 [node name="B2" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1060, 254 )
+position = Vector2( 1017, 403 )
 
 [node name="B3" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1065, 377 )
+position = Vector2( 918, 476 )
 
 [node name="B4" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1068, 484 )
+position = Vector2( 1126, 480 )
 
 [node name="B5" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1089, 601 )
+position = Vector2( 1334, 554 )
 
 [node name="B6" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1182, 700 )
+position = Vector2( 1340, 678 )
 
 [node name="B7" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1251, 823 )
+position = Vector2( 1241, 751 )
 
 [node name="B8" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1315, 943 )
+position = Vector2( 1449, 755 )
 
 [node name="B9" parent="1" instance=ExtResource( 4 )]
-position = Vector2( 1422, 1015 )
+position = Vector2( 1636, 229 )
+
+[node name="B10" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 1642, 353 )
+
+[node name="B11" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 1543, 426 )
+
+[node name="B12" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 1751, 430 )
+
+[node name="B13" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 264, 115 )
+
+[node name="B14" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 270, 239 )
+
+[node name="B15" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 171, 312 )
+
+[node name="B16" parent="1" instance=ExtResource( 4 )]
+position = Vector2( 379, 316 )
 
 [node name="Ball" parent="1" instance=ExtResource( 6 )]
-position = Vector2( 209, 161 )
+position = Vector2( 1491, 97 )
 
 [node name="Ball1" parent="1" instance=ExtResource( 6 )]
-position = Vector2( 381, 150 )
+position = Vector2( 1040, 110 )
 
 [node name="Shield" parent="." instance=ExtResource( 9 )]
+
+[node name="CatBoss" parent="." instance=ExtResource( 2 )]
+position = Vector2( 270, 772 )
+Do_swords = true
+Do_move = true
+
+[node name="CatPaw" parent="." instance=ExtResource( 10 )]
+position = Vector2( 305, 495 )
+
+[node name="Floor13" type="Sprite" parent="CatPaw"]
+position = Vector2( -32.9072, -94.3563 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 1387, 505, 266, 530 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1711, 495 )
+rotation = 4.71238
+
+[node name="Floor14" type="Sprite" parent="CatPaw3"]
+position = Vector2( 5.00073, -115 )
+rotation = 1.5708
+z_index = -1
+texture = ExtResource( 7 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1387, 505, 266, 530 )

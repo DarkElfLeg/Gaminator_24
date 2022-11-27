@@ -83,11 +83,11 @@ tracks/5/keys = {
 position = Vector2( -1, -4 )
 
 [node name="Body" type="Node2D" parent="."]
-rotation = 0.110761
+rotation = -0.0218166
 
 [node name="Part1" type="Sprite" parent="Body"]
 position = Vector2( -146.631, 5.35112 )
-scale = Vector2( 1.10402, 0.965239 )
+scale = Vector2( 1.17798, 0.940519 )
 texture = ExtResource( 1 )
 offset = Vector2( -29, 88 )
 flip_h = true
@@ -96,7 +96,7 @@ region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Part2" type="Sprite" parent="Body"]
 position = Vector2( 149.837, 5.60585 )
-scale = Vector2( 1.05873, 0.969835 )
+scale = Vector2( 1.1005, 0.948385 )
 texture = ExtResource( 1 )
 offset = Vector2( 23, 91 )
 region_enabled = true
@@ -104,7 +104,7 @@ region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Part3" type="Sprite" parent="Body"]
 position = Vector2( -145.41, -2.15321 )
-scale = Vector2( 1.09056, 0.958959 )
+scale = Vector2( 1.15496, 0.929775 )
 texture = ExtResource( 1 )
 offset = Vector2( -26, -100 )
 flip_h = true
@@ -114,7 +114,7 @@ region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Part4" type="Sprite" parent="Body"]
 position = Vector2( 147.971, -5.60124 )
-scale = Vector2( 1.05305, 0.957277 )
+scale = Vector2( 1.09077, 0.926896 )
 texture = ExtResource( 1 )
 offset = Vector2( 28, -93 )
 flip_v = true
@@ -123,7 +123,7 @@ region_rect = Rect2( 1817, 218, 116, 196 )
 
 [node name="Body" type="Sprite" parent="Body"]
 position = Vector2( 2.29736, 7.57664 )
-scale = Vector2( 0.945613, 1.06054 )
+scale = Vector2( 0.905036, 1.10583 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 1385, 221, 394, 292 )

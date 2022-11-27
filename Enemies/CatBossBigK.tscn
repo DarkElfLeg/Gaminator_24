@@ -402,7 +402,6 @@ bones = [ "Body", PoolRealArray( 0, 0, 0, 0 ), "Body/HandR", PoolRealArray( 0, 0
 
 [node name="Body" type="Bone2D" parent="Skeleton2D"]
 rotation = -1.44159
-scale = Vector2( 1e-05, 1e-05 )
 rest = Transform2D( 0.128842, -0.991665, 0.991665, 0.128842, 0, 0 )
 
 [node name="HandR" type="Bone2D" parent="Skeleton2D/Body"]
@@ -431,7 +430,6 @@ rest = Transform2D( 1, 0, 0, 1, 92.2249, -11.9823 )
 
 [node name="Mouth" type="Bone2D" parent="Skeleton2D/Body"]
 position = Vector2( 14.875, -1.93263 )
-rotation = -6.28319
 rest = Transform2D( 1, 0, 0, 1, 14.875, -1.93263 )
 
 [node name="Tail" type="Bone2D" parent="Skeleton2D/Body"]

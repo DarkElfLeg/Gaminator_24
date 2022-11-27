@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Fight_Levels/Briks/brick_octa.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Enemies/KSkullBoss.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Fight_Levels/Briks/brick_rhomb.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprites/Castle.png" type="Texture" id=4]
 [ext_resource path="res://Fight_Levels/Briks/brick_box_g.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Fight_Levels/Ball.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Fight_Levels/sBoss.gd" type="Script" id=8]
 [ext_resource path="res://GameNodes/Shield.tscn" type="PackedScene" id=9]
 
@@ -37,10 +39,58 @@ tracks/1/keys = {
 "method": "_set_spawn_point"
 } ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("CatPaw:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -419, 642 ), Vector2( 214, 637 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CatPaw3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2288, 574 ), Vector2( 1746, 627 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Go_out"
 length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatPaw:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 214, 637 ), Vector2( -419, 642 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CatPaw3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1746, 627 ), Vector2( 2288, 574 ) ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "Hide"
@@ -409,5 +459,29 @@ position = Vector2( 1019, 392 )
 [node name="Shield" parent="." instance=ExtResource( 9 )]
 
 [node name="CatBoss" parent="." instance=ExtResource( 2 )]
-position = Vector2( 977, 1329 )
+position = Vector2( 986.667, 862.1 )
 Do_swords = true
+
+[node name="CatPaw" parent="." instance=ExtResource( 7 )]
+position = Vector2( 214, 637 )
+
+[node name="Floor13" type="Sprite" parent="CatPaw"]
+position = Vector2( -32.9072, -94.3563 )
+rotation = -1.59094
+z_index = -1
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 1387, 505, 266, 530 )
+
+[node name="CatPaw3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1746, 627 )
+rotation = 4.71238
+
+[node name="Floor14" type="Sprite" parent="CatPaw3"]
+position = Vector2( 5.00073, -115 )
+rotation = 1.5708
+z_index = -1
+texture = ExtResource( 4 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1387, 505, 266, 530 )
