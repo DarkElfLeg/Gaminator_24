@@ -170,6 +170,9 @@ func _collect_sweets():
 		$"/root/Game/Singletone/PUp".play()
 	pass
 
+func _quit():
+	get_tree().quit()
+
 func _save_sweets():
 	sweets += temp_sweets
 	Dialogic.set_variable("CandyCount",sweets)
