@@ -20,5 +20,5 @@ anims/Go_out = SubResource( 2 )
 
 [node name="Minigame" parent="." instance=ExtResource( 2 )]
 List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/TV.tscn", "res://Fight_Levels/Junk/TV.tscn" ]
-next_level = "res://Scenes/sShop.tscn"
+next_level = "res://Scenes/killsWork.tscn"
 time_for_spawn_delay = 0.4
