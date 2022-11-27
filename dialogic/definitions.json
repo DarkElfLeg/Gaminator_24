@@ -112,12 +112,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1668402205-366",
-			"name": "isInfoAboutRats",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1668401190-648",
 			"name": "isHareSaved",
 			"type": 0,
@@ -144,6 +138,30 @@
 		{
 			"id": "1668185782-171",
 			"name": "CandyCount",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1668402205-366",
+			"name": "isInfoAboutRats",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669531910-466",
+			"name": "isKillsGarbage",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669531892-322",
+			"name": "isKillsWork",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669531864-965",
+			"name": "isKillsRats",
 			"type": 0,
 			"value": "0"
 		}

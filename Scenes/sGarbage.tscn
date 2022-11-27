@@ -19,7 +19,7 @@ anims/Go_in = SubResource( 1 )
 anims/Go_out = SubResource( 2 )
 
 [node name="Minigame_example" parent="." instance=ExtResource( 1 )]
-List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Spikes.tscn", "res://Fight_Levels/Junk/Spikes.tscn", "res://Fight_Levels/Junk/Sharp_garbage.tscn" ]
+List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Boot.tscn", "res://Fight_Levels/Junk/Paket.tscn", "res://Fight_Levels/Junk/Box.tscn", "res://Fight_Levels/Junk/Rat.tscn" ]
 next_level = "res://Scenes/sBackAlley.tscn"
 time_for_win = 30
 time_for_spawn_delay = 0.3

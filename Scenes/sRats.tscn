@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://GameNodes/Exit2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Dungeon.png" type="Texture" id=3]
 [ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/sBackAlley.gd" type="Script" id=5]
@@ -113,19 +112,9 @@ texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 303, 13, 255, 261 )
 
-[node name="Exit2" parent="CatPaw2" instance=ExtResource( 1 )]
-position = Vector2( 311.759, 11.066 )
-rotation = 0.261799
-next_level = "res://Scenes/sRatKing.tscn"
-
 [node name="CatPaw3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2914, 602 )
 rotation = -1.57079
-
-[node name="Exit2" parent="CatPaw3" instance=ExtResource( 1 )]
-position = Vector2( 491.996, -626.003 )
-rotation = -1.57081
-next_level = "res://Scenes/sHome.tscn"
 
 [node name="Floor9" type="Sprite" parent="CatPaw3"]
 position = Vector2( 24.9993, -216.003 )
@@ -141,6 +130,6 @@ anims/Go_in = SubResource( 1 )
 anims/Go_out = SubResource( 2 )
 
 [node name="Minigame_example" parent="." instance=ExtResource( 6 )]
-List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Spikes.tscn", "res://Fight_Levels/Junk/Rat.tscn" ]
+List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Spider.tscn", "res://Fight_Levels/Junk/Rat.tscn" ]
 next_level = "res://Scenes/sRatKing.tscn"
 time_for_spawn_delay = 0.2

@@ -1,15 +1,21 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Fight_Levels/Junk/Rat.gd" type="Script" id=1]
 [ext_resource path="res://GameNodes/Rat.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GameNodes/Rat2.tscn" type="PackedScene" id=3]
 
 [node name="Spikes" type="Area2D"]
 script = ExtResource( 1 )
+isDeleteByDead = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( 63, -42, 56, 5, 16, 53, -37, 58, -76, 40, -77, -9, -40, -23, 9, -73 )
 
 [node name="Rat" parent="." instance=ExtResource( 2 )]
+position = Vector2( -12, 9 )
+
+[node name="Rat2" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( -12, 9 )
 
 [connection signal="body_entered" from="." to="." method="_on_Spikes_body_entered"]

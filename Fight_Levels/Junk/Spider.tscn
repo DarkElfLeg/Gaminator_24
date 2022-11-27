@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Home.png" type="Texture" id=1]
+[ext_resource path="res://Fight_Levels/Junk/Spikes.gd" type="Script" id=2]
+[ext_resource path="res://GameNodes/AlexScripts/RotateTest.gd" type="Script" id=3]
+
+[node name="Spikes" type="Area2D"]
+script = ExtResource( 2 )
+isDeleteByDead = false
+speed = 600
+
+[node name="Lapis" type="Sprite" parent="."]
+position = Vector2( 54, -1 )
+scale = Vector2( 0.744934, 0.744934 )
+texture = ExtResource( 1 )
+offset = Vector2( -9.16321, 0.657597 )
+region_enabled = true
+region_rect = Rect2( 663, 1110, 151, 151 )
+script = ExtResource( 3 )
+RotateSpeed = 5
+
+[node name="Lapis2" type="Sprite" parent="."]
+position = Vector2( -61, -2 )
+scale = Vector2( 0.744934, 0.744934 )
+texture = ExtResource( 1 )
+offset = Vector2( 15, 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 663, 1110, 151, 151 )
+script = ExtResource( 3 )
+RotateSpeed = -5
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+offset = Vector2( -2, 2 )
+region_enabled = true
+region_rect = Rect2( 504, 1137, 121, 111 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+offset = Vector2( -2, 2 )
+region_enabled = true
+region_rect = Rect2( 491, 1281, 136, 111 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -40, 3 )
+polygon = PoolVector2Array( -35, -4, -7, -45, 38, -59, 81, -44, 112, -1, 87, 41, 40, 57, -11, 43 )
+
+[connection signal="body_entered" from="." to="." method="_on_Spikes_body_entered"]

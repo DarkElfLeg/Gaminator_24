@@ -77,7 +77,7 @@ tracks/0/keys = {
 
 [node name="Level" type="Node2D" parent="."]
 script = ExtResource( 3 )
-first_level = "res://Scenes/sTown.tscn"
+first_level = "res://Scenes/sCastle.tscn"
 
 [node name="Fon" parent="." instance=ExtResource( 1 )]
 

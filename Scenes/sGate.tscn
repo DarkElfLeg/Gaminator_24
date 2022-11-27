@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Sprites/Out.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Home.png" type="Texture" id=2]
@@ -7,8 +7,7 @@
 [ext_resource path="res://Sprites/Castle.png" type="Texture" id=5]
 [ext_resource path="res://GameNodes/CatPaw.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/sGate.gd" type="Script" id=7]
-[ext_resource path="res://mindMap/BossDefeatedReplacer.tscn" type="PackedScene" id=8]
-[ext_resource path="res://mindMap/BigText.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Fight_Levels/Minigame_example.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -359,17 +358,13 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 753, 690, 189, 384 )
 
-[node name="BossDefeatedReplacer" parent="." instance=ExtResource( 8 )]
-position = Vector2( 925, 731 )
-dialog_file = "killsGate"
-
-[node name="BigText" parent="." instance=ExtResource( 9 )]
-margin_left = 446.0
-margin_top = 226.0
-margin_right = 1446.0
-margin_bottom = 557.0
-text = "sGate
-(mini-game)"
+[node name="Minigame_example" parent="." instance=ExtResource( 10 )]
+position = Vector2( -334, 1311 )
+rotation = 1.0472
+List_of_spawn_nodes = [ "res://Fight_Levels/Junk/Candy.tscn", "res://Fight_Levels/Junk/Guard.tscn", "res://Fight_Levels/Junk/Guard.tscn", "res://Fight_Levels/Junk/Guard.tscn" ]
+next_level = "res://Scenes/killsGate.tscn"
+time_for_win = 30
+time_for_spawn_delay = 0.3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Go_in = SubResource( 1 )

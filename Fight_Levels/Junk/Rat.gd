@@ -2,6 +2,8 @@ extends Area2D
 
 export var speed = 400
 var move_to = 0
+export var isDeleteByDead = true;
+var isDead = false;
 
 func _ready():
 	move_to = rand_range(position.x - 900, position.x + 900);
@@ -23,6 +25,11 @@ func _process(delta):
 
 func _on_Spikes_body_entered(body):
 	if body.name == "Alice":
-		$"/root/Game/Alice"._hert()
-		queue_free()
-	pass # Replace with function body.
+		$"/root/Game/Alice"._hert();
+		if (not isDeleteByDead):
+			isDead = true;
+			$Rat.visible = false;
+			$Rat2.visible = true;
+			$CollisionPolygon2D.disabled = true;
+		else:
+			queue_free();
