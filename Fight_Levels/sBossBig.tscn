@@ -81,6 +81,7 @@ anims/Hide = SubResource( 3 )
 
 [node name="CatBoss" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2430, 293 )
+speed = 15
 
 [node name="3" type="Node2D" parent="."]
 

@@ -51,6 +51,7 @@ script = ExtResource( 8 )
 
 [node name="CatBoss" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2316, 313 )
+speed = 30
 Do_move = true
 
 [node name="3" type="Node2D" parent="."]
