@@ -25,7 +25,8 @@ func _physics_process(delta):
 		direction_speed = lerp(direction_speed,direction*speed,0.1)
 		
 		SetFlip(direction_speed.x) # Поменял поворот для команды с Диалога
-			
+		if Input.is_action_just_pressed("ui_cancel"):
+			Singletone._dialog("menuPause")
 		if Input.is_action_just_pressed("ui_accept"):
 			emit_signal("Interact")
 				
