@@ -6,8 +6,10 @@
 [node name="Spikes" type="Area2D"]
 script = ExtResource( 1 )
 isDeleteByDead = false
+isRotateSpeed = 3
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
 color = Color( 0.396078, 0.396078, 0.396078, 1 )
 polygon = PoolVector2Array( -169, -83, 62, -96, 51, 149, -163, 143, -154, 36 )
 
