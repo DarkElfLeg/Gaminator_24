@@ -81,6 +81,7 @@ func _hert():
 	go_spawn = true
 	Singletone.pause_mode = true
 	$AnimationPlayer.play("hert")
+	$"/root/Game/Singletone/Hit".play()
 	# Момент очистки!
 	clear()
 	life = life - 1;

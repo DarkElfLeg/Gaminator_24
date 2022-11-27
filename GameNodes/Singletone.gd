@@ -31,7 +31,6 @@ func _fight():
 	$"/root/Game/Singletone/calm_music".stop()
 	pass
 
-
 func check_helth():
 	if Helth_Player > Max_Helth_Player:
 		Helth_Player = Max_Helth_Player
@@ -141,11 +140,13 @@ func _set_max_helth(helth):
 
 func _heal(heal):
 	Helth_Player += int(heal)
+	$"/root/Game/Singletone/PUp".play()
 	check_helth()
 	# Почему это отдельно он damage? Чтобы запускать анимацию в ноде Alice!
 
 func _damage(damage):
 	Helth_Player -= int(damage)
+	$"/root/Game/Singletone/Hert".play()
 	check_helth()
 
 func _clear_sweets():
@@ -161,10 +162,12 @@ func _collect_sweets():
 		temp_sweets += 1
 		Dialogic.set_variable("CandyCount",sweets)
 		$"../Game/HUD/Candy2/CandyCountUI".text = str(temp_sweets)
+		$"/root/Game/Singletone/PUp".play()
 	else:
 		sweets += 1
 		Dialogic.set_variable("CandyCount",sweets)
 		$"../Game/HUD/Candy2/CandyCountUI".text = str(sweets)
+		$"/root/Game/Singletone/PUp".play()
 	pass
 
 func _save_sweets():
