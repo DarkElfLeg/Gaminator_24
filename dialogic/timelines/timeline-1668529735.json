@@ -16,11 +16,31 @@
 			"question": ""
 		},
 		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "pause_on",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"choice": "Продолжить",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "pause_off",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"choice": "Выйти в титульное меню",
@@ -55,6 +75,16 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "Pause_Off",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"call_node": {

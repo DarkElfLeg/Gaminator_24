@@ -289,7 +289,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sParty.tscn"
+					"res://Fight_Levels/sParty.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"

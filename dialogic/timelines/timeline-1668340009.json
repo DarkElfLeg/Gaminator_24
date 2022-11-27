@@ -134,7 +134,7 @@
 		{
 			"call_node": {
 				"arguments": [
-					"res://Scenes/sHole.tscn"
+					"res://Fight_Levels/sHole.tscn"
 				],
 				"method_name": "_in",
 				"target_node_path": "Singletone"
