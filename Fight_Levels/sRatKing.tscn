@@ -421,6 +421,7 @@ position = Vector2( 1759, 112 )
 
 [node name="CatBoss" parent="." instance=ExtResource( 2 )]
 position = Vector2( 250, 278 )
+life = 2
 Do_move = true
 
 [node name="CatPaw" parent="." instance=ExtResource( 7 )]
