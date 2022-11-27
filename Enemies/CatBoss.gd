@@ -20,10 +20,21 @@ func _ready():
 	Singletone.is_in_minigame = true
 	$AnimationPlayer.play("idle")
 	yield(get_tree().create_timer(3.0), "timeout")
-	for child in $"../3".get_children():# Почему 3? А просто хочу 3 жизни...
-		if child.has_method("_go_spawn"):
-			yield(get_tree().create_timer(0.1), "timeout")
-			child._go_spawn(position)
+	if life == 3:
+		for child in $"../3".get_children():# Почему 3? А просто хочу 3 жизни...
+				if child.has_method("_go_spawn"):
+					yield(get_tree().create_timer(0.1), "timeout")
+					child._go_spawn(position)
+	if life == 2:
+		for child in $"../2".get_children():# Почему 3? А просто хочу 3 жизни...
+				if child.has_method("_go_spawn"):
+					yield(get_tree().create_timer(0.1), "timeout")
+					child._go_spawn(position)
+	if life == 1:
+		for child in $"../1".get_children():# Почему 3? А просто хочу 3 жизни...
+				if child.has_method("_go_spawn"):
+					yield(get_tree().create_timer(0.1), "timeout")
+					child._go_spawn(position)
 
 func _idle():
 	$AnimationPlayer.play("idle")

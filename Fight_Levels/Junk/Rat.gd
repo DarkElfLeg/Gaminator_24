@@ -14,11 +14,11 @@ func _ready():
 func _process(delta):
 	if not Singletone.pause_mode:
 		position.y -= speed * delta
-		if position.x < (move_to+100):
+		if position.x < (move_to+80):
 			position.x -= speed * delta
-		if position.x > (move_to-100):
+		if position.x > (move_to-80):
 			position.x += speed * delta
-		if position.y < -200:
+		if position.y < -150:
 			queue_free()
 		pass
 

@@ -1,12 +1,6 @@
 {
 	"events": [
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "BOSS KILLED sQueen End!"
-		},
-		{
 			"condition": "<=",
 			"definition": "1668102862-483",
 			"event_id": "dialogic_012",

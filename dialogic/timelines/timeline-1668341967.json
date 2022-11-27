@@ -1,12 +1,6 @@
 {
 	"events": [
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "BOSS KILLED sHole!"
-		},
-		{
 			"condition": "<=",
 			"definition": "1668102957-970",
 			"event_id": "dialogic_012",
