@@ -1,9 +1,12 @@
 extends Area2D
 
-export var speed = 400
+export var isDeleteByDead = true;
+export var speed = 400;
+
 
 func _ready():
 	pass
+
 
 func _process(delta):
 	if not Singletone.pause_mode:
@@ -15,6 +18,10 @@ func _process(delta):
 
 func _on_Spikes_body_entered(body):
 	if body.name == "Alice":
-		$"/root/Game/Alice"._hert()
-		queue_free()
-	pass # Replace with function body.
+		$"/root/Game/Alice"._hert();
+		if (not isDeleteByDead):
+			$Sprite.visible = false;
+			$Sprite2.visible = true;
+			$CollisionPolygon2D.disabled = true;
+		else:
+			queue_free();
