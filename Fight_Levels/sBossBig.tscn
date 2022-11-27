@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Fight_Levels/Briks/brick_octa.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Enemies/CatBoss.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Fight_Levels/Ball.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Fight_Levels/Briks/brick_t_down.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Fight_Levels/sBoss.gd" type="Script" id=8]
-[ext_resource path="res://GameNodes/Shield.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Go_in"
@@ -259,5 +258,3 @@ position = Vector2( 209, 161 )
 
 [node name="Ball1" parent="1" instance=ExtResource( 6 )]
 position = Vector2( 381, 150 )
-
-[node name="Shield" parent="." instance=ExtResource( 9 )]

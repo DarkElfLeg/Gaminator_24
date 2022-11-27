@@ -1,0 +1,413 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Fight_Levels/Briks/brick_octa.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Enemies/KSkullBoss.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Fight_Levels/Briks/brick_rhomb.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fight_Levels/Briks/brick_box_g.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Fight_Levels/Ball.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Fight_Levels/sBoss.gd" type="Script" id=8]
+[ext_resource path="res://GameNodes/Shield.tscn" type="PackedScene" id=9]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Go_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CatBoss:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 977, 1329 ), Vector2( 987, 846 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("CatBoss")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 2.9 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_set_spawn_point"
+} ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Go_out"
+length = 3.0
+
+[sub_resource type="Animation" id=3]
+resource_name = "Hide"
+
+[node name="Fight_with_red_cat" type="Node2D"]
+script = ExtResource( 8 )
+next_level = "res://Scenes/killsHole.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Hide"
+anims/Go_in = SubResource( 1 )
+anims/Go_out = SubResource( 2 )
+anims/Hide = SubResource( 3 )
+
+[node name="3" type="Node2D" parent="."]
+
+[node name="Brick" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1256, 1004 )
+
+[node name="Brick2" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1244, 887 )
+
+[node name="Brick3" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1238, 775 )
+
+[node name="Brick4" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1193, 657 )
+
+[node name="Brick5" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1081, 581 )
+
+[node name="Brick6" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 964, 572 )
+
+[node name="Brick7" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 846, 615 )
+
+[node name="Brick8" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 753, 708 )
+
+[node name="Brick9" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 695, 820 )
+
+[node name="Brick10" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 694, 932 )
+
+[node name="Brick11" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 583, 1016 )
+
+[node name="Brick12" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 562, 901 )
+
+[node name="Brick13" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 570, 744 )
+
+[node name="Brick14" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 617, 614 )
+
+[node name="Brick15" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 723, 495 )
+
+[node name="Brick16" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 865, 401 )
+
+[node name="Brick17" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1014, 409 )
+
+[node name="Brick18" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1154, 426 )
+
+[node name="Brick19" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1260, 520 )
+
+[node name="Brick20" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1328, 652 )
+
+[node name="Brick21" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1404, 775 )
+
+[node name="Brick22" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1429, 895 )
+
+[node name="Brick23" parent="3" instance=ExtResource( 5 )]
+position = Vector2( 1472, 1010 )
+
+[node name="KinematicBody2D" parent="3" instance=ExtResource( 6 )]
+position = Vector2( 1325, 365 )
+
+[node name="2" type="Node2D" parent="."]
+
+[node name="Brick" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 356, 1005 )
+
+[node name="Brick2" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 424, 916 )
+
+[node name="Brick3" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 494, 829 )
+
+[node name="Brick4" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 567, 741 )
+
+[node name="Brick5" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 648, 659 )
+
+[node name="Brick6" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 729, 584 )
+
+[node name="Brick7" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 804, 509 )
+
+[node name="Brick8" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 888, 436 )
+
+[node name="Brick9" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 966, 355 )
+
+[node name="Brick10" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1045, 430 )
+
+[node name="Brick11" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1124, 504 )
+
+[node name="Brick12" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1193, 578 )
+
+[node name="Brick13" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1261, 653 )
+
+[node name="Brick14" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1330, 729 )
+
+[node name="Brick15" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1402, 811 )
+
+[node name="Brick16" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1470, 897 )
+
+[node name="Brick17" parent="2" instance=ExtResource( 3 )]
+position = Vector2( 1538, 983 )
+
+[node name="KinematicBody2D2" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 490, 428 )
+
+[node name="KinematicBody2D3" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 288, 725 )
+
+[node name="KinematicBody2D4" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 102, 504 )
+
+[node name="KinematicBody2D5" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 278, 311 )
+
+[node name="KinematicBody2D6" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 116, 92 )
+
+[node name="KinematicBody2D7" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 461, 125 )
+
+[node name="KinematicBody2D8" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 713, 275 )
+
+[node name="KinematicBody2D9" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 934, 75 )
+
+[node name="KinematicBody2D10" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1191, 263 )
+
+[node name="KinematicBody2D11" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1431, 61 )
+
+[node name="KinematicBody2D12" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1526, 365 )
+
+[node name="KinematicBody2D13" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1716, 156 )
+
+[node name="KinematicBody2D14" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1647, 691 )
+
+[node name="KinematicBody2D15" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1740, 420 )
+
+[node name="KinematicBody2D16" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1357, 998 )
+
+[node name="KinematicBody2D17" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1257, 862 )
+
+[node name="KinematicBody2D18" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1217, 990 )
+
+[node name="KinematicBody2D19" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 722, 992 )
+
+[node name="KinematicBody2D20" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 653, 854 )
+
+[node name="KinematicBody2D21" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 553, 982 )
+
+[node name="KinematicBody2D22" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 520, 604 )
+
+[node name="KinematicBody2D23" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 615, 506 )
+
+[node name="KinematicBody2D24" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 705, 420 )
+
+[node name="KinematicBody2D25" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 812, 346 )
+
+[node name="KinematicBody2D26" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 902, 251 )
+
+[node name="KinematicBody2D27" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1030, 244 )
+
+[node name="KinematicBody2D28" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1118, 349 )
+
+[node name="KinematicBody2D29" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1225, 416 )
+
+[node name="KinematicBody2D30" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1292, 509 )
+
+[node name="KinematicBody2D31" parent="2" instance=ExtResource( 1 )]
+position = Vector2( 1385, 604 )
+
+[node name="KinematicBody2D" parent="2" instance=ExtResource( 6 )]
+position = Vector2( 107, 918 )
+
+[node name="1" type="Node2D" parent="."]
+
+[node name="Ball" parent="1" instance=ExtResource( 6 )]
+position = Vector2( 209, 161 )
+
+[node name="Ball1" parent="1" instance=ExtResource( 6 )]
+position = Vector2( 381, 150 )
+
+[node name="O" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 698, 999 )
+
+[node name="O2" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 580, 932 )
+
+[node name="O3" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 677, 856 )
+
+[node name="O4" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 532, 810 )
+
+[node name="O5" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 637, 735 )
+
+[node name="O6" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 508, 680 )
+
+[node name="O7" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 616, 607 )
+
+[node name="O8" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 487, 556 )
+
+[node name="O9" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 601, 487 )
+
+[node name="O10" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 483, 427 )
+
+[node name="O11" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 595, 361 )
+
+[node name="O12" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 715, 410 )
+
+[node name="O13" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 725, 530 )
+
+[node name="O14" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 824, 458 )
+
+[node name="O15" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 851, 573 )
+
+[node name="O16" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 939, 491 )
+
+[node name="O17" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 975, 602 )
+
+[node name="O18" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1065, 509 )
+
+[node name="O19" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1110, 621 )
+
+[node name="O20" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1186, 522 )
+
+[node name="O21" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1238, 619 )
+
+[node name="O22" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1313, 517 )
+
+[node name="O23" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1358, 649 )
+
+[node name="O24" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1428, 553 )
+
+[node name="O25" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1488, 673 )
+
+[node name="O26" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1406, 769 )
+
+[node name="O27" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1277, 745 )
+
+[node name="O28" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1320, 869 )
+
+[node name="O29" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1232, 969 )
+
+[node name="O30" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1361, 990 )
+
+[node name="O31" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1445, 890 )
+
+[node name="O32" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1484, 1017 )
+
+[node name="O33" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1535, 792 )
+
+[node name="O34" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 454, 995 )
+
+[node name="O35" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 429, 893 )
+
+[node name="O36" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 393, 760 )
+
+[node name="O37" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 370, 646 )
+
+[node name="O38" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 351, 517 )
+
+[node name="O39" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 355, 388 )
+
+[node name="O40" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 474, 305 )
+
+[node name="O41" parent="1" instance=ExtResource( 1 )]
+position = Vector2( 1019, 392 )
+
+[node name="Shield" parent="." instance=ExtResource( 9 )]
+
+[node name="CatBoss" parent="." instance=ExtResource( 2 )]
+position = Vector2( 977, 1329 )
+Do_swords = true
