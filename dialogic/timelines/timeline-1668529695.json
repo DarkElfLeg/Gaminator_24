@@ -104,6 +104,16 @@
 			"value": ""
 		},
 		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_quit",
+				"target_node_path": "Singletone"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
